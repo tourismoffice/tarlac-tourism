@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tarlac Tourism - Province of Tarlac</title>
+  <link rel="shortcut icon" href="LogoIcon/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <div class="navBtns">
+    <div class="navmobilediv">
+      <div class="navmobile">
+        <img src="LogoIcon/logoTourism.png" alt="" class="navbar__img" />
+        <a href="" class="navbar__title">TARLAC TOURISM</a>
+      </div>
+      <p class="navmobileProvince">Province of Tarlac</p>
+    </div>
+    <button class="navOpen">
+      <i class="fa-solid fa-bars menu"></i>
+    </button>
+    <button class="navClose">
+      <i class="fa-solid fa-x close"></i>
+    </button>
+  </div>
+  
+  
+  <nav class="navbar">
+    <div class="navtitle">
+        <div class="navtitlediv">
+            <div class="test">
+                <img src="LogoIcon/logoTourism.png" alt="" class="navbar__img" />
+                <a href="index.html" class="navbar__title">TARLAC TOURISM</a>
+            </div>
+                <p class="navTitleProvince">Province of Tarlac</p>
+        </div>
+    </div>
+    <ul class="navbar__ul">
+        <li class="navbar__li">
+            <a href="#home" class="navbar__link">HOME</a>
+        </li>
+        <li class="navbar__li">
+            <a href="#museo" class="navbar__link">MUSEO NG KANLAHI</a>
+        </li>
+        <li class="navbar__li">
+            <a href="#mapTarlac" class="navbar__link">MAP OF TARLAC</a>
+        </li>
+        <li class="navbar__li">
+            <a href="#history" class="navbar__link">HISTORY OF TARLAC</a>
+        </li>
+        <li class="navbar__li">
+            <a href="#diorama" class="navbar__link">DIORAMA</a>
+        </li>
+        <li class="navbar__li dropdown">
+            <a href="#" class="navbar__link dropdown-toggle">EXPLORE TARLAC ▼</a>
+            <ul class="dropdown-menu">
+                <li><a href="festivals.html" class="dropdown-link">FESTIVALS</a></li>
+                <li><a href="eco-tourism.html" class="dropdown-link">ECO-TOURISM</a></li>
+                <li><a href="food.html" class="dropdown-link">FOOD</a></li>
+                <li><a href="religion.html" class="dropdown-link">FAITH</a></li>
+                <li><a href="adventures.html" class="dropdown-link">ADVENTURE</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="navFooter">
+        <a class="navFooter__link" href="https://www.facebook.com/tarlactourism">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a class="navFooter__link" href="mailto:tarlac.tourism2017@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a class="navFooter__link" href="https://maps.app.goo.gl/GeT9QtH2o9eWYMUz8">
+            <i class="fa-solid fa-location-dot"></i>
+        </a>
+    </div>
+</nav>
+
+  
+  <!-- Home Page -->
+
+  <img src="TarlacTourism/CoverPage.jpg" class="img-cover" alt="Tarlac Tourism" id="home">
+ 
+  <div id="museo">
+  <div class="container">
+    <div class="arrow l" onclick="prev()">
+      <img src="Arrows/arrowLeft.svg" alt="l" />
+    </div>
+    <div class="slide slide-1">
+      <video class="myVideo" autoplay muted loop>
+        <source src="Video/videoplayback.mp4" type="video/mp4" />
+      </video>
+      <div class="overlay-content"></div>
+      <div class="caption">
+        <div id="home" class="home">
+          <div class="home__title">
+            <h2 class="home__title--diwa">Diwa ng Tarlac</h2>
+            <div class="home__diwa">
+              <h2 class="home__title--name">MUSEO NG</h2>
+              <div class="home__line"></div>
+            </div>
+            <div class="home__diwa">
+              <div class="home__lines"></div>
+              <h2 class="home__title--nameKanlahi">KANLAHI</h2>
+            </div>
+            <h2 class="home__opens">
+              Open: Monday to Friday 9:00 am to 3:00 pm
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide slide-2">
+      <div class="home__videoOverlay"></div>
+      <div class="captionThree">
+        <div class="home__video">
+          <div class="homeIconClose">
+            <i class="fa-solid fa-x home__back"></i>
+          </div>
+          <div class="homeVideoWrapper">
+            <iframe class="home__diorama" src="https://www.youtube.com/embed/eJZwMEo4ogg?autoplay=1&mute=1"
+              frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <button class="homebtn_ripple home__btn">
+        <i class="fa fa-play home__playButton"></i>
+      </button>
+    </div>
+    <div class="slide slide-3">
+      <div class="captionTwo">
+        <div class="captionTwoInner">
+          <div class="dayDiorama">
+            <div class="dayDioramaTitle">
+              <h2 class="dayDioramaTitle__name">YOUR DAY AT</h2>
+              <h2 class="dayDioramaTitle__name">THE DIORAMA</h2>
+            </div>
+            <div class="dayDioramaImgs">
+              <img src="YourDayAtDioramaImages/diorama.jpg" alt="diorama"
+                class="dayDioramaImgs__one dayDioramaImgSize" />
+              <img src="YourDayAtDioramaImages/kanlahi.jpg" alt="kanlahi"
+                class="dayDioramaImgs__two dayDioramaImgSize" />
+              <img src="YourDayAtDioramaImages/mapTarlac.jpg" alt="map of tarlac"
+                class="dayDioramaImgs__three dayDioramaImgSize" />
+            </div>
+          </div>
+          <div class="dayHistory">
+            <div class="dayHistoryImg">
+              <img src="YourDayAtDioramaImages/historyTarlac.jpg" alt="diorama" class="dayHistory__img" />
+            </div>
+            <div class="dayHistoryTitle">
+              <h2 class="dayHistoryTitle__name">COME & DISCOVER</h2>
+              <h2 class="dayHistoryTitle__name--history">
+                HISTORY OF TARLAC
+              </h2>
+            </div>
+          </div>
+          <button class="dayLocation">
+            <a href="https://maps.app.goo.gl/GeT9QtH2o9eWYMUz8" class="dayLocation__link" target="_blank">OUR
+              LOCATION</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="arrow r" onclick="next()">
+      <img src="Arrows/arrowRight.svg" alt="r" />
+    </div>
+  </div>
+</div>
+  <!-- Map of Tarlac -->
+  <div id="mapTarlac" class="mapTarlacDiv">
+    <div class="mapTarlacWidth">
+      <div class="mapTarlac">
+        <h2 class="mapTarlacTitle">MAP OF TARLAC</h2>
+      </div>
+      <div class="mapTarlacContent">
+        <img src="MapTarlac/mapTarlac.jpg" alt="" class="mapTarlacImg" />
+        <div class="mapTarlacCountry">
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">COUNTRY: </span>PHILIPPINES
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">REGION: </span>CENTRAL
+            LUZON
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">FOUNDED: </span>1873
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">CAPITAL: </span>TARLAC CITY
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">AREA: </span>3,053 SQ. KM.
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">HIGHEST ELEVATION: </span>1,655 M (MOUNT IBA)
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">CITY: </span>1
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">• </span>TARLAC
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">BARANGAYS: </span>511
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">HERITAGE CULTURES: </span>7
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">• </span>KAPAMPANGANS
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">• </span>PANGASINENSES
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">• </span>ILOCANOS
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">• </span>TAGALOGS
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">• </span>FIL-CHINESE
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">• </span>MUSLIMS
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">• </span>AETAS
+          </p>
+        </div>
+        <div class="mapTarlacCountry">
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">MUNICIPALITIES: </span>17
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">• </span>ANAO
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">• </span>BAMBAN
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">• </span>CAMILING
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">• </span>CAPAS
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">• </span>CONCEPTION
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">• </span>GERONA
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">• </span>LAPAZ
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">• </span>MAYANTOC
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">• </span>MONCADA
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">• </span>PANIQUI
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">• </span>PURA
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">• </span>RAMOS
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">• </span>SAN CLEMENTE
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">• </span>SAN JOSE
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">• </span>SAN MANUEL
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">• </span>SAN IGNACIA
+          </p>
+          <p class="mapTarlacCountryText">
+            <span class="mapTarlacCountryTextSpan">• </span>VICTORIA
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- HISTORY OF TARLAC TIMELINE PAGE -->
+  <div id="history" class="timelineHeader">
+    <h2 class="timelineTitle">HISTORY OF TARLAC</h2>
+  </div>
+  <div class="timeline-container">
+    <div class="timeline">
+      <div class="container right">
+        <div class="content">
+          <h2 class="contentTitle">Pedro Serrano Laktaw</h2>
+          <img src="HistoryImage/Pedro.jpg" alt="" class="contentImage">
+          <p class="contentDescription">
+            An old Spanish-Tagalog dictionary by Pedro Serrano Laktaw in the
+            late 1800s referred to ‘Tarlac’, as native sugar cane. Early
+            documents referred the place as a marshland rather than a plant,
+            which is more feasible as it had its application in other parts of
+            the Philippnes.
+          </p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2 class="contentTitle">1850s</h2>
+          <img src="HistoryImage/revolution.jpg" alt="revolution" class="contentImage">
+          <p class="contentDescription">
+            The first step towards the erection of Tarlac into a province was
+            made in 1858, with the creation of the Comandanica
+            Politico-Militar de Tarlac. Based on the actual law, when the Comandancia de Armas de Tarlac (another term for
+            Comandanica Politico-Militar de Tarlac) was conceived in 1857,
+            with the appointment of Capt. Sebastian Hernandez as the first
+            Comandante and the Royal Decree that credited it on 30 August
+            1858, it was already the formation of the territory that
+            compromised almost in its entirely what was then and still now the
+            Tarlac Province.
+          </p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2 class="contentTitle">1892</h2>
+          <img src="HistoryImage/Train.jpg" alt="train" class="contentImage">
+          <p class="contentDescription">
+            The Manila-Dagupan railroad further sustained the province as a
+            transportation hub in Luzon.
+          </p>
+          <h2 class="contentTitle">May 24, 1893</h2>
+          <p class="contentDescription">
+            The Gobierno Civil de Tarlac was created, with Don Antoniop
+            Rodriguez Batista serving as the first civil governor.
+          </p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2 class="contentTitle">August 30, 1896</h2>
+          <img src="HistoryImage/insurgentSoldier.jpg" alt="insurgent soldier" class="contentImage">
+          <p class="contentDescription">
+            Tarlac was included among the eight revolting provinces by
+            Governor-General Ramon Blanco, immortalized as among the eight
+            rays of the sun in the Philippine flag.Eight Philippine provinces 
+            that initiated the revolution against the Spanish regime in 1896 
+            including Manila, Cavite, Bulacan, Pampanga, Nueva Ecija, Tarlac, Laguna, and Batangas.
+          </p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2 class="contentTitle">JANUARY 24, 1897</h2>
+          <img src="HistoryImage/General.jpg" alt="general francisco macabulos" class="contentImage">
+          <p class="contentDescription">
+            The so-called ‘First Cry of Tarlac’ initiated by General Francisco
+            S. Macabulos in La Paz.On the morning of January 24, 1897, Macabulos found the perfect opportunity. 
+            Macabulos along with his men charged at the Cuartel of the Spanish civil guards and soldiers in La Paz, Tarlac, armed with primitive knives and spears along with few guns. 
+            The revolutionaries triumphed and raided the Cuartel. 
+          </p >
+          <h2 class="contentTitle">April 17, 1898</h2>
+          <p class="contentDescription">
+            General Francisco M. Macabulos install the central Comite
+            Directivo del Centro y Neorte de Luzon, With headquarters at
+            Lomboy, La Paz Tarlac; with its own constitution, the so-called
+            ‘Macabulos Constitution’.
+          </p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2 class="contentTitle">June 6, 1899</h2>
+          <img src="HistoryImage/Capital.jpg" alt="capital" class="contentImage">
+          <p class="contentDescription">
+            President Emilio Aguinaldo transferred his capital at Bamban,
+            Tarlac, assuming the position of Captain-General. By June 21, he
+            relocated at the Tarlac cabecera.
+          </p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2 class="contentTitle">July 14, 1899</h2>
+          <img src="HistoryImage/sanSebastianCatherdral.jpg" alt="san sebastian cathedral" class="contentImage">
+          <p class="contentDescription">
+            The Congress of the First Philippine Republic was reconvened at
+            the Tarlac Cathedral with Ambrosio Rianzares Bautista as the
+            President.
+          </p>
+          <h2 class="contentTitle">August 8, 1899</h2>
+          <p class="contentDescription">
+            The Unibersidad Literaria de Filipinas was reopen in Tarlac, with
+            Dr. Ma Leon Guerrero as its rector. on September 29, 1899, it held
+            its first and only graduation ceremony.
+          </p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2 class="contentTitle">October 23, 1899</h2>
+          <img src="HistoryImage/msgr.jpg" alt="monsignor" class="contentImage">
+          <p class="contentDescription" class="contentDescription">
+            Msgr. Gregorio Aglipay convened the so called Paniqui Assembly,
+            marking the seed of what would become the Philippine Independent
+            Church.
+          </p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2 class="contentTitle">February 8, 1901</h2>
+          <img src="HistoryImage/capitol.jpg" alt="capitol of tarlac" class="contentImage">
+          <p class="contentDescription" class="contentDescription">
+            The American-sponsored civil government in Tarlac was inaugurated
+            with Capt. Wallis O. Clark as its first governor.
+          </p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2 class="contentTitle">September 1, 1902</h2>
+          <img src="HistoryImage/Thc.jpg" alt="tarlac high" class="contentImage">
+          <p class="contentDescription" class="contentDescription">
+            Tarlac is one of the first province in the country to erect its own
+            public highschool building, the Tarlac Highschool.
+          </p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2 class="contentTitle">1930s</h2>
+          <img src="HistoryImage/laJotaMoncadenia.jpg" alt=" la jota moncadenia" class="contentImage">
+          <p class="contentDescription">
+            La Jota Moncadenia is a cultural dance originating from the town
+            of Moncada. The first folk dance team in the country to perform
+            the dance is attributed to Ms. Felicidad Morales and the Moncada
+            Central School back in 1938.
+          </p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2 class="contentTitle">1942</h2>
+          <img src="HistoryImage/deathMarch.jpg" alt="death march" class="contentImage">
+          <p class="contentDescription">
+            Tarlac also figured prominently during the Second World War. Mere
+            mention of Capas O'Donell evokes memories of World War II, The
+            Fall of Bataan, and the Death March where tens of thousands of
+            tired, starved, and sick prisoners of war were made to walk
+            through rough and dusty roads under the sweltering heat of the
+            sun.
+          </p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2 class="contentTitle">January 20, 1945</h2>
+          <img src="HistoryImage/japaneseLiberation.jpg" alt="japanese liberation" class="contentImage">
+          <p class="contentDescription">
+            Tarlac was liberated from the Japanese on the feast of St.
+            Sebastian.
+          </p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2 class="contentTitle">1953</h2>
+          <img src="HistoryImage/Leonora.jpg" alt="leonora" class="contentImage">
+          <p class="contentDescription">
+            Tarlac Indigenous, Maria Cristina Galang won in the Philippines
+            International Fair as Miss Philippines in 1953. The Maria Cristina
+            Park in front of the Capitol Building was named after the first
+            tarlaquena beauty queen.
+          </p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2 class="contentTitle">1982</h2>
+          <img src="HistoryImage/Diwa.jpg" alt="diwa ng tarlac" class="contentImage">
+          <p class="contentDescription">
+            The Diwa ng Tarlac was constructed by the administration of then
+            Governor Homobono Sawit, which was set as the civic center of the
+            province.
+          </p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2 class="contentTitle">1988</h2>
+          <img src="HistoryImage/Municipality.jpg" alt="municipality of san jose" class="contentImage">
+          <p class="contentDescription">Creation of the Municipality of San Jose in Western Tarlac.</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2 class="contentTitle">June 15, 1991</h2>
+          <img src="HistoryImage/Explosion.jpg" alt="explosion of pinatubo" class="contentImage">
+          <p class="contentDescription">
+            Mt. Pinatubo explosion where more than 800 people died mostly from
+            collapsing roofs. And more than two million people whose houses
+            and livelihood were either damaged and/or destroyed.
+            The eruption has also caused massive damage to natural resources, public sectors, public infrastructures, and agriculture. 
+          </p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2 class="contentTitle">April 12, 2004</h2>
+          <img src="HistoryImage/Monasterio.jpg" alt="monasterio" class="contentImage">
+          <p class="contentDescription">
+            Then Governor Jose "Aping" Yap, through former President Gloria
+            Macapagal Arroyo issued Proclamation 602 "Declaring as Eco-Tourism
+            Park and Campsite a 278 hectare land in Brgy. Tubigan and Moriones
+            in the town of San Jose. The Eco-Tourism is known for the famous
+            Monasterio De Tarlac.
+          </p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2 class="contentTitle">April 2010</h2>
+          <img src="HistoryImage/Plarong Pambansa.jpg" alt="tarlac recreation park" class="contentImage">
+          <p class="contentDescription">
+            The province of Tarlac Hosted its First Palarong Pambansa at the
+            newly Constructed Tarlac Recreation Park, now known as the Jose V.
+            Yap Sports and Recreational Complex under the administration of
+            the Governor Victor Yap.
+          </p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2 class="contentTitle">2019</h2>
+          <img src="HistoryImage/sportComplex.png" alt=" sport complex caps" class="contentImage">
+          <p class="contentDescription">
+            The province of Tarlac hosted its first Southeast Asian Games at
+            the New Clark City Sports Complex in Capas, Tarlac.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Diorama Page -->
+  <div id="diorama" class="dioramaDiv">
+    <div class="dioramaHeader">
+      <h2 class="dioramaHeaderTitle">DIORAMA</h2>
+    </div>
+    <div class="mySlides fade">
+      <div class="slideContent">
+        <div class="slideText">
+          <h2 class="slideTitle">Casa-Real de Tarlac</h2>
+          <p class="slideYear">1899</p>
+          <p class="slideDescription">
+            In 1899, when Tarlac become the last capital of the first
+            Philippine Republic of President Emilio Aguinaldo with the
+            casa-real (provincial) government house, now the site of Tarlac
+            State University, becoming his official residence.
+          </p>
+          <div class="slideDivIcon slideMobileNone">
+            <i class="fa-solid fa-arrow-left slideIcon" onclick="prevSlide()"></i>
+            <i class="fa-solid fa-arrow-right slideIcon" onclick="nextSlide()"></i>
+          </div>
+        </div>
+        <img src="Dioramas/1.jfif" class="diormaImages" />
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="slideContent">
+        <div class="slideText">
+          <h2 class="slideTitle">Muscovados de Tarlac</h2>
+          <p class="slideYear">1888</p>
+          <p class="slideDescription">
+            The agricultural lands of Tarlac Province are noted for their
+            produce of sugar cane, leading to the sprouting of crude and
+            usually carabao-driven mills or extractors (molinos de sangre)
+            in the production of muscovados (unrefined sugar) prior to the
+            arrival of TABACALERA IN 1888 and its subsidiary of Central
+            Azuucarera de Tarlac in 1927.
+          </p>
+          <div class="slideDivIcon slideMobileNone">
+            <i class="fa-solid fa-arrow-left slideIcon" onclick="prevSlide()"></i>
+            <i class="fa-solid fa-arrow-right slideIcon" onclick="nextSlide()"></i>
+          </div>
+        </div>
+        <img src="Dioramas/2.jfif" class="diormaImages" />
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="slideContent">
+        <div class="slideText">
+          <h2 class="slideTitle">Estacion Ferro - Carril De Tarlac</h2>
+          <p class="slideYear">1892</p>
+          <p class="slideDescription">
+            The establishment of Manila-Dagupan railroad in 1892 sustained
+            the role of the province as transportation hub since time
+            immemorial.
+          </p>
+          <div class="slideDivIcon slideMobileNone">
+            <i class="fa-solid fa-arrow-left slideIcon" onclick="prevSlide()"></i>
+            <i class="fa-solid fa-arrow-right slideIcon" onclick="nextSlide()"></i>
+          </div>
+        </div>
+        <img src="Dioramas/3.jfif" class="diormaImages" />
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="slideContent">
+        <div class="slideText">
+          <h2 class="slideTitle">Unang Sigaw</h2>
+          <p class="slideYear">1896-1897</p>
+          <p class="slideDescription">
+            Tarlac's initial Cry against Spanish colonial Regime was from
+            Francisco Macabulos in La Paz through the influence of Eduardo
+            Llaner of Nueva Ecija.
+          </p>
+          <div class="slideDivIcon slideMobileNone">
+            <i class="fa-solid fa-arrow-left slideIcon" onclick="prevSlide()"></i>
+            <i class="fa-solid fa-arrow-right slideIcon" onclick="nextSlide()"></i>
+          </div>
+        </div>
+        <img src="Dioramas/4.jfif" class="diormaImages" />
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="slideContent">
+        <div class="slideText">
+          <h2 class="slideTitle">Azotea De Tarlac</h2>
+          <p class="slideYear">1892</p>
+          <p class="slideDescription">
+            A depiction of the ill-fated loved affair of Leonor Rivera of
+            Camiling, Tarlac and Jose Rizal. Leonor's mother intercepted
+            love letters between the two. Rizal thought Leonor had forgotten
+            him. On the eve of the wedding to Charles Kipping, she found
+            out about the letters.
+          </p>
+          <div class="slideDivIcon slideMobileNone">
+            <i class="fa-solid fa-arrow-left slideIcon" onclick="prevSlide()"></i>
+            <i class="fa-solid fa-arrow-right slideIcon" onclick="nextSlide()"></i>
+          </div>
+        </div>
+        <img src="Dioramas/5.jfif" class="diormaImages" />
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="slideContent">
+        <div class="slideText">
+          <h2 class="slideTitle">Iglesia Parroquialde Camiling</h2>
+          <p class="slideYear">1838</p>
+          <p class="slideDescription">
+            Built by the missionaries from Dominican Order after the
+            founding of the pueblo of Camiling (then still under the
+            province of Pangasinan)bin 1838, the church dedicated to
+            Archangel San Miguel - typified the classical architectural
+            design for churches during heyday.
+          </p>
+          <div class="slideDivIcon slideMobileNone">
+            <i class="fa-solid fa-arrow-left slideIcon" onclick="prevSlide()"></i>
+            <i class="fa-solid fa-arrow-right slideIcon" onclick="nextSlide()"></i>
+          </div>
+        </div>
+        <img src="Dioramas/6.jfif" class="diormaImages" />
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="slideContent">
+        <div class="slideText">
+          <h2 class="slideTitle">La Jota Moncadenia</h2>
+          <p class="slideYear">1875</p>
+          <p class="slideDescription">
+            a popular folk dance characterized by the combination of the
+            Aragonese Jota of Spain and the Ilocano dance steps of the lively
+            people of Moncada, tarlac, circa 1875, with creation of the
+            Municipality of Victoria of then newly-created Gobierno
+            Politico-Militar de Tarlac.
+          </p>
+          <div class="slideDivIcon slideMobileNone">
+            <i class="fa-solid fa-arrow-left slideIcon" onclick="prevSlide()"></i>
+            <i class="fa-solid fa-arrow-right slideIcon" onclick="nextSlide()"></i>
+          </div>
+        </div>
+        <img src="Dioramas/8.jfif" class="diormaImages" />
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="slideContent">
+        <div class="slideText">
+          <h2 class="slideTitle">Poblacion de Tarlac</h2>
+          <p class="slideYear">1873</p>
+          <p class="slideDescription">
+            In 1873, Tarlac Province out of the matrix (mother provinces) of
+            Pampanga and Pangasinan, becoming a purpuri (potpourri) of people
+            across enthnolinguistic lines and social statuses, including the
+            principalia of Dons by the plazas and the church grounds and the
+            common people by the palenques (market).
+          </p>
+          <div class="slideDivIcon slideMobileNone">
+            <i class="fa-solid fa-arrow-left slideIcon" onclick="prevSlide()"></i>
+            <i class="fa-solid fa-arrow-right slideIcon" onclick="nextSlide()"></i>
+          </div>
+        </div>
+        <img src="Dioramas/9.jfif" class="diormaImages" />
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="slideContent">
+        <div class="slideText">
+          <h2 class="slideTitle">Moro-Moro</h2>
+          <p class="slideYear">1749</p>
+          <p class="slideDescription">
+            The baptism of Sultan Alimud Din in 1749 at Acocolao, Paniqui
+            that give birth to moro-moro play (comedian de capa y espada)
+            in the Philippine history.
+          </p>
+          <div class="slideDivIcon slideMobileNone">
+            <i class="fa-solid fa-arrow-left slideIcon" onclick="prevSlide()"></i>
+            <i class="fa-solid fa-arrow-right slideIcon" onclick="nextSlide()"></i>
+          </div>
+        </div>
+        <img src="Dioramas/14.jfif" class="diormaImages" />
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="slideContent">
+        <div class="slideText">
+          <h2 class="slideTitle">Capas Death March</h2>
+          <p class="slideYear">1942</p>
+          <p class="slideDescription">
+            The Final Destination: The day after the fall of Bataan, Filipino
+            American Soldiers from Mariveles and Bagac started the horrific
+            ordeal called the Bataan Death March, to concentration camp in
+            Capas The Official count was Pegged at 74,800 Filipinos and 11,786
+            Americans. It was estimated that 30,000.00 POWs Died of Sickness
+            and malnutrition's while under detention.
+          </p>
+          <div class="slideDivIcon slideMobileNone">
+            <i class="fa-solid fa-arrow-left slideIcon" onclick="prevSlide()"></i>
+            <i class="fa-solid fa-arrow-right slideIcon" onclick="nextSlide()"></i>
+          </div>
+        </div>
+        <img src="Dioramas/15.jfif" class="diormaImages" />
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="slideContent">
+        <div class="slideText">
+          <h2 class="slideTitle">Public education in Tarlac</h2>
+          <p class="slideYear">1902</p>
+          <p class="slideDescription">
+            Founded by Mr. Frank White, Tarlac High School, founded on
+            September 1.1902, is said to be the first high school in the
+            Philippines during Anerican period with Mr. White as the principal.
+          </p>
+          <div class="slideDivIcon slideMobileNone">
+            <i class="fa-solid fa-arrow-left slideIcon" onclick="prevSlide()"></i>
+            <i class="fa-solid fa-arrow-right slideIcon" onclick="nextSlide()"></i>
+          </div>
+        </div>
+        <img src="Dioramas/16.jfif" class="diormaImages" />
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="slideContent">
+        <div class="slideText">
+          <h2 class="slideTitle">Panganlungan</h2>
+          <p class="slideYear">C.A Pre History</p>
+          <p class="slideDescription">
+            Tarlac as the first and last refuge of indigenous cultural
+            communities / at the dawn of colonial contract.
+          </p>
+          <div class="slideDivIcon slideMobileNone">
+            <i class="fa-solid fa-arrow-left slideIcon" onclick="prevSlide()"></i>
+            <i class="fa-solid fa-arrow-right slideIcon" onclick="nextSlide()"></i>
+          </div>
+        </div>
+        <img src="Dioramas/18.jfif" class="diormaImages" />
+      </div>
+    </div>
+
+    <br />
+    <div class="slideDivIconMobile">
+      <i class="fa-solid fa-arrow-left slideIcon" onclick="prevSlide()"></i>
+      <i class="fa-solid fa-arrow-right slideIcon" onclick="nextSlide()"></i>
+    </div>
+    <div style="text-align: center" class="image-navigation">
+      <img src="Dioramas/1.jfif" alt="Slide 1" class="click-image" data-slide="1" onclick="currentSlide(1)">
+      <img src="Dioramas/2.jfif" alt="Slide 2" class="click-image" data-slide="2" onclick="currentSlide(2)">
+      <img src="Dioramas/3.jfif" alt="Slide 3" class="click-image" data-slide="3" onclick="currentSlide(3)">
+      <img src="Dioramas/4.jfif" alt="Slide 4" class="click-image" data-slide="4" onclick="currentSlide(4)">
+      <img src="Dioramas/5.jfif" alt="Slide 5" class="click-image" data-slide="5" onclick="currentSlide(5)">
+      <img src="Dioramas/6.jfif" alt="Slide 6" class="click-image" data-slide="6" onclick="currentSlide(6)">
+      <img src="Dioramas/8.jfif" alt="Slide 7" class="click-image" data-slide="7" onclick="currentSlide(7)">
+      <img src="Dioramas/9.jfif" alt="Slide 8" class="click-image" data-slide="8" onclick="currentSlide(8)">
+      <img src="Dioramas/14.jfif" alt="Slide 9" class="click-image" data-slide="9" onclick="currentSlide(9)">
+      <img src="Dioramas/15.jfif" alt="Slide 10" class="click-image" data-slide="10" onclick="currentSlide(10)">
+      <img src="Dioramas/16.jfif" alt="Slide 11" class="click-image" data-slide="11" onclick="currentSlide(11)">
+      <img src="Dioramas/18.jfif" alt="Slide 12" class="click-image" data-slide="12" onclick="currentSlide(12)">
+
+    </div>
+    <br />
+  </div>
+
+  <div class="products-container">
+    <div class="product-header">
+        <h1>Explore the Wonders of Tarlac!</h1>
+        <p>
+          Explore Tarlac’s vibrant <b>festivals</b>, stunning <b>eco-tourism</b> spots, rich <b>food scene</b>, deep <b>religious</b> heritage, and thrilling <b>adventures</b>. From the KanLahi Festival and Mount Pinatubo treks to local delicacies and historic churches, Tarlac offers a perfect mix of culture, nature, and excitement!
+        </p>
+    </div>
+
+    <div class="highlight-wrapper">
+        <div class="highlight-card">
+            <img class="highlight-img" src="Eco Tourism Pictures/CAPAS SHRINE 1.jpg" alt="Capas National Shrine">
+            <div class="highlight-desc">  
+                <h3 class="exploreTarlac__location">Capas National Shrine</h3>
+                <p class="exploreTarlac">
+                  <i class="fa-solid fa-location-dot" height="14" width="15.75" style="color: #74C0FC;"></i>
+                    Capas, Tarlac
+                </p>
+            </div>
+        </div>
+        <div class="highlight-card">
+            <img class="highlight-img" src="Eco Tourism Pictures/TRP 1.jpg" alt="Jose V. Yap Sports and Recreational Complex">
+            <div class="highlight-desc">
+                <h3 class="exploreTarlac__location">Jose V. Yap <br> Sports and Recreation Complex</h3>
+                <p class="exploreTarlac">
+                  <i class="fa-solid fa-location-dot" height="14" width="15.75" style="color: #74C0FC;"></i>
+                    San Jose, Tarlac
+                </p>
+            </div>
+        </div>
+        <div class="highlight-card">
+            <img class="highlight-img" src="Eco Tourism Pictures/MONASTERIO 1.jpg" alt="Monasterio">
+            <div class="highlight-desc">
+                <h3 class="exploreTarlac__location">Monasterio de Tarlac</h3>
+                <p class="exploreTarlac">
+                  <i class="fa-solid fa-location-dot" height="14" width="15.75" style="color: #74C0FC;"></i>
+                    San Jose, Tarlac
+                </p>
+            </div>
+        </div>
+        <div class="highlight-card">
+            <img class="highlight-img" src="Festivals/Silawan.jpg" alt="Silawan Festival">
+            <div class="highlight-desc">
+                <h3 class="exploreTarlac__location">Silawan Festival</h3>
+                <p class="exploreTarlac">
+                  <i class="fa-solid fa-location-dot" height="14" width="15.75" style="color: #74C0FC;"></i>
+                    Gerona, Tarlac
+                </p>
+            </div>
+        </div>
+
+        <div class="highlight-card">
+            <img class="highlight-img" src="Food/chicharon.jpg" alt="Food">
+            <div class="highlight-desc">
+                <h3 class="exploreTarlac__location">Chicharon Camiling</h3>
+                <p class="exploreTarlac">
+                  <i class="fa-solid fa-location-dot" height="14" width="15.75" style="color: #74C0FC;"></i>
+                    Camiling, Tarlac
+                </p>
+            </div>
+        </div>
+        
+        <div class="highlight-card">
+            <img class="highlight-img" src="Adventure/kayak.jpg" alt="Kayak">
+            <div class="highlight-desc">
+                <h3 class="exploreTarlac__location">Rapid Stream <br> (Kayak & Canoeing) </h3>
+                <p class="exploreTarlac">
+                  <i class="fa-solid fa-location-dot" height="14" width="15.75" style="color: #74C0FC;"></i>
+                    San Jose, Tarlac
+                </p>
+                
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="provincial-tourism">
+
+  <h2 class="title">Province of Tarlac Tourism Offices</h2>
+  <div class="styled-hr"></div>
+  
+      <div class="tarlac-tourism-dept">
+          <div class="card">
+              <img src="TarlacTourism/PGT Tourism.jpg" alt="PGT Tourism Office Logo" class="logo">
+              <h3>Provincial Tourism Office</h3>
+              <p class="name"><strong>Arsenio B. Lugay II</strong></p>
+              <p class="role">Provincial Tourism Officer</p>
+              <p class="email"><i class="fa-regular fa-envelope" style="color: #60a1d2;"></i> tarlac.tourism2017@gmail.com</p>
+
+              <a href="https://www.facebook.com/tarlactourism" class="social-link">
+                <i class="fa-brands fa-facebook" style="color: #1e6899;"></i>
+                 Tarlac Tourism
+             </a>
+             
+          </div>
+  
+          <div class="card">
+              <img src="TarlacTourism/Anao Tourism.jpg" alt="Anao Tourism Office Logo" class="logo">
+              <h3>Anao Tourism Office</h3>
+              <p class="name"><strong>Joey Astreho</strong></p>
+              <p class="role">Anao Tourism Officer</p>
+
+              <p class="email"><i class="fa-solid fa-phone" style="color: #426fbd;"></i> 09664483818</p>
+
+              <p class="email"><i class="fa-regular fa-envelope" style="color: #60a1d2;"></i> municipalityofanao@yahoo.com</p>
+
+              <a href="https://www.facebook.com/AnaoTourism/" class="social-link">
+                <i class="fa-brands fa-facebook" style="color: #1e6899;"></i>
+                 Anao Tourism
+             </a>
+
+          </div>
+  
+          <div class="card">
+            <img src="TarlacTourism/bamban_tourism.png" alt="Bamban Tourism Office Logo" class="logo">
+            <h3>Bamban Tourism Office</h3>
+            <p class="name"><strong>Cherrylyn PascuaI</strong></p>
+            <p class="role">Bamban Tourism Officer</p>
+            <p class="email"><i class="fa-regular fa-envelope" style="color: #60a1d2;"></i> tourism@bambantarlac.gov.ph</p>
+
+            <a href="https://www.facebook.com/BambanTarlacTourismOfficialPage/" class="social-link">
+              <i class="fa-brands fa-facebook" style="color: #1e6899;"></i>
+              Bamban Tarlac Tourism Office
+           </a>
+
+        </div>
+  
+        <div class="card">
+          <img src="TarlacTourism/camiling2.png" alt="Camiling LGU Logo" class="logo">
+          <h3>Camiling Local Government Unit</h3>
+          <p class="name"><strong>Erlon Clemente Agustin</strong></p>
+          <p class="role">Mayor of the Municipality of Camiling</p>
+          <p class="email"><i class="fa-regular fa-envelope" style="color: #60a1d2;"></i> lgu.camilingtarlac.2306@gmail.com</p>
+
+
+          <a href="https://www.facebook.com/p/Municipality-of-Camiling-100081751335249/" class="social-link">
+            <i class="fa-brands fa-facebook" style="color: #1e6899;"></i>
+            Municipality of Camiling
+         </a>
+
+        </div>
+  
+        <div class="card">
+          <img src="TarlacTourism/Capas Tourism Logo.png" alt="Capas Tourism Logo" class="logo">
+          <h3>Capas Tourism Office</h3>
+          <p class="name"><strong>Marissa Vidal</strong></p>
+          <p class="role">Capas Tourism Officer</p>
+          <p class="email"><i class="fa-regular fa-envelope" style="color: #60a1d2;"></i> lgucapastourism@gmail.com</p>
+
+          <a href="https://www.facebook.com/p/Capas-Tourism-Office-100064575226399/" class="social-link">
+            <i class="fa-brands fa-facebook" style="color: #1e6899;"></i>
+            Capas Tourism Office
+         </a>
+
+        </div>
+
+        <div class="card">
+          <img src="TarlacTourism/concepcion-tarlac-tourism.jpg" alt="Concepcion Tourism Logo" class="logo">
+          <h3>Concepcion Tourism Office</h3>
+          <p class="name"><strong>Eliadoro Alcaya Jr.</strong></p>
+          <p class="role">Concepcion Tourism Officer</p>
+          <p class="email"><i class="fa-regular fa-envelope" style="color: #60a1d2;"></i> tourismconcepcion@gmail.com</p>
+
+          <a href="https://www.facebook.com/people/Concepcion-Tarlac-Tourism/100094245540373/" class="social-link">
+            <i class="fa-brands fa-facebook" style="color: #1e6899;"></i>
+            Concepcion Tarlac Tourism
+         </a>
+
+        </div>
+
+        <div class="card">
+          <img src="TarlacTourism/Gerona.png" alt="Gerona LGU Logo" class="logo">
+          <h3>Gerona Local Government Unit</h3>
+          <p class="name"><strong>Engr. Eloy C. Eclar</strong></p>
+          <p class="role">Mayor of the Municipality of Gerona</p>
+          <p class="email"><i class="fa-regular fa-envelope" style="color: #60a1d2;"></i> lgu@geronatarlac.gov.ph</p>
+
+          <a href="https://www.facebook.com/p/LGU-Gerona-Tarlac-61565937950304/" class="social-link">
+            <i class="fa-brands fa-facebook" style="color: #1e6899;"></i>
+            LGU Gerona, Tarlac
+         </a>
+
+        </div>
+  
+        <div class="card">
+          <img src="TarlacTourism/lapaz.png" alt="Lapaz LGU Logo" class="logo">
+          <h3>La Paz Local Government Unit</h3>
+          <p class="name"><strong>Venustiano A. Jordan</strong></p>
+          <p class="role">Mayor of the Municipality of La Paz</p>
+
+          <a href="https://www.facebook.com/officialLaPazpage" class="social-link">
+            <i class="fa-brands fa-facebook" style="color: #1e6899;"></i>
+            From the Desk of the Municipal Mayor Venus Jordan
+         </a>
+
+        </div>
+
+        <div class="card">
+          <img src="TarlacTourism/Mayantoc.png" alt="Mayantoc Tourism Logo" class="logo">
+          <h3>Mayantoc Local Government Unit</h3>
+          <p class="name"><strong>Iluminado E. Pobre Jr.</strong></p>
+          <p class="role">Mayor of the Municipality of Mayantoc</p>
+          <p class="email"><i class="fa-regular fa-envelope" style="color: #60a1d2;"></i> bayanngmayantoc@gmail.com</p>
+
+          <a href="https://www.facebook.com/p/Bayan-ng-Mayantoc-100093557854171/" class="social-link">
+            <i class="fa-brands fa-facebook" style="color: #1e6899;"></i>
+            Bayan ng Mayantoc
+         </a>
+
+        </div>
+
+        <div class="card">
+          <img src="TarlacTourism/Moncada Tourism Logo.png" alt="Moncada Tourism Logo" class="logo">
+          <h3>Moncada Tourism Office</h3>
+          <p class="name"><strong>Juvy Mendoza</strong></p>
+          <p class="role">Moncada Tourism Officer</p>
+          <p class="email"><i class="fa-regular fa-envelope" style="color: #60a1d2;"></i> tourism@moncadatarlac.gov.ph</p>
+
+          <a href="https://www.facebook.com/MoncadaTourismOffice/" class="social-link">
+            <i class="fa-brands fa-facebook" style="color: #1e6899;"></i>
+            Moncada Tourism, Arts, and Cultural Affairs Office
+         </a>
+
+        </div>
+
+        <div class="card">
+          <img src="TarlacTourism/Paniqui.jpg" alt="Paniqui Tourism Logo" class="logo">
+          <h3>Paniqui Tourism Office</h3>
+          <p class="name"><strong>Chris Benz Obcena</strong></p>
+          <p class="role">Paniqui Tourism Officer</p>
+          <p class="email"><i class="fa-regular fa-envelope" style="color: #60a1d2;"></i> info@paniquitarlac.gov.ph</p>
+
+          <a href="https://www.facebook.com/lgupaniqui/" class="social-link">
+            <i class="fa-brands fa-facebook" style="color: #1e6899;"></i>
+            Municipality of Paniqui
+         </a>
+
+        </div>
+
+        <div class="card">
+          <img src="TarlacTourism/Pura.png" alt="Pura LGU Logo" class="logo">
+          <h3>Pura Tourism Office</h3>
+          <p class="name"><strong>Mr. Jeffrey Jose</strong></p>
+          <p class="role">Pura Tourism Officer</p>
+          <p class="email"><i class="fa-regular fa-envelope" style="color: #60a1d2;"></i> info@puratarlac.gov.ph</p>
+
+          <a href="https://www.facebook.com/profile.php?id=100067303536694" class="social-link">
+            <i class="fa-brands fa-facebook" style="color: #1e6899;"></i>
+            Pura Tourism Sports Culture & the Arts
+         </a>
+
+        </div>
+
+        <div class="card">
+          <img src="TarlacTourism/Ramos.jpg" alt="Ramos Tourism Logo" class="logo">
+          <h3>Ramos Tourism Office</h3>
+          <p class="name"><strong>Joanna Clarisse Castro</strong></p>
+          <p class="role">Tourism Officer</p>
+          <p class="email"><i class="fa-regular fa-envelope" style="color: #60a1d2;"></i> lguramos@yahoo.com</p>
+
+          <a href="https://www.facebook.com/RangAyTurismongRamos/" class="social-link">
+            <i class="fa-brands fa-facebook" style="color: #1e6899;"></i>
+            Rang-Ay Turismo Ng Ramos
+         </a>
+
+        </div>
+
+        <div class="card">
+          <img src="TarlacTourism/San Clemente.png" alt="San Clemente LGU Logo" class="logo">
+          <h3>Municipal Tourism Management Office of San Clemente</h3>
+          <p class="name"><strong>Alfredo A. Modomo, JR.</strong></p>
+          <p class="role">Tourism Officer</p>
+          <p class="email"><i class="fa-regular fa-envelope" style="color: #60a1d2;"></i> lgusanclemente@gmail.com</p>
+
+          <a href="https://www.facebook.com/sanclemente.tarlac//" class="social-link">
+            <i class="fa-brands fa-facebook" style="color: #1e6899;"></i>
+            San Clemente Tarlac
+         </a>
+
+        </div>
+
+        <div class="card">
+          <img src="TarlacTourism/san-jose-tarlac.png" alt="San Jose LGU Logo" class="logo">
+          <h3>San Jose Local Government Unit</h3>
+          <p class="name"><strong>Romeo Ong Capitulo</strong></p>
+          <p class="role">Mayor of the Municipality of San Jose</p>
+
+          <a href="https://www.facebook.com/mayorONGcapitulo" class="social-link">
+            <i class="fa-brands fa-facebook" style="color: #1e6899;"></i>
+            Mayor Romeo Ong Capitulo
+         </a>
+
+        </div>
+
+        <div class="card">
+          <img src="TarlacTourism/San Manuel.png" alt="San Manuel LGU Logo" class="logo">
+          <h3>San Manuel Local Government Unit</h3>
+          <p class="name"><strong>Alfredo A. Modomo Jr.</strong></p>
+          <p class="role">Designated Municipal Tourism Coordinator</p>
+          <p class="email"><i class="fa-regular fa-envelope" style="color: #60a1d2;"></i> webinquiries@sanmanueltarlac.gov.ph</p>
+
+          <a href="https://www.facebook.com/mayordonyatesoro" class="social-link">
+            <i class="fa-brands fa-facebook" style="color: #1e6899;"></i>
+            Mayor Donya Tesoro
+         </a>
+
+        </div>
+
+        <div class="card">
+          <img src="TarlacTourism/Santa Ignacia.png" alt="Santa Ignacia LGU Logo" class="logo">
+          <h3>Santa Ignacia Tourism Office</h3>
+          <p class="name"><strong>Winea Domingo</strong></p>
+          <p class="role">Tourism Officer In-Charge</p>
+          <p class="email"><i class="fa-regular fa-envelope" style="color: #60a1d2;"></i> lgu.sta.ignacia@gmail.com</p>
+
+          <a href="https://www.facebook.com/lgusantaignaciatarlac" class="social-link">
+            <i class="fa-brands fa-facebook" style="color: #1e6899;"></i>
+            Lgu-Santa Ignacia Tarlac
+         </a>
+
+        </div>
+
+        <div class="card">
+          <img src="TarlacTourism/tarlac-city.jpg" alt="Tarlac City Tourism Office Logo" class="logo">
+          <h3>Tarlac City Tourism Office</h3>
+          <p class="name"><strong>Ricardo Virgilio Vega Jr.</strong></p>
+          <p class="role">Tourism Officer</p>
+          <p class="email"><i class="fa-regular fa-envelope" style="color: #60a1d2;"></i> citytourism.tarlac@gmail.com</p>
+
+          <a href="https://www.facebook.com/tarlaccitytourismcultureandarts" class="social-link">
+            <i class="fa-brands fa-facebook" style="color: #1e6899;"></i>
+            Tarlac City Tourism, Culture & Arts
+         </a>
+
+        </div>
+
+        <div class="card">
+          <img src="TarlacTourism/victoria-2.webp" alt="Victoria LGU Logo" class="logo">
+          <h3>Victoria Tourism Office</h3>
+          <p class="name"><strong>Nanette Rigor</strong></p>
+          <p class="role">Tourism Officer - Officer In-Charge</p>
+          <p class="email"><i class="fa-regular fa-envelope" style="color: #60a1d2;"></i> lguvictoria.otm@gmail.com</p>
+
+          <a href="https://www.facebook.com/maunladnavictoria" class="social-link">
+            <i class="fa-brands fa-facebook" style="color: #1e6899;"></i>
+            Maunlad Na Victoria
+         </a>
+        </div>
+  
+    </div>
+  
+  </div>
+
+  <div class="img-tourism-logos">
+    <img src="TarlacTourism/tarlac-province-logo.png" alt="Tarlac Province Logo">
+    <img src="TarlacTourism/PGT Tourism.jpg" alt="Tarlac Tourism Logo">
+    <img src="TarlacTourism/Gov-SY.png" alt="Gov Susan Yap Logo">
+    <img src="TarlacTourism/dot-ph.png" alt="Department of Tourism (Philippines) Logo">
+    <img src="TarlacTourism/love-ph-2.png" alt="Love the Philippines Logo">
+  </div>
+
+
+  <!-- Footer Page -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__left">
+        <div class="footerTourism">
+          <img src="LogoIcon/logoTourism.png" alt="" class="footer__img" />
+          <a href="index.html" class="footer__title">Tarlac Tourism</a>
+        </div>
+        <p class="footerProvince">Province of Tarlac</p>
+      </div>
+      <div class="footer__div">
+        <div class="footerIcon">
+          <i class="fa-solid fa-phone footerIcons"></i>
+          <a class="footer__link" href="tel:+479998893869" target="_blank">
+            <p class="footer__contact footer__size">
+              +63999 889 3869
+            </p>
+          </a>
+        </div>
+        <div class="footerIcon">
+          <i class="fa-solid fa-location-dot footerIcons"></i>
+          <a class="footer__link" href="https://maps.app.goo.gl/GeT9QtH2o9eWYMUz8" target="_blank">
+            <p class="footer__location footer__size">
+              Capitol Hills, Romulo Blvd. San Vicente, Tarlac, Philippines
+            </p>
+          </a>
+        </div>
+
+        <div class="footer__date">
+          <p class="footer__date footer__size">
+            Open Every Monday - Friday (8:00 am - 3:00 pm)
+          </p>
+        </div>
+        
+      </div>
+      <div class="footer__div">
+        <div class="footerIcon">
+          <i class="fa-brands fa-facebook-f footerIcons"></i>
+          <a class="footer__link" href="https://www.facebook.com/tarlactourism" target="_blank">
+            <p class="footer__fb footer__size">Facebook</p>
+          </a>
+        </div>
+        <div class="footerIcon">
+          <i class="fa-solid fa-envelope footerIcons"></i>
+          <a class="footer__link" href="mailto:tarlac.tourism2017@gmail.com">
+            <p class="footer__gmail footer__size">Gmail</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <p class="footer__copyright">
+      © 2025 Tourism Office, Diwa ng Tarlac. All Rights Reserved.
+    </p>
+  </footer>
+  
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+
+  <script src="https://kit.fontawesome.com/ad2580ca3d.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
