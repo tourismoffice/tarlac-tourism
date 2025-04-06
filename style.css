@@ -5155,11 +5155,52 @@ html {
     border-radius: 0.5rem;
     object-fit: cover;
   }
+  
+  .images-right-02 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 35rem;
+  }
+  
+  .images-right-02 > img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    object-fit: cover;
+  }  
+
+  .food-right-content-02 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+  
+  .food-right-content-02 .images-right-02 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 23rem;
+  }
+  
+  .food-right-content-02 .images-right-02 img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    object-fit: cover;
+  }
 
   .web-coverImg {
     position: relative;
     width: 100vw;
-    height: 85vh;
+    height: 95vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
