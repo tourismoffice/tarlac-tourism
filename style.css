@@ -1178,6 +1178,8 @@ html {
   max-width: 85rem;
   margin: auto;
   margin-bottom: 5vb;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
 .food-right-content .styled-hr {
@@ -1525,6 +1527,8 @@ html {
   max-width: 75rem;
   margin: auto;
   margin-bottom: 5vb;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
 .food-right-content-02 .styled-hr-02 {
@@ -1670,6 +1674,8 @@ html {
   max-width: 85rem;
   margin: auto;
   margin-bottom: 5vb;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
 .adventure-right-content .styled-hr {
