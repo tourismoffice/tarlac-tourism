@@ -4913,7 +4913,7 @@ html {
     align-items: center; 
   }
 
-.food-right-content-02 .images-right-02 {
+.food-right-content-02 > .images-right-02 {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -4923,7 +4923,7 @@ html {
     margin-bottom: 1.5rem;
 }
 
-.food-right-content-02 .images-right-02 img {
+.food-right-content-02 > .images-right-02 img {
     width: 30vw;
     height: 25vh;
     object-fit: cover;
@@ -5097,14 +5097,13 @@ html {
     height: auto;
   }
   
-
   .home__video {
     position: fixed;
-    top: -10vh;
+    top: -18vh;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    height: 60vh;
+    height: 55vh;
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -5131,7 +5130,7 @@ html {
     padding: 0.5rem;
     border-radius: 50%;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .adventure-right-content {
