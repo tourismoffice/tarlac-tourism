@@ -4,8 +4,15 @@
   box-sizing: border-box;
 }
 
+/* Prevent horizontal scrollbar caused by animations */
+body, html {
+  overflow-x: hidden;
+}
+
+
 /* FONT POPPINS */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 /* FONT MUSEUM */
 @font-face {
@@ -1620,6 +1627,7 @@ html {
   width: 17rem;
   height: 22.5rem;
   max-width: 18rem;
+  opacity: 0;
 }
 
 /* eco - tourism trp 2*/
@@ -1628,6 +1636,7 @@ html {
   height: 15rem;
   margin: 0.78rem 0 4.5rem 7.5rem; 
 }
+
 /*canding and lubigan*/
 .column img.img-tour {
   width: 35rem;
@@ -2531,7 +2540,7 @@ html {
   align-items: center;
   max-width: 78rem;
   margin: auto;
-  margin-bottom: 5vb;
+  margin-bottom: 10vb;
   font-family: "Poppins", sans-serif;
   font-size: 1.12rem;
 }
@@ -2743,7 +2752,7 @@ html {
   color: rgb(0, 94, 138);
 }
 
-/*Scroll Animation*/
+/*Animation*/
 
 @keyframes appear{
   
@@ -2758,17 +2767,143 @@ html {
   }
 }
 
-.card{
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.tarlac-tourism-dept > .card{
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 1.4s ease-out, opacity 1.5s ease-out;
+}
+
+.tarlac-tourism-dept > .card.animate {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.web-cover-text {
+  opacity: 0;
+  transform: translate(-100%, -50%);
+  transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+}
+
+.web-cover-text.animate {
+  opacity: 1;
+  transform: translate(0, -50%);
+}
+
 
 .content{
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
 }
+
+ .images-right > .img-1-eco {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+}
+
+  .images-right > .img-1-eco.animate {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Left entry */
+
+.images-right > .img-2, .images-right-02 > .img-2, .anao-church, .images-right > .img-2-faith{
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+}
+
+.images-right > .img-2.animate, .images-right-02 > .img-2.animate, .anao-church.animate, .images-right > .img-2-faith.animate{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.column-img{
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+}
+
+.column-img.animate{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Bottom entry */
+
+.bottom-img-eco, .Archangel, .nonnatus, .archangel{
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+}
+
+.bottom-img-eco.animate, .Archangel.animate, .nonnatus.animate, .archangel.animate {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+/* Right enter */
+
+.img-1, .images-right > .img-1-faith, .peace, .cathedral{
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+}
+
+.img-1.animate, .images-right > .img-1-faith.animate, .peace.animate, .cathedral.animate{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+/* Top enter */
+.assisi, .Antoninus, .Qwerty, .atv, .antonius, .Faustina, .therese{
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+}
+
+.assisi.animate, .Antoninus.animate, .Qwerty.animate, .atv.animate, .antonius.animate, .Faustina.animate, .therese.animate{
+  transform: translateY(0);
+  opacity: 1;
+}
+
 
 /* Responsive Website*/
 
@@ -2880,6 +3015,7 @@ html {
     width: 35rem;
     height: 10rem;
     margin: 0.78rem 0 4.5rem 7.5rem; 
+
   }
 
   .adventure-right-content {

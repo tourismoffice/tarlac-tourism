@@ -1,5 +1,25 @@
 "use strict";
 
+
+document.addEventListener("DOMContentLoaded", function () {
+  const images = document.querySelectorAll('.column-img, .bottom-img-eco, .img-1-eco, .img-2, .card, .img-1, .assisi, .Antoninus, .Archangel, .nonnatus, .anao-church, .web-cover-text, .Qwerty, .atv, .img-1-faith, .img-2-faith, .antonius, .archangel, .peace, .cathedral, .Faustina, .therese');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      console.log('Checking:', entry.target.className, 'Visible:', entry.isIntersecting);
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  images.forEach(img => observer.observe(img));
+});
+
+
 /* NAVIGATION LINKS EFFECT */
 const nav = document.querySelector(".navbar");
 const arrows = document.querySelectorAll(".arrow");
