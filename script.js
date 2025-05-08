@@ -2,7 +2,7 @@
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  const images = document.querySelectorAll('.column-img, .bottom-img-eco, .img-1-eco, .img-2, .card, .img-1, .assisi, .Antoninus, .Archangel, .nonnatus, .anao-church, .web-cover-text, .Qwerty, .atv, .img-1-faith, .img-2-faith, .antonius, .archangel, .peace, .cathedral, .Faustina, .therese');
+  const images = document.querySelectorAll('.column-img, .bottom-img-eco, .img-1-eco, .img-2, .card, .img-1, .assisi, .Antoninus, .Archangel, .nonnatus, .anao-church, .web-cover-text, .Qwerty, .atv, .img-1-faith, .img-2-faith, .antonius, .archangel, .peace, .cathedral, .Faustina, .therese, .mapTarlacVisuals');
 
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
