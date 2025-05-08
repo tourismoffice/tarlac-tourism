@@ -2937,39 +2937,47 @@ html {
   transform: translate(0, -50%);
 }
 
- .images-right > .img-1-eco {
+/* 3-column image right entry*/
+
+ .images-right > .img-1-eco, .img-1-eco-1 {
   opacity: 0;
   transform: translateX(-100%);
   transition: transform 1.5s ease-out, opacity 1.5s ease-out;
 }
 
-  .images-right > .img-1-eco.animate {
+  .images-right > .img-1-eco.animate, .img-1-eco-1.animate {
   transform: translateX(0);
   opacity: 1;
 }
 
 /* Left entry */
 
-.images-right > .img-2, .images-right-02 > .img-2, .anao-church, .images-right > .img-2-faith{
+.images-right > .img-2, .images-right-02 > .img-2, .anao-church, .images-right > .img-2-faith, .img-2-eco-1, .fes-1 .media-wrapper > .image,
+.fes .media-wrapper > video{
   opacity: 0;
   transform: translateX(100%);
   transition: transform 1.5s ease-out, opacity 1.5s ease-out;
 }
 
-.images-right > .img-2.animate, .images-right-02 > .img-2.animate, .anao-church.animate, .images-right > .img-2-faith.animate{
+.images-right > .img-2.animate, .images-right-02 > .img-2.animate, .anao-church.animate, .images-right > .img-2-faith.animate, 
+.img-2-eco-1.animate, .fes-1 .media-wrapper > .image.animate, .fes .media-wrapper > video.animate{
   transform: translateX(0);
   opacity: 1;
 }
 
 /* Bottom entry */
 
-.bottom-img-eco, .archangel, .assisi, .Antoninus, .Qwerty, .atv, .antonius, .Faustina, .therese,  .Archangel, .nonnatus, .column-img{
+.bottom-img-eco, .archangel, .assisi, .Antoninus, .Qwerty, .atv, .antonius, .Faustina, .therese,  .Archangel, .nonnatus, .column-img, 
+.column-eco, .img-tour-1{
   opacity: 0;
   transform: translateY(100%);
   transition: transform 1.5s ease-out, opacity 1.5s ease-out;
 }
 
-.bottom-img-eco.animate, .Archangel.animate, .nonnatus.animate, .archangel.animate, .assisi.animate, .Antoninus.animate, .Qwerty.animate, .atv.animate, .antonius.animate, .Faustina.animate, .therese.animate, .column-img.animate {
+.bottom-img-eco.animate, .Archangel.animate, .nonnatus.animate, .archangel.animate, .assisi.animate, 
+.Antoninus.animate, .Qwerty.animate, .atv.animate, .antonius.animate, .Faustina.animate, .therese.animate, .column-img.animate, 
+.column-eco.animate,.img-tour-1.animate
+{
   transform: translateY(0);
   opacity: 1;
 }
@@ -2977,13 +2985,15 @@ html {
 
 /* Right enter */
 
-.img-1, .images-right > .img-1-faith, .peace, .cathedral, .mapTarlacVisuals{
+.img-1, .images-right > .img-1-faith, .peace, .cathedral, .mapTarlacVisuals, .fes .media-wrapper > .image,
+.fes-1 .media-wrapper > video{
   opacity: 0;
   transform: translateX(-100%);
   transition: transform 1.5s ease-out, opacity 1.5s ease-out;
 }
 
-.img-1.animate, .images-right > .img-1-faith.animate, .peace.animate, .cathedral.animate, .mapTarlacVisuals.animate{
+.img-1.animate, .images-right > .img-1-faith.animate, .peace.animate, .cathedral.animate, .mapTarlacVisuals.animate, 
+.fes .media-wrapper > .image.animate, .fes-1 .media-wrapper > video.animate{
   transform: translateX(0);
   opacity: 1;
 }
