@@ -696,7 +696,8 @@ html {
 .footerProvince {
   text-align: center;
   color: #c9ab81;
-  margin-top: 0.5rem;
+  margin-top: 0 !important;
+  padding: 0 !important;
 }
 
 .footer__img {
@@ -708,11 +709,12 @@ html {
 .footer__title {
   color: white;
   font-family: museumInline;
-  font-size: 1.2rem;
-  letter-spacing: 0.8rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.5rem;
   text-decoration: none;
   border: 1px solid white;
   padding: 0.6rem 0.1rem 0.4rem 0.7rem;
+  
 }
 
 .footer__top {
@@ -846,6 +848,10 @@ html {
   flex-wrap: wrap;
   margin-left: 0;
   padding: 0;
+}
+
+.aeta-tarlacMap{
+  padding-left: 2rem !important;
 }
 
 /* DIORAMA STYLE */
@@ -2658,6 +2664,7 @@ html {
   margin-bottom: 10vb;
   font-family: "Poppins", sans-serif;
   font-size: 1.12rem;
+  margin-top: 5vh;
 }
 
 .religion-right-content .styled-hr {
@@ -3225,6 +3232,7 @@ html {
     transition: opacity 0.3s ease-in-out;
     margin-top: 0.8rem;
   }
+  
 }
 
 
@@ -3245,6 +3253,16 @@ html {
 
   .slideIcon:hover {
     color: white;
+  }
+
+  .pto-container .picture{
+    width: 100%;
+    height: 360px;
+  }
+
+  .pto-about{
+      width: 100%;
+      padding: 100px 20%;
   }
 }
 
@@ -3347,6 +3365,7 @@ html {
 @media screen and (max-width: 1300px) {
   .navbar {
     padding: 1rem 2rem;
+    background-color:#0A2239;
   }
 
   .navbar__li {
@@ -3518,7 +3537,7 @@ html {
 @media screen and (max-width: 1024px) {
   .navBtns {
     display: flex;
-    background-color: #1b1b1b;
+    background-color:#0A2239;
     padding: 1rem 0rem 1rem 2rem;
     align-items: center;
     position: fixed;
@@ -3634,7 +3653,14 @@ html {
     margin-bottom: 0.6rem;
     font-weight: 500;
   }
-  
+
+  .footer p {
+    font-size: 1rem !important;
+  }
+
+  .footer__div {
+    margin-top: 2rem;
+  }
 
 }
 
@@ -3722,7 +3748,7 @@ html {
 
   .navBtns {
     display: flex;
-    background-color: #1b1b1b;
+    background-color:#0A2239;
     padding: 1rem 0rem 1rem 2.5rem;
     position: relative;
     align-items: center;
@@ -3871,9 +3897,26 @@ html {
   .mapTarlacCountry {
     font-size: 0.8rem;
   }
+
   .img-cover{
     padding-top: 6.5rem;
   }
+
+  .homeIconClose {
+  position: absolute;
+  top: 3vh;
+  right: -12vw;
+  z-index: 1100;
+  padding: 0.3rem; 
+  border-radius: 50%;
+  color: white;
+  font-size: 0.7rem; 
+  }
+
+  .homeIconClose i {
+    font-size: 0.7rem;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -4424,6 +4467,18 @@ html {
   height: 100px;
 }
 
+.pto-about{
+  padding: 5rem 15%;
+}
+
+.footer p {
+    font-size: 0.875rem !important; 
+}
+
+.footer__div {
+    margin-top: 1rem;
+ }
+
 }
 
 @media screen and (min-width: 375px) and (max-width: 820px) {
@@ -4540,16 +4595,20 @@ html {
     height: 100%;
     border: none;
   }
-  
-  .homeIconClose {
+
+    .homeIconClose {
     position: absolute;
-    top: -0.25vh;
+    top: 3.5vh;
     right: -9vw;
     z-index: 1100;
     padding: 0.5rem;
     border-radius: 50%;
     color: white;
     font-size: 1.5rem;
+  }
+
+  .homeIconClose i {
+    font-size: 1rem;
   }
 }
 
@@ -4575,7 +4634,7 @@ html {
     padding: 0.5rem;
     border-radius: 50%;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -4593,17 +4652,21 @@ html {
     justify-content: center;
   }
 
+.homeIconClose {
+  position: absolute;
+  top: -3vh;
+  right: -14vw;
+  z-index: 1100;
+  padding: 0.3rem; 
+  border-radius: 50%;
+  color: white;
+  font-size: 1rem; 
+}
 
-  .homeIconClose {
-    position: absolute;
-    top: -6vh;
-    right: -14vw;
-    z-index: 1100;
-    padding: 0.5rem;
-    border-radius: 50%;
-    color: white;
-    font-size: 1.5rem;
-  }
+.homeIconClose i {
+  font-size: 0.8rem;
+}
+
 }
 
 @media screen and (max-width: 768px) {
@@ -4620,16 +4683,19 @@ html {
     justify-content: center;
   }
 
-
   .homeIconClose {
     position: absolute;
-    top: -25.5vh;
+    top: -23.5vh;
     right: -3vw;
     z-index: 1100;
     padding: 0.5rem;
     border-radius: 50%;
     color: white;
     font-size: 1rem;
+  }
+
+  .homeIconClose i {
+    font-size: 0.7rem;
   }
 }
 
@@ -4761,6 +4827,12 @@ html {
     max-height: 100vh;
     height: fit-content;
     margin-bottom: 7.5vh;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .pto-about{
+    padding: 5rem 15%;
   }
 }
 
@@ -5117,6 +5189,21 @@ html {
     margin-top: 5vh;
   }
 
+  /* Animations (Bottom) */
+
+  .mapTarlacVisuals
+  {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+  }
+
+  .mapTarlacVisuals.animate
+  {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -5132,6 +5219,8 @@ html {
     transform: translate(-50%, -50%);
     z-index: 1000;
   }
+
+  
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
@@ -5571,6 +5660,21 @@ html {
     font-size: 1.15rem;
     max-width: 42rem;
   }
+
+  .homeIconClose {
+  position: absolute;
+  top: 3vh;
+  right: -12vw;
+  z-index: 1100;
+  padding: 0.3rem; 
+  border-radius: 50%;
+  color: white;
+  font-size: 0.7rem; 
+}
+
+.homeIconClose i {
+  font-size: 0.7rem;
+}
   
 }
 
