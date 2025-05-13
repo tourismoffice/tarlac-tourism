@@ -166,7 +166,7 @@ html {
   top: calc(100% + 0.5rem); 
   left: 50%;
   transform: translateX(-50%); 
-  background-color:  #0F2D46;
+  background-color:  #0A2239;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -4367,7 +4367,7 @@ html {
   top: 0;
   bottom: 0;
   width: 6px;
-  background: #c9ab81;
+  background: #0A2239;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -4387,7 +4387,6 @@ html {
   height: 25px;
   background: #ffffff;
   border-radius: 50%;
-
   border: 4px solid #1b1b1b;
 }
 
