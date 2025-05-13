@@ -3165,14 +3165,14 @@ html {
 /* Right enter */
 
 .img-1, .images-right > .img-1-faith, .peace, .cathedral, .mapTarlacVisuals, .fes .media-wrapper > .image,
-.fes-1 .media-wrapper > video{
+.fes-1 .media-wrapper > video, .pto-img{
   opacity: 0;
   transform: translateX(-100%);
   transition: transform 1.5s ease-out, opacity 1.5s ease-out;
 }
 
 .img-1.animate, .images-right > .img-1-faith.animate, .peace.animate, .cathedral.animate, .mapTarlacVisuals.animate, 
-.fes .media-wrapper > .image.animate, .fes-1 .media-wrapper > video.animate{
+.fes .media-wrapper > .image.animate, .fes-1 .media-wrapper > video.animate, .pto-img.animate{
   transform: translateX(0);
   opacity: 1;
 }
