@@ -4761,7 +4761,7 @@ html {
   
   .home__video {
     position: fixed;
-    top: -65vh;
+    top: -60vh;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 68%;
@@ -4787,7 +4787,7 @@ html {
     .homeIconClose {
     position: absolute;
     top: 3.5vh;
-    right: -9vw;
+    right: -11.5vw;
     z-index: 1100;
     padding: 0.5rem;
     border-radius: 50%;
