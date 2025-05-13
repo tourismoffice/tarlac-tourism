@@ -4455,7 +4455,9 @@ html {
 .contentImage {
   width: 100%;
   margin-bottom: 1rem;
+  max-height: 20rem;
 }
+
 
 .contentDescription {
   font-family: museumLight;
@@ -4990,7 +4992,6 @@ html {
   }
 }
 
-
 @media screen and (max-width: 768px) {
   .web-cover-text {
     margin-left: 2rem;
@@ -5015,7 +5016,21 @@ html {
     height: fit-content;
     margin-bottom: 7.5vh;
   }
+
+  .web-cover-text{
+    opacity: 0;
+    transform: translateX(-50%);
+    top: 25vh;
+    transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+  }
+
+  .web-cover-text.animate{
+    transform: translateX(0);
+    opacity: 1;
+  }
+
 }
+
 
 @media screen and (max-width: 425px) {
   .pto-about{
