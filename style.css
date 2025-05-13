@@ -1109,6 +1109,13 @@ html {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
+.pto-img-2 {
+  width: 400px;
+  max-width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
 .pto-text {
   max-width: 45rem;
   padding: 10px 20px;
@@ -3132,14 +3139,14 @@ html {
 /* Left entry */
 
 .images-right > .img-2, .images-right-02 > .img-2, .anao-church, .images-right > .img-2-faith, .img-2-eco-1, .fes-1 .media-wrapper > .image,
-.fes .media-wrapper > video{
+.fes .media-wrapper > video, .pto-img-2{
   opacity: 0;
   transform: translateX(100%);
   transition: transform 1.5s ease-out, opacity 1.5s ease-out;
 }
 
 .images-right > .img-2.animate, .images-right-02 > .img-2.animate, .anao-church.animate, .images-right > .img-2-faith.animate, 
-.img-2-eco-1.animate, .fes-1 .media-wrapper > .image.animate, .fes .media-wrapper > video.animate{
+.img-2-eco-1.animate, .fes-1 .media-wrapper > .image.animate, .fes .media-wrapper > video.animate, .pto-img-2.animate{
   transform: translateX(0);
   opacity: 1;
 }
