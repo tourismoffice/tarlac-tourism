@@ -1083,6 +1083,21 @@ html {
   z-index: 2; 
 }
 
+.pto-section > h2{
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+.img-cover-2 {
+  width: 100%;
+  object-fit: contain;
+  display: block;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
 
 .pto-section {
   padding: 60px 20px;
