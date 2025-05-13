@@ -979,7 +979,8 @@ html {
 
 .product-header p{
   margin-bottom: 40px;
-  font-size: 18px;
+  font-size: 1.10rem;
+  font-family: "Poppins", sans-serif;
 }
 
 .browse-products{
