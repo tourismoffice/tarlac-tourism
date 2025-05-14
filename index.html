@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
   <!-- Navigation Bar -->
   <div class="navBtns">
     <div class="navmobilediv">
@@ -83,93 +84,8 @@
   <!-- Home Page -->
 
   <img src="TarlacTourism/CoverPage.jpg" class="img-cover" alt="Tarlac Tourism" id="home">
- 
-  <div id="museo">
-  <div class="container">
-    <div class="arrow l" onclick="prev()">
-      <img src="Arrows/arrowLeft.svg" alt="l" />
-    </div>
-    <div class="slide slide-1">
-      <video class="myVideo" autoplay muted loop>
-        <source src="Video/videoplayback.mp4" type="video/mp4" />
-      </video>
-      <div class="overlay-content"></div>
-      <div class="caption">
-        <div id="home" class="home">
-          <div class="home__title">
-            <h2 class="home__title--diwa">Diwa ng Tarlac</h2>
-            <div class="home__diwa">
-              <h2 class="home__title--name">MUSEO NG</h2>
-              <div class="home__line"></div>
-            </div>
-            <div class="home__diwa">
-              <div class="home__lines"></div>
-              <h2 class="home__title--nameKanlahi">KANLAHI</h2>
-            </div>
-            <h2 class="home__opens">
-              Open: Monday to Friday 9:00 am to 4:00 pm
-            </h2>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="slide slide-2">
-      <div class="home__videoOverlay"></div>
-      <div class="captionThree">
-        <div class="home__video">
-          <div class="homeIconClose">
-            <i class="fa-solid fa-x home__back"></i>
-          </div>
-          <div class="homeVideoWrapper">
-            <iframe class="home__diorama" src="https://www.youtube.com/embed/eJZwMEo4ogg?autoplay=1&mute=1"
-              frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-      <button class="homebtn_ripple home__btn">
-        <i class="fa fa-play home__playButton"></i>
-      </button>
-    </div>
-    <div class="slide slide-3">
-      <div class="captionTwo">
-        <div class="captionTwoInner">
-          <div class="dayDiorama">
-            <div class="dayDioramaTitle">
-              <h2 class="dayDioramaTitle__name">YOUR DAY AT</h2>
-              <h2 class="dayDioramaTitle__name">THE DIORAMA</h2>
-            </div>
-            <div class="dayDioramaImgs">
-              <img src="YourDayAtDioramaImages/diorama.jpg" alt="diorama"
-                class="dayDioramaImgs__one dayDioramaImgSize" />
-              <img src="YourDayAtDioramaImages/kanlahi.jpg" alt="kanlahi"
-                class="dayDioramaImgs__two dayDioramaImgSize" />
-              <img src="YourDayAtDioramaImages/mapTarlac.jpg" alt="map of tarlac"
-                class="dayDioramaImgs__three dayDioramaImgSize" />
-            </div>
-          </div>
-          <div class="dayHistory">
-            <div class="dayHistoryImg">
-              <img src="YourDayAtDioramaImages/historyTarlac.jpg" alt="diorama" class="dayHistory__img" />
-            </div>
-            <div class="dayHistoryTitle">
-              <h2 class="dayHistoryTitle__name">COME & DISCOVER</h2>
-              <h2 class="dayHistoryTitle__name--history">
-                HISTORY OF TARLAC
-              </h2>
-            </div>
-          </div>
-          <button class="dayLocation">
-            <a href="https://maps.app.goo.gl/GeT9QtH2o9eWYMUz8" class="dayLocation__link" target="_blank">OUR
-              LOCATION</a>
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="arrow r" onclick="next()">
-      <img src="Arrows/arrowRight.svg" alt="r" />
-    </div>
-  </div>
-</div>
+
+
   <!-- Map of Tarlac -->
   <div id="mapTarlac" class="mapTarlacDiv">
     <div class="mapTarlacWidth">
@@ -313,12 +229,12 @@
   <div id="history" class="timelineHeader">
     <h2 class="timelineTitle">HISTORY OF TARLAC</h2>
   </div>
-  <div class="timeline-container">
+  <div class="timeline-container pedroLaktaw">
     <div class="timeline">
       <div class="container right">
         <div class="content">
           <h2 class="contentTitle">Pedro Serrano Laktaw</h2>
-          <img src="HistoryImage/Pedro.jpg" alt="" class="contentImage">
+          <img src="HistoryImage/Pedro.jpg" alt="" class="contentImage pedroImage">
           <p class="contentDescription">
             An old Spanish-Tagalog dictionary by Pedro Serrano Laktaw in the
             late 1800s referred to ‘Tarlac’, as native sugar cane. Early
@@ -395,7 +311,7 @@
       <div class="container left">
         <div class="content">
           <h2 class="contentTitle">June 6, 1899</h2>
-          <img src="HistoryImage/Capital.jpg" alt="capital" class="contentImage">
+          <img src="HistoryImage/Capital.jpg" alt="capital" class="contentImage capitalBamban">
           <p class="contentDescription">
             President Emilio Aguinaldo transferred his capital at Bamban,
             Tarlac, assuming the position of Captain-General. By June 21, he
@@ -444,7 +360,7 @@
       <div class="container left">
         <div class="content">
           <h2 class="contentTitle">September 1, 1902</h2>
-          <img src="HistoryImage/Thc.jpg" alt="tarlac high" class="contentImage">
+          <img src="HistoryImage/Thc.jpg" alt="tarlac high" class="contentImage TNHS">
           <p class="contentDescription" class="contentDescription">
             Tarlac is one of the first province in the country to erect its own
             public highschool building, the Tarlac Highschool.
@@ -566,6 +482,94 @@
       </div>
     </div>
   </div>
+
+  <div id="museo">
+  <div class="container">
+    <div class="arrow l" onclick="prev()">
+      <img src="Arrows/arrowLeft.svg" alt="l" />
+    </div>
+    <div class="slide slide-1">
+      <video class="myVideo" autoplay muted loop>
+        <source src="Video/videoplayback.mp4" type="video/mp4" />
+      </video>
+      <div class="overlay-content"></div>
+      <div class="caption">
+        <div id="home" class="home">
+          <div class="home__title">
+            <h2 class="home__title--diwa">Diwa ng Tarlac</h2>
+            <div class="home__diwa">
+              <h2 class="home__title--name">MUSEO NG</h2>
+              <div class="home__line"></div>
+            </div>
+            <div class="home__diwa">
+              <div class="home__lines"></div>
+              <h2 class="home__title--nameKanlahi">KANLAHI</h2>
+            </div>
+            <h2 class="home__opens">
+              Open: Monday to Friday 9:00 am to 4:00 pm
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide slide-2">
+      <div class="home__videoOverlay"></div>
+      <div class="captionThree">
+        <div class="home__video">
+          <div class="homeIconClose">
+            <i class="fa-solid fa-x home__back"></i>
+          </div>
+          <div class="homeVideoWrapper">
+            <iframe class="home__diorama" src="https://www.youtube.com/embed/eJZwMEo4ogg?autoplay=1&mute=1"
+              frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <button class="homebtn_ripple home__btn">
+        <i class="fa fa-play home__playButton"></i>
+      </button>
+    </div>
+    <div class="slide slide-3">
+      <div class="captionTwo">
+        <div class="captionTwoInner">
+          <div class="dayDiorama">
+            <div class="dayDioramaTitle">
+              <h2 class="dayDioramaTitle__name">YOUR DAY AT</h2>
+              <h2 class="dayDioramaTitle__name">THE DIORAMA</h2>
+            </div>
+            <div class="dayDioramaImgs">
+              <img src="YourDayAtDioramaImages/diorama.jpg" alt="diorama"
+                class="dayDioramaImgs__one dayDioramaImgSize" />
+              <img src="YourDayAtDioramaImages/kanlahi.jpg" alt="kanlahi"
+                class="dayDioramaImgs__two dayDioramaImgSize" />
+              <img src="YourDayAtDioramaImages/mapTarlac.jpg" alt="map of tarlac"
+                class="dayDioramaImgs__three dayDioramaImgSize" />
+            </div>
+          </div>
+          <div class="dayHistory">
+            <div class="dayHistoryImg">
+              <img src="YourDayAtDioramaImages/historyTarlac.jpg" alt="diorama" class="dayHistory__img" />
+            </div>
+            <div class="dayHistoryTitle">
+              <h2 class="dayHistoryTitle__name">COME & DISCOVER</h2>
+              <h2 class="dayHistoryTitle__name--history">
+                HISTORY OF TARLAC
+              </h2>
+            </div>
+          </div>
+          <button class="dayLocation">
+            <a href="https://maps.app.goo.gl/GeT9QtH2o9eWYMUz8" class="dayLocation__link" target="_blank">OUR
+              LOCATION</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="arrow r" onclick="next()">
+      <img src="Arrows/arrowRight.svg" alt="r" />
+    </div>
+  </div>
+</div>
+
   <!-- Diorama Page -->
   <div id="diorama" class="dioramaDiv">
     <div class="dioramaHeader">
@@ -1267,7 +1271,7 @@
       <div class="footer__left">
         <div class="footerTourism">
           <img src="LogoIcon/Tourismlogo.png" alt="" class="footer__img" />
-          <a href="index.html" class="footer__title">Tarlac Tourism</a>
+          <a href="index.html" class="footer__title">TARLAC TOURISM</a>
         </div>
         <p class="footerProvince">Province of Tarlac</p>
       </div>

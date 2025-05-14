@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-/* NAVIGATION BAR MOBILE */
+/* MOBILE NAVIGATION TOGGLE */
 const navOpen = document.querySelector(".navOpen");
 const navClose = document.querySelector(".navClose");
 const navigation = document.querySelector(".navbar");
@@ -86,18 +86,6 @@ navClose.addEventListener("click", () => {
   navOpen.style.display = "block";
   navigation.classList.remove("open");
   navtitle.style.display = "block";
-});
-
-/* FIX NAVIGATION IN DESKTOP WHEN SWITCHING MOBILE AND DESKTOP */
-const navLinks = document.querySelectorAll(".navbar__link");
-navLinks.forEach(link => {
-  link.addEventListener("click", () => {
-    if (window.innerWidth <= 850) {
-      navClose.style.display = "none";
-      navOpen.style.display = "block";
-      navigation.classList.remove("open");
-    }
-  });
 });
 
 /* SCROLL FUNCTION (BACK TO TOP) */
