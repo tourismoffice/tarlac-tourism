@@ -43,27 +43,33 @@
             <a href="#home" class="navbar__link">HOME</a>
         </li>
         <li class="navbar__li">
-            <a href="#museo" class="navbar__link">MUSEO NG KANLAHI</a>
-        </li>
-        <li class="navbar__li">
             <a href="#mapTarlac" class="navbar__link">MAP OF TARLAC</a>
         </li>
-        <li class="navbar__li">
-            <a href="#history" class="navbar__link">HISTORY OF TARLAC</a>
+        <li class="navbar__li dropdown">
+            <a href="#museo" class="navbar__link dropdown-toggle">MUSEO NG KANLAHI ▼</a>
+            <ul class="dropdown-menu">
+                <li><a href="#history" class="dropdown-link">HISTORY OF TARLAC</a></li>
+                <li><a href="#diorama" class="dropdown-link">DIORAMA</a></li>
+            </ul>
         </li>
         <li class="navbar__li">
-            <a href="#diorama" class="navbar__link">DIORAMA</a>
+            <a href="accommodations.html" class="navbar__link">ACCOMMODATIONS</a>
         </li>
         <li class="navbar__li dropdown">
-            <a href="#" class="navbar__link dropdown-toggle">EXPLORE TARLAC ▼</a>
+            <a href="#explore" class="navbar__link dropdown-toggle">EXPLORE TARLAC ▼</a>
             <ul class="dropdown-menu">
                 <li><a href="festivals.html" class="dropdown-link">FESTIVALS</a></li>
                 <li><a href="eco-tourism.html" class="dropdown-link">ECO-TOURISM</a></li>
                 <li><a href="food.html" class="dropdown-link">FOOD</a></li>
                 <li><a href="religion.html" class="dropdown-link">FAITH</a></li>
                 <li><a href="adventures.html" class="dropdown-link">ADVENTURE</a></li>
-                <li><a href="accommodations.html" class="dropdown-link">ACCOMODATIONS</a></li>
             </ul>
+        </li>
+        <li class="navbar__li">
+            <a href="#tourism-officers" class="navbar__link">TOURISM OFFICES</a>
+        </li>
+        <li class="navbar__li">
+            <a href="about.html" class="navbar__link">ABOUT US</a>
         </li>
     </ul>
 
@@ -94,7 +100,7 @@
       </div>
       <div class="mapTarlacContent">
         <div class="mapTarlacVisuals">
-          <img src="MapTarlac/Map-tarlac-province.PNG" alt="" class="mapTarlacImg" />
+          <img src="MapTarlac/TP-Map.png" alt="" class="mapTarlacImg" />
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d301059.5172466649!2d120.30761462317025!3d15.590892864684552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396c64784816e43%3A0x7274401dd15f1843!2sProvincial%20Government%20of%20Tarlac!5e0!3m2!1sen!2sph!4v1746018490174!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>        
         <div class="mapTarlacCountry">
@@ -229,7 +235,7 @@
   <div id="history" class="timelineHeader">
     <h2 class="timelineTitle">HISTORY OF TARLAC</h2>
   </div>
-  <div class="timeline-container pedroLaktaw">
+  <div class="timeline-container">
     <div class="timeline">
       <div class="container right">
         <div class="content">
@@ -247,7 +253,7 @@
       <div class="container left">
         <div class="content">
           <h2 class="contentTitle">1850s</h2>
-          <img src="HistoryImage/revolution.jpg" alt="revolution" class="contentImage">
+          <img src="HistoryImage/revolution.jpg" alt="revolution" class="contentImage revolution">
           <p class="contentDescription">
             The first step towards the erection of Tarlac into a province was
             made in 1858, with the creation of the Comandanica
@@ -264,7 +270,7 @@
       <div class="container right">
         <div class="content">
           <h2 class="contentTitle">1892</h2>
-          <img src="HistoryImage/Train.jpg" alt="train" class="contentImage">
+          <img src="HistoryImage/Train.jpg" alt="train" class="contentImage train">
           <p class="contentDescription">
             The Manila-Dagupan railroad further sustained the province as a
             transportation hub in Luzon.
@@ -279,7 +285,7 @@
       <div class="container left">
         <div class="content">
           <h2 class="contentTitle">August 30, 1896</h2>
-          <img src="HistoryImage/insurgentSoldier.jpg" alt="insurgent soldier" class="contentImage">
+          <img src="HistoryImage/insurgentSoldier.jpg" alt="insurgent soldier" class="contentImage soldier">
           <p class="contentDescription">
             Tarlac was included among the eight revolting provinces by
             Governor-General Ramon Blanco, immortalized as among the eight
@@ -322,7 +328,7 @@
       <div class="container right">
         <div class="content">
           <h2 class="contentTitle">July 14, 1899</h2>
-          <img src="HistoryImage/sanSebastianCatherdral.jpg" alt="san sebastian cathedral" class="contentImage">
+          <img src="HistoryImage/sanSebastianCatherdral.jpg" alt="san sebastian cathedral" class="contentImage san-seb-cathedral">
           <p class="contentDescription">
             The Congress of the First Philippine Republic was reconvened at
             the Tarlac Cathedral with Ambrosio Rianzares Bautista as the
@@ -350,7 +356,7 @@
       <div class="container right">
         <div class="content">
           <h2 class="contentTitle">February 8, 1901</h2>
-          <img src="HistoryImage/capitol.jpg" alt="capitol of tarlac" class="contentImage">
+          <img src="HistoryImage/capitol.jpg" alt="capitol of tarlac" class="contentImage tarlac-capitol">
           <p class="contentDescription" class="contentDescription">
             The American-sponsored civil government in Tarlac was inaugurated
             with Capt. Wallis O. Clark as its first governor.
@@ -382,7 +388,7 @@
       <div class="container left">
         <div class="content">
           <h2 class="contentTitle">1942</h2>
-          <img src="HistoryImage/deathMarch.jpg" alt="death march" class="contentImage">
+          <img src="HistoryImage/deathMarch.jpg" alt="death march" class="contentImage death-march">
           <p class="contentDescription">
             Tarlac also figured prominently during the Second World War. Mere
             mention of Capas O'Donell evokes memories of World War II, The
@@ -396,8 +402,8 @@
       <div class="container right">
         <div class="content">
           <h2 class="contentTitle">January 20, 1945</h2>
-          <img src="HistoryImage/japaneseLiberation.jpg" alt="japanese liberation" class="contentImage">
-          <p class="contentDescription">
+          <img src="HistoryImage/japaneseLiberation.jpg" alt="japanese liberation" class="contentImage ww2-tarlac-liberation">
+          <p class="contentDescription ww2-tarlac-liberation">
             Tarlac was liberated from the Japanese on the feast of St.
             Sebastian.
           </p>
@@ -418,7 +424,7 @@
       <div class="container right">
         <div class="content">
           <h2 class="contentTitle">1982</h2>
-          <img src="HistoryImage/Diwa.jpg" alt="diwa ng tarlac" class="contentImage">
+          <img src="HistoryImage/Diwa.jpg" alt="diwa ng tarlac" class="contentImage diwa">
           <p class="contentDescription">
             The Diwa ng Tarlac was constructed by the administration of then
             Governor Homobono Sawit, which was set as the civic center of the
@@ -429,14 +435,14 @@
       <div class="container left">
         <div class="content">
           <h2 class="contentTitle">1988</h2>
-          <img src="HistoryImage/Municipality.jpg" alt="municipality of san jose" class="contentImage">
-          <p class="contentDescription">Creation of the Municipality of San Jose in Western Tarlac.</p>
+          <img src="HistoryImage/Municipality.jpg" alt="municipality of san jose" class="contentImage san-jose-western">
+          <p class="contentDescription san-jose-western">Creation of the Municipality of San Jose in Western Tarlac.</p>
         </div>
       </div>
       <div class="container right">
         <div class="content">
           <h2 class="contentTitle">June 15, 1991</h2>
-          <img src="HistoryImage/Explosion.jpg" alt="explosion of pinatubo" class="contentImage">
+          <img src="HistoryImage/Explosion.jpg" alt="explosion of pinatubo" class="contentImage mt-pinatubo">
           <p class="contentDescription">
             Mt. Pinatubo explosion where more than 800 people died mostly from
             collapsing roofs. And more than two million people whose houses
@@ -448,7 +454,7 @@
       <div class="container left">
         <div class="content">
           <h2 class="contentTitle">April 12, 2004</h2>
-          <img src="HistoryImage/Monasterio.jpg" alt="monasterio" class="contentImage">
+          <img src="HistoryImage/Monasterio.jpg" alt="monasterio" class="contentImage monasterio">
           <p class="contentDescription">
             Then Governor Jose "Aping" Yap, through former President Gloria
             Macapagal Arroyo issued Proclamation 602 "Declaring as Eco-Tourism
@@ -461,7 +467,7 @@
       <div class="container right">
         <div class="content">
           <h2 class="contentTitle">April 2010</h2>
-          <img src="HistoryImage/Plarong Pambansa.jpg" alt="tarlac recreation park" class="contentImage">
+          <img src="HistoryImage/Plarong Pambansa.jpg" alt="tarlac recreation park" class="contentImage trp">
           <p class="contentDescription">
             The province of Tarlac Hosted its First Palarong Pambansa at the
             newly Constructed Tarlac Recreation Park, now known as the Jose V.
@@ -473,7 +479,7 @@
       <div class="container left">
         <div class="content">
           <h2 class="contentTitle">2019</h2>
-          <img src="HistoryImage/sportComplex.png" alt=" sport complex caps" class="contentImage">
+          <img src="HistoryImage/sportComplex.png" alt=" sport complex caps" class="contentImage ncc">
           <p class="contentDescription">
             The province of Tarlac hosted its first Southeast Asian Games at
             the New Clark City Sports Complex in Capas, Tarlac.
@@ -498,11 +504,14 @@
           <div class="home__title">
             <h2 class="home__title--diwa">Diwa ng Tarlac</h2>
             <div class="home__diwa">
-              <h2 class="home__title--name">MUSEO NG</h2>
+              <h2 class="home__title--name">MUSEO</h2>
+            </div>
+            <div class="home__diwa">
+              <div class="home__line"></div>
+              <h2 class="home__title--ng">NG</h2>
               <div class="home__line"></div>
             </div>
             <div class="home__diwa">
-              <div class="home__lines"></div>
               <h2 class="home__title--nameKanlahi">KANLAHI</h2>
             </div>
             <h2 class="home__opens">
@@ -840,7 +849,7 @@
     <br />
   </div>
 
-  <div class="products-container">
+  <div class="products-container" id="explore">
     <div class="product-header">
         <h1>Explore the Wonders of Tarlac!</h1>
         <p>
@@ -917,7 +926,7 @@
 </div>
 
 
-<div class="hero">
+<div class="hero" id="hotel">
   <div class="overlay">
     <div class="hero-content">
       <h1>Discover Tarlac Accommodations</h1>
@@ -927,13 +936,13 @@
   </div>
 </div>
 
-<div class="provincial-tourism">
+<div class="provincial-tourism" id="tourism-officers">
 
   <h2 class="title">Province of Tarlac Tourism Offices</h2>
   <div class="styled-hr"></div>
   
       <div class="tarlac-tourism-dept">
-          <div class="card">
+          <div class="card full-row">
               <img src="TarlacTourism/PGT Tourism.jpg" alt="PGT Tourism Office Logo" class="logo">
               <h3>Provincial Tourism Office</h3>
               <p class="name"><strong>Krishna V. Buenaventura</strong></p>
@@ -1241,7 +1250,7 @@
   
   </div>
 
-  <div class="pto-container">
+  <div class="pto-container" id="about">
     <div class="picture"></div>
     <div class="pto-about">
         <h1>Get to know us!</h1>

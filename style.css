@@ -107,7 +107,7 @@ html {
 }
 
 .navTitleProvince {
-  color: #c9ab81;
+  color: #ffff;
   text-align: center;
   font-size: 1rem;
   font-family: "Open Sans", sans-serif;  
@@ -270,12 +270,12 @@ html {
   top: 50%;
   left: 7.5rem;
   transform: translateY(-50%); 
-  color: gold;
+  color: #ffff;
   text-align: left;
   font-family: "Open Sans", sans-serif;   
   text-shadow: 2px 2px 5px black, -2px -2px 5px gray;
   z-index: 2;
-  color: yellow;
+  color: #ffffff;
   text-decoration: solid #000000;
   text-align: left;
   margin-top: 1.5rem;
@@ -328,7 +328,7 @@ html {
 }
 
 .home__title--diwa {
-  color: #c9ab81;
+  color: #ffff;
   font-family: museumLightItalic;
   font-size: 2rem;
   font-weight: lighter;
@@ -341,28 +341,36 @@ html {
 
 .home__title--name {
   letter-spacing: 1.5rem;
-  margin-right: 1rem;
+  margin-top: 0.8rem;
+  margin: auto;
+}
+
+.home__title--ng{
+  letter-spacing: 1rem;
+  margin-top: 0.8rem;
+  margin: auto;
+  margin-left: 1rem;
 }
 
 .home__line {
   height: 0.1rem;
   width: 15rem;
-  background: #c9ab81;
+  background: #ffff;
 }
 
 .home__lines {
   height: 0.1rem;
   width: 20rem;
-  background: #c9ab81;
+  background: #fff;
 }
 
 .home__title--nameKanlahi {
   letter-spacing: 1.5rem;
-  margin-left: 2rem;
+  margin: auto;
 }
 
 .home__opens {
-  color: #c9ab81;
+  color: #ffff;
   font-family: museumLightItalic;
   font-size: 2rem;
   font-weight: lighter;
@@ -786,16 +794,15 @@ html {
 
 /* Map of Tarlac Style */
 .mapTarlacDiv {
-  background: radial-gradient(
-      ellipse at center,
-      hsla(0, 0%, 0%, 0.2) 0,
-      #000000 100%
-    ),
-    url(TarlacTourism/TARLAC\ CITY_TARLAC\ CAPITOL\ \(2\).jpg);
+  background: 
+    linear-gradient(rgba(10, 34, 57, 0.85), rgba(10, 34, 57, 0.85)),
+    url("TarlacTourism/TARLAC CITY_TARLAC CAPITOL (2).jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  color: white; 
 }
+
 
 .mapTarlacWidth {
   width: 80%;
@@ -871,19 +878,18 @@ html {
 }
 
 .dioramaDiv {
-  background: radial-gradient(
-      ellipse at center,
-      hsla(0, 0%, 0%, 0.2) 0,
-      #000000 100%
-    ),
-    url(YourDayAtDioramaImages/diorama.jpg);
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.9), rgba(12, 20, 36, 0.9)),
+    url("YourDayAtDioramaImages/diorama.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  color: white;
 }
 
+
 .dioramaHeaderTitle {
-  color: #c9ab81;
+  color: #fff;
   font-size: 3rem;
   font-family: "Open Sans", sans-serif;  
   text-align: center;
@@ -901,14 +907,14 @@ html {
 }
 
 .slideTitle {
-  color: #c9ab81;
+  color: #fff;
   font-family: "Open Sans", sans-serif;  
   font-size: 3rem;
   text-align: center;
 }
 
 .slideYear {
-  color: #c9ab81;
+  color: #fff;
   font-family: "Open Sans", sans-serif;   
   font-size: 1.2rem;
   text-align: center;
@@ -1294,9 +1300,19 @@ html {
 
 @media (min-width: 1024px) {
   .tarlac-tourism-dept {
-      grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .tarlac-tourism-dept .full-row {
+    grid-column: 1 / -1;        
+    width: 100%;                
+    max-width: 23rem;           
+    margin-left: auto;          
+    margin-right: auto;         
   }
 }
+
+
 
 /*Logos*/
 
@@ -4509,10 +4525,14 @@ html {
 .contentDescription {
   font-family: "Open Sans", sans-serif; 
   font-size: 1.2rem;
-  text-align: center;
+  text-align: justify;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.contentDescription.san-jose-western, .contentDescription.ww2-tarlac-liberation{
+  text-align: center;
 }
 
 /* MOBILE VERSION */
@@ -4718,6 +4738,18 @@ html {
     margin-top: 1rem;
  }
 
+  .contentImage.capitalBamban, .contentImage.revolution, .contentImage.san-seb-cathedral, 
+  .contentImage.tarlac-capitol, .contentImage.TNHS, .contentImage.san-jose-western,
+  .contentImage.mt-pinatubo, .contentImage.monasterio, .contentImage.trp, .contentImage.ncc,
+  .contentImage.train, .contentImage.soldier, .contentImage.death-march, .contentImage.ww2-tarlac-liberation,
+  .contentImage.diwa, .contentImage.pedroImage {
+    width: 18rem !important;
+    max-height: 25rem;
+    display: block;
+    margin: 0 auto 1rem auto; 
+    object-fit: cover;
+  }
+
 }
 
 @media screen and (min-width: 375px) and (max-width: 820px) {
@@ -4885,6 +4917,16 @@ html {
     color: white;
     font-size: 1rem;
   }
+
+  .contentImage.capitalBamban, .contentImage.revolution, .contentImage.san-seb-cathedral, 
+  .contentImage.tarlac-capitol, .contentImage.TNHS, .contentImage.san-jose-western,
+  .contentImage.mt-pinatubo, .contentImage.monasterio, .contentImage.trp, .contentImage.ncc {
+    width: 35rem;
+    max-height: 25rem;
+    display: block;
+    margin: 0 auto 1rem auto; 
+    object-fit: cover;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -4916,7 +4958,20 @@ html {
   font-size: 0.8rem;
 }
 
+  .contentImage.capitalBamban, .contentImage.revolution, .contentImage.san-seb-cathedral, 
+  .contentImage.tarlac-capitol, .contentImage.TNHS, .contentImage.san-jose-western,
+  .contentImage.mt-pinatubo, .contentImage.monasterio, .contentImage.trp, .contentImage.ncc,
+  .contentImage.train, .contentImage.soldier, .contentImage.death-march, .contentImage.ww2-tarlac-liberation,
+  .contentImage.diwa {
+    width: 23rem;
+    max-height: 25rem;
+    display: block;
+    margin: 0 auto 1rem auto; 
+    object-fit: cover;
+  }
+
 }
+
 
 @media screen and (max-width: 768px) {
   .home__video {
@@ -5091,10 +5146,21 @@ html {
 
 }
 
-
 @media screen and (max-width: 425px) {
   .pto-about{
     padding: 5rem 15%;
+  }
+
+  .contentImage.capitalBamban, .contentImage.revolution, .contentImage.san-seb-cathedral, 
+  .contentImage.tarlac-capitol, .contentImage.TNHS, .contentImage.san-jose-western,
+  .contentImage.mt-pinatubo, .contentImage.monasterio, .contentImage.trp, .contentImage.ncc,
+  .contentImage.train, .contentImage.soldier, .contentImage.death-march, .contentImage.ww2-tarlac-liberation,
+  .contentImage.diwa, .contentImage.pedroImage {
+    width: 20rem;
+    max-height: 25rem;
+    display: block;
+    margin: 0 auto 1rem auto; 
+    object-fit: cover;
   }
 }
 
