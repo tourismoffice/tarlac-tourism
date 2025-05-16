@@ -712,7 +712,8 @@ html {
 
 .footerProvince {
   text-align: center;
-  color: #c9ab81;
+  color: #fff;
+  font-style: italic;
   margin-top: 0 !important;
   padding: 0 !important;
 }
@@ -997,6 +998,7 @@ html {
   margin-bottom: 40px;
   font-size: 1.10rem;
   font-family: "Open Sans", sans-serif;  
+  text-align: justify;
 }
 
 .browse-products{
@@ -1312,6 +1314,32 @@ html {
   }
 }
 
+/* Explore Tarlac */
+.products-container .styled-hr {
+  display: flex;
+  gap: 7px; 
+  margin: 0.6rem 0 1.5rem 0;
+}
+
+
+.products-container .styled-hr::before, .products-container
+.styled-hr::after {
+  content: "";
+  display: block;
+  width: 50px; 
+  height: 2.5px;   
+  margin-left: 0.3rem;
+  background-color: rgb(18, 122, 190);
+}
+
+.products-container .styled-hr::after {
+  width: 15px; 
+}
+
+.product-header:hover > h1 {
+  color: rgb(30, 104, 153);
+}
+
 
 
 /*Logos*/
@@ -1460,7 +1488,6 @@ html {
 .text-right-content {
   flex: 1;
   padding-right: 20px;
-  font-weight: 700 !important;
 }
 
 
