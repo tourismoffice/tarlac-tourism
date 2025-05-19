@@ -2892,6 +2892,13 @@ html {
   margin-left: 3rem;
 }
 
+.religion-right-content .images-right img.la-maja{
+  width: 35rem;
+  max-width: 50rem;
+  height: 25rem;
+  margin-left: 3rem;
+}
+
 .images-right img.img-1-faith {
   width: 24rem;
   height: 16rem;
@@ -3209,14 +3216,14 @@ html {
 
 /* Left entry */
 
-.images-right > .img-2, .images-right-02 > .img-2, .anao-church, .images-right > .img-2-faith, .img-2-eco-1, .fes-1 .media-wrapper > .image,
+.images-right > .img-2, .images-right-02 > .img-2, .anao-church, .la-maja,.images-right > .img-2-faith, .img-2-eco-1, .fes-1 .media-wrapper > .image,
 .fes .media-wrapper > video, .pto-img-2{
   opacity: 0;
   transform: translateX(100%);
   transition: transform 1.5s ease-out, opacity 1.5s ease-out;
 }
 
-.images-right > .img-2.animate, .images-right-02 > .img-2.animate, .anao-church.animate, .images-right > .img-2-faith.animate, 
+.images-right > .img-2.animate, .images-right-02 > .img-2.animate, .anao-church.animate, .la-maja.animate, .images-right > .img-2-faith.animate, 
 .img-2-eco-1.animate, .fes-1 .media-wrapper > .image.animate, .fes .media-wrapper > video.animate, .pto-img-2.animate{
   transform: translateX(0);
   opacity: 1;
@@ -5391,7 +5398,23 @@ html {
     margin-bottom: 3vb;
   }
 
-  
+  /* Animations (Bottom) */
+
+  .mapTarlacVisuals, .img-1, .images-right-02 > .img-2, .anao-church, .images-left > .img-1, .images-left > .peace,
+  .images-right > .img-1, .images-right > .img-2, .images-right > .img-1-faith, .images-right > .img-2-faith, .cathedral, .la-maja
+  {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+  }
+
+  .mapTarlacVisuals.animate, .img-1.animate, .images-right-02 > .img-2.animate, .anao-church.animate, .images-left > .img-1.animate, .images-left > .peace.animate,
+  .images-right > .img-1.animate, .images-right > .img-2.animate, .images-right > .img-1-faith.animate, .images-right > .img-2-faith.animate, .religion-left-content > .cathedral.animate, .la-maja.animate
+  {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
 }
 
 @media screen and (max-width: 950px) {
@@ -5546,19 +5569,27 @@ html {
 
   /* Animations (Bottom) */
 
-  .mapTarlacVisuals
+  .mapTarlacVisuals, .img-1, .images-right-02 > .img-2, .anao-church, .images-left > .img-1, .images-left > .peace,
+  .images-right > .img-1, .images-right > .img-2, .images-right > .img-1-faith, .images-right > .img-2-faith, .cathedral, .la-maja
   {
     opacity: 0;
     transform: translateY(100%);
     transition: transform 1.5s ease-out, opacity 1.5s ease-out;
   }
 
-  .mapTarlacVisuals.animate
+  .mapTarlacVisuals.animate, .img-1.animate, .images-right-02 > .img-2.animate, .anao-church.animate, .images-left > .img-1.animate, .images-left > .peace.animate,
+  .images-right > .img-1.animate, .images-right > .img-2.animate, .images-right > .img-1-faith.animate, .images-right > .img-2-faith.animate, .religion-left-content > .cathedral.animate, .la-maja.animate
   {
     transform: translateY(0);
     opacity: 1;
   }
 
+}
+
+@media screen and (max-width: 375px) {
+  .images-left > .peace{
+    width: 25rem !important;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -5574,7 +5605,6 @@ html {
     transform: translate(-50%, -50%);
     z-index: 1000;
   }
-
   
 }
 
@@ -5596,6 +5626,9 @@ html {
 
   .web__title {
     font-size: 2.2rem !important;
+    overflow-wrap: break-word; /* Break long words */
+    word-wrap: break-word;
+    word-break: break-word;
   }
 
   .web__explore {
@@ -5764,14 +5797,14 @@ html {
 
 
   .religion-right-content .images-right > img.anao-church {
-    width: 35rem;
+    width: 30rem;
     height: auto;
     display: block;
     margin-left: 5rem !important;
   }
 
   .religion-left-content .images-left > img.cathedral {
-    width: 35rem;
+    width: 30rem;
     height: auto;
     display: block;
     margin-right: 75rem;
@@ -5821,8 +5854,16 @@ html {
   
   .religion-left-content .text-left-content > p{
     max-width: 23rem;
-    width: 95%;
+    width: 90%;
     box-sizing: border-box;
+  }
+
+  .religion-left-content .text-left-content > h2{
+    font-size: 1.9rem;
+  }
+
+  .religion-left-content .text-left-content > h2{
+    font-size: 1.95rem;
   }
 
   .assisi {
@@ -5838,6 +5879,12 @@ html {
   .anao-church{
     height: 18rem !important; 
     width: auto;
+  }
+
+  .la-maja{
+    height: 18rem !important; 
+    width: 25rem !important;
+    margin-left: 5rem !important;
   }
 
   .cathedral{
@@ -6032,4 +6079,3 @@ html {
 }
   
 }
-
