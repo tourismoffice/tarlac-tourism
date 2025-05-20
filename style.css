@@ -81,6 +81,7 @@ html {
 }
 
 /* NAVIGATION BAR STYLE */
+
 .navbar {
   background-color:#0A2239;
   display: flex;
@@ -88,7 +89,6 @@ html {
   align-items: center;
   padding: 1rem 10rem;
 }
-
 
 .navTitle {
   display: flex;
@@ -155,64 +155,293 @@ html {
   text-decoration: none;
 }
 
-.navFooter {
-  display: none;
-}
-
 .navBtns,
 .nav__open,
 .nav__close {
   display: none;
 }
 
-.dropdown {
+.navbar__li.dropdown {
   position: relative;
-  display: inline-block; 
 }
 
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: calc(100% + 0.5rem); 
-  left: 50%;
-  transform: translateX(-50%); 
-  background-color:  #0A2239;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  border: 1px solid white;
-  min-width: 9rem;
+  top: 2.5rem;
+  left: 0;
+  background-color: #0A2239;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 0;
+  border-radius: 0.25rem;
   z-index: 1000;
+  min-width: 12rem;
 }
 
 .dropdown-menu li {
-  padding: 0.8rem;
-  text-align: center;
+  list-style: none;
 }
 
-.dropdown-menu li a {
+.dropdown-menu .dropdown-link {
+  display: block;
+  padding: 0.75rem 1rem;
   color: white;
-  font-family: "Open Sans", sans-serif;  
-  font-size: 1rem;
   text-decoration: none;
-  display: block;
-  transition: color 0.8s ease-in-out;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.95rem;
 }
 
-.dropdown-menu li a:hover {
-  color: #c9ab81; 
-  background-color: transparent;
+
+.dropdown-menu .dropdown-link:hover {
+  color: #e6dc00;
 }
 
-.dropdown:hover .dropdown-menu {
+
+.navbar__li.dropdown:hover .dropdown-menu {
   display: block;
 }
 
-.dropdown.active .dropdown-menu {
+.navbar__li.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  background-color: #0A2239;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 0;
+  border-radius: 0.25rem;
+  z-index: 1000;
+  min-width: 12rem;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu .dropdown-link {
+  display: block; 
+  padding: 0.75rem 1rem;
+  color: white;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.95rem;
+}
+
+@media (min-width: 1025px) {
+  .navbar__li.dropdown {
+    position: relative;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #0A2239;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 0.5rem;
+    padding: 0.75rem 0;
+    min-width: 12rem;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  .navbar__li.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .dropdown-link {
+    display: block;
+    padding: 0.75rem 1.25rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+  }
+
+  .dropdown-link:hover {
+    color: #e6dc00; 
+    background-color: transparent; 
+  }
+
+  .dropdown-toggle {
+    pointer-events: none;
+    cursor: default;
+  }
+
+  .navbar__li.dropdown:hover .dropdown-menu {
   display: block;
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
-  margin-top: 1.2rem;
+}
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 2rem;
+    background-color: #0A2239;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    transition: right 0.3s ease;
+    z-index: 1001;
+  }
+
+  .navbar.open {
+    right: 0;
+  }
+
+  .navtitle {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .navbar__ul {
+    flex-direction: column;
+    width: 100%;
+    text-align: center; 
+  }
+
+  .navbar__li {
+    margin: 0.5rem 0;
+  }
+
+  .navbar__link {
+    font-size: clamp(1rem, 1.8vw, 1.2rem);
+    padding: 0.5rem 0;
+    display: block;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .dropdown-menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: none;
+    box-shadow: none;
+    background-color: transparent;
+    padding: 0;
+    min-width: auto;
+  }
+
+  .navbar__li.dropdown .dropdown-menu {
+    background-color: transparent;
+    margin-left: 0; 
+  }
+
+  .dropdown-link {
+    padding-left: 0;
+    font-size: clamp(0.9rem, 1.5vw, 1.05rem);
+    text-align: center;
+  }
+
+  .navBtns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0A2239;
+    padding: 1rem 2rem;
+    z-index: 1002;
+    position: relative;
+  }
+
+  .navmobilediv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navmobile {
+    display: flex;
+    align-items: center;
+  }
+
+  .navmobileProvince {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.85rem;
+    margin-top: 0.2rem;
+    margin-left: 10rem;
+    font-style: italic;
+  }
+
+  .navOpen,
+  .navClose {
+    display: block;
+    font-size: 1.8rem;
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .navClose {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    z-index: 1003;
+  }
+
+  .navbar__title {
+    font-size: 1.3rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .navbar__img {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.5rem;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar.open {
+    display: flex;
+  }
+
+
+  .navBtns {
+    display: flex;
+  }
+
+  .navbar__li.dropdown:hover .dropdown-menu {
+    display: none;
+  }
+
+  .navbar__li.dropdown .dropdown-menu {
+    display: none;
+  }
+
+  .navbar__li.dropdown.active .dropdown-menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar__link{
+    font-size: 0.85rem !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .navmobileProvince {
+    margin-left: 5rem !important;
+  }
 }
 
 
@@ -226,17 +455,6 @@ html {
   left: 0;
 }
 
-.navmobile {
-  display: flex;
-  align-items: center;
-}
-
-.navmobileProvince {
-  text-align: center;
-  margin-left: 4rem;
-  color: #c9ab81;
-  font-family: "Open Sans", sans-serif;  
-}
 
 .img-cover {
   width: 100%;
@@ -3463,18 +3681,6 @@ html {
       font-size: 0.75rem;
   }
 
-  .dropdown-menu {
-      min-width: 160px;
-  }
-
-  .dropdown-menu li {
-      padding: 0.6rem; 
-  }
-
-  .dropdown-menu li a {
-      font-size: 0.9rem; 
-  }
-
   .click-image {
     width: 4rem;
   }
@@ -3550,55 +3756,6 @@ html {
 
   .navbar__link {
       font-size: 0.9rem; 
-  }
-
-  .dropdown-menu {
-      position: static; 
-      display: none; 
-      width: 100%; 
-      text-align: center;
-      background: #1b1b1b;
-  }
-
-  .dropdown:hover .dropdown-menu {
-      display: block; 
-  }
-
-  .dropdown-menu li {
-      padding: 0.5rem;
-  }
-
-  .dropdown-menu li a {
-      font-size: 0.9rem;
-  }
-
-  .dropdown {
-    display: block; 
-    text-align: center;
-  }
-
-  .dropdown-menu {
-    position: static; 
-    transform: none;
-    width: 100%; 
-    margin-top: 0.5rem;
-    border: none; 
-  }
-
-  .dropdown-menu li {
-    padding: 0.6rem;
-  }
-
-  .dropdown-menu li a {
-    font-size: 1.1rem; 
-    padding: 0.5rem 1rem;
-  }
-
-  .dropdown.active .dropdown-menu {
-    display: block;
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out;
-    margin-top: 0.8rem;
   }
   
 }
@@ -3833,7 +3990,7 @@ html {
   }
 
   .home__title--diwa {
-    color: #c9ab81;
+    color: #fff;
     font-family: museumLightItalic;
     font-size: 1.2rem;
     font-weight: lighter;
@@ -3848,7 +4005,7 @@ html {
   }
 
   .home__opens {
-    color: #c9ab81;
+    color: #fff;
     font-family: museumLightItalic;
     font-size: 1.2rem;
     font-weight: lighter;
@@ -3958,18 +4115,6 @@ html {
 
   .navbar.open {
     display: flex;
-  }
-
-  .navFooter {
-    display: block;
-    margin-top: 1.5rem;
-  }
-
-  .navFooter__link {
-    color: white;
-    font-size: 2rem;
-    text-decoration: none;
-    margin: 0rem 1rem;
   }
 
   .navbar__title {
@@ -4171,18 +4316,6 @@ html {
     display: flex;
   }
 
-  .navFooter {
-    display: block;
-    margin-top: 1.5rem;
-  }
-
-  .navFooter__link {
-    color: white;
-    font-size: 1.5rem;
-    text-decoration: none;
-    margin: 0rem 1rem;
-  }
-
   .dayDiorama {
     display: block;
   }
@@ -4292,19 +4425,6 @@ html {
     padding-top: 6rem;
   }
 
-  .dropdown-menu {
-    width: auto;
-    text-align: center;
-  }
-
-  .dropdown-menu li {
-    padding: 0.2rem;
-  }
-
-  .dropdown-menu li a {
-    font-size: 0.75rem;
-  }
-
 }
 
 @media screen and (max-width: 650px) {
@@ -4354,11 +4474,6 @@ html {
     margin-top: 0.8rem;
     font-size: 1rem;
     margin-bottom: 1.5rem;
-  }
-
-  .navFooter {
-    display: block;
-    margin-top: 2rem;
   }
 
   .navbar__li {
@@ -4765,14 +4880,14 @@ html {
   }
 
   .slideTitle {
-    color: #c9ab81;
+    color: #fff;
     font-family: museumLight;
     font-size: 2rem;
     text-align: center;
   }
 
   .slideYear {
-    color: #c9ab81;
+    color: #fff;
     font-family: museumLightItalic;
     font-size: 1.5rem;
     text-align: center;
