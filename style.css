@@ -1242,7 +1242,71 @@ html {
   margin-top: 0;
 }
 
+/*Museo KanLahi*/
+  .museo-kanlahi {
+      text-align: center;
+      padding: 40px 20px;
+      font-family: "Open Sans", sans-serif;
+      margin-bottom: 1.5rem;
+    }
 
+    .museo-kanlahi h1 {
+      font-size: 2.5em;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+    }
+
+    .museo-kanlahi h1:hover {
+      color: rgb(30, 104, 153);
+    }
+
+    .museo-kanlahi .styled-hr {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin: 0.1rem 0 1.5rem 0;
+    justify-content: center; 
+    }
+
+    .museo-kanlahi .styled-hr::before,
+    .museo-kanlahi .styled-hr::after {
+      content: "";
+      display: block;
+      height: 2.5px;
+      background-color: rgb(18, 122, 190);
+    }
+
+    .museo-kanlahi .styled-hr::before {
+      width: 50px;
+    }
+
+    .museo-kanlahi .styled-hr::after {
+      width: 15px;
+    }
+
+    .museo-kanlahi-description {
+      max-width: 75rem;
+      margin: 0 auto 40px;
+      font-size: 1em;
+      line-height: 1.6;
+    }
+
+    .museo-kanlahi-img-container {
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      flex-wrap: wrap;
+    }
+
+    .museo-kanlahi-img {
+      width: 25rem;
+      height: 20rem;
+      object-fit: cover;
+      border-radius: 4px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 2em;
+    }
 
 
 /* Provincial Tourism Offices */
@@ -3131,6 +3195,53 @@ html {
   color: rgb(0, 94, 138);
 }
 
+.kanlahi-museo {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.kanlahi-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.kanlahi-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.kanlahi-text h2 {
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.kanlahi-text p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.kanlahi-image {
+  flex: 1;
+  min-width: 280px;
+}
+
+.kanlahi-image img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+
 /*Animation*/
 
 @keyframes appear{
@@ -3232,7 +3343,7 @@ html {
 /* Bottom entry */
 
 .bottom-img-eco, .archangel, .assisi, .Antoninus, .Qwerty, .atv, .antonius, .Faustina, .therese,  .Archangel, .nonnatus, .column-img, 
-.column-eco, .img-tour-1{
+.column-eco, .img-tour-1, .museo-kanlahi-img{
   opacity: 0;
   transform: translateY(100%);
   transition: transform 1.5s ease-out, opacity 1.5s ease-out;
@@ -3240,7 +3351,7 @@ html {
 
 .bottom-img-eco.animate, .Archangel.animate, .nonnatus.animate, .archangel.animate, .assisi.animate, 
 .Antoninus.animate, .Qwerty.animate, .atv.animate, .antonius.animate, .Faustina.animate, .therese.animate, .column-img.animate, 
-.column-eco.animate,.img-tour-1.animate
+.column-eco.animate,.img-tour-1.animate, .museo-kanlahi-img.animate
 {
   transform: translateY(0);
   opacity: 1;
@@ -4934,7 +5045,7 @@ html {
 
   .homeIconClose {
     position: absolute;
-    top: -0.25vh;
+    top: 3vh;
     right: -12vw;
     z-index: 1100;
     padding: 0.5rem;
