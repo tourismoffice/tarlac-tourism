@@ -4876,49 +4876,40 @@ html {
 
 @media screen and (min-width: 1024px) and (max-width: 2560px){
   
-.home__video {
-  width: 68%;
-  height: 80vh;
-  z-index: 1000;
-  visibility: hidden;  /* Hidden by default */
-  opacity: 0;  /* Fully transparent initially */
-  transition: opacity 0.5s ease, visibility 0s ease 0.5s;  /* Smooth transition */
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.9); /* Dark background */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  margin: 0 auto; /* Center it */
-}
+  .home__video {
+    position: fixed;
+    top: -65vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 68%;
+    height: 80vh;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .homeVideoWrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .home__diorama {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
 
-.home__video.show {
-  visibility: visible;  /* Show the video */
-  opacity: 1;  /* Fully opaque */
-  transition: opacity 0.5s ease;
-}
-
-.homeVideoWrapper {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.home__diorama {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-.homeIconClose {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  z-index: 1100;
-  padding: 0.5rem;
-  border-radius: 50%;
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
-}
+  .homeIconClose {
+    position: absolute;
+    top: 3vh;
+    right: -9vw;
+    z-index: 1100;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: white;
+  }
 
 .homeIconClose i {
   font-size: 1rem;
