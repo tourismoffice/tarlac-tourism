@@ -972,8 +972,13 @@ html {
   margin-left: 0.6rem;
 }
 
+.footer__date .footer__size:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 .footer__size:hover {
-  color: gray;
+  color: #e6dc00;
 }
 
 .footer__link {
