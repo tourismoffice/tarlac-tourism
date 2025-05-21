@@ -2,7 +2,7 @@
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  const images = document.querySelectorAll('.column-img, .bottom-img-eco, .img-1-eco, .img-2, .card, .img-1, .assisi, .Antoninus, .Archangel, .nonnatus, .anao-church, .web-cover-text, .Qwerty, .atv, .img-1-faith, .img-2-faith, .antonius, .archangel, .peace, .cathedral, .Faustina, .therese, .mapTarlacVisuals, .column-eco, .img-1-eco-1, .img-2-eco-1, .img-tour-1, .fes .media-wrapper > .image, .fes-1 .media-wrapper > .image, .fes .media-wrapper > video, .fes-1 .media-wrapper > video, .pto-img, .pto-img-2, .la-maja, .museo-kanlahi-img');
+  const images = document.querySelectorAll('.column-img, .bottom-img-eco, .img-1-eco, .img-2, .card, .img-1, .assisi, .Antoninus, .img-2-eco-2, .Archangel, .nonnatus, .anao-church, .web-cover-text, .Qwerty, .atv, .img-1-faith, .img-2-faith, .antonius, .archangel, .peace, .cathedral, .Faustina, .therese, .mapTarlacVisuals, .column-eco, .img-1-eco-1, .img-2-eco-1, .img-tour-1, .fes .media-wrapper > .image, .fes-1 .media-wrapper > .image, .fes .media-wrapper > video, .fes-1 .media-wrapper > video, .pto-img, .pto-img-2, .la-maja, .museo-kanlahi-img');
 
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {

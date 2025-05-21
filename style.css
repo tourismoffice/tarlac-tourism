@@ -2305,10 +2305,18 @@ html {
   height: 15rem;
   max-width: 24rem;
 }
+
 /*sitio tala 2*/
 .images-right img.img-2-eco-1 {
   width: 17.5rem;
   height: 15rem;
+  max-width: 24rem;
+}
+
+/*JVY*/
+.images-right img.img-2-eco-2 {
+  width: 17rem;
+  height: 22.5rem;
   max-width: 24rem;
 }
 
@@ -3545,7 +3553,7 @@ html {
 
 /* Left entry */
 
-.images-right > .img-2, .images-right-02 > .img-2, .anao-church, .la-maja,.images-right > .img-2-faith, .img-2-eco-1, .fes-1 .media-wrapper > .image,
+.images-right > .img-2, .images-right-02 > .img-2, .anao-church, .la-maja,.images-right > .img-2-faith, .img-2-eco-1, .img-2-eco-2, .fes-1 .media-wrapper > .image,
 .fes .media-wrapper > video, .pto-img-2{
   opacity: 0;
   transform: translateX(100%);
@@ -3553,7 +3561,7 @@ html {
 }
 
 .images-right > .img-2.animate, .images-right-02 > .img-2.animate, .anao-church.animate, .la-maja.animate, .images-right > .img-2-faith.animate, 
-.img-2-eco-1.animate, .fes-1 .media-wrapper > .image.animate, .fes .media-wrapper > video.animate, .pto-img-2.animate{
+.img-2-eco-1.animate, .fes-1 .media-wrapper > .image.animate, .fes .media-wrapper > video.animate, .pto-img-2.animate, .img-2-eco-2.animate{
   transform: translateX(0);
   opacity: 1;
 }
