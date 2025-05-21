@@ -1506,8 +1506,9 @@ html {
     .museo-kanlahi-description {
       max-width: 75rem;
       margin: 0 auto 40px;
-      font-size: 1em;
+      font-size: 1.19rem;
       line-height: 1.6;
+      font-style: normal;
     }
 
     .museo-kanlahi-img-container {
