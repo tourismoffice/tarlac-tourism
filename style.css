@@ -1161,11 +1161,6 @@ html {
   margin: 0rem 1rem;
 }
 
-.slideIcon:hover {
-  color: #c9ab81;
-  border: 2px solid #c9ab81;
-}
-
 .diormaImages {
   width: 50%;
   filter: brightness(1.5);
@@ -3760,6 +3755,42 @@ html {
   
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .pto-about-us {
+  max-height: 120rem;
+  height: 30rem;
+  padding-top: 10rem;
+}
+
+.pto-about-us .about{
+  font-size: 1rem;
+}
+
+.pto-about-us h2{
+  font-size: 4rem;
+  line-height: 3.75rem;
+}
+}
+
+@media (width: 768px) {
+  .food-right-content{
+    max-width: 60rem !important;
+  }
+
+  .food-right-content .text-right-content > p{
+    width: 120rem !important;
+  }
+
+  .food-right-content-02{
+    max-width: 40rem !important;
+  }
+
+  .food-right-content-02 .text-right-content-02 > p{
+    width: 32rem !important;
+  }
+
+}
+
 
 @media screen and (max-width: 950px) {
   .image-navigation {
@@ -6293,6 +6324,32 @@ html {
 
 .homeIconClose i {
   font-size: 0.7rem;
+}
+
+.pto-about-us {
+  max-height: 65rem;
+  padding-top: 10rem;
+}
+
+.pto-about-us .about{
+  font-size: 0.95rem;
+}
+
+.pto-about-us h2{
+  font-size: 2rem;
+  line-height: 1.75rem;
+}
+
+.museo-kanlahi-img{
+  width: 23rem !important;
+}
+
+.hero-content > h1{
+  font-size: 2.5rem;
+}
+
+.hero-content > p{
+  font-size: 1.1rem;
 }
   
 }
