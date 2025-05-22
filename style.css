@@ -5738,6 +5738,14 @@ html {
 
 }
 
+@media (min-width: 768px) {
+  .tarlac-falls-content {
+    margin-left: 5rem !important;
+    max-width: 45rem !important;
+  }
+}
+
+
 @media screen and (max-width: 768px) {
   .assisi {
     margin-top: 3rem;
