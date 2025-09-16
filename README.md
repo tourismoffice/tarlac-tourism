@@ -9,6 +9,7 @@ Created by the Computer Science students and updated by the BSIT & BSIS students
 
 
 ## Authors
+-[Saborboro, Kit Himmel C. - Head-Developer]()
 
 - [Esteban, Gerald C. - Developer]()
 
