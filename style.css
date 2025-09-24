@@ -2201,6 +2201,14 @@ html {
 }
 
 /* Food Webpage */
+.myVideo3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
 
 .food-right-content-02 {
   display: flex;
@@ -2297,8 +2305,27 @@ html {
   height: 16rem;
   margin: 0 0 2rem 0; 
 }
+.myVideo2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
 
 /* Adventure webpages */
+
+.myVideo4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
 
 /*sitio tala 1*/
 .images-right img.img-1-eco-1 {
@@ -2425,6 +2452,16 @@ html {
 }
 
 /* Adventure Webpage */
+
+.myVideo5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
 
 .adventure-right-content {
   display: flex;
@@ -2725,6 +2762,15 @@ html {
 }
 
 /*Festivals webpages*/
+
+.myVideo1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
 
 .fes {
   font-family: "Open Sans", sans-serif;  
