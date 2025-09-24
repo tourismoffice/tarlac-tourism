@@ -624,6 +624,7 @@ html {
   top: 20%;
   transform: translateY(-20%);
   padding: 0px 0px;
+  object-fit: cover;
 }
 
 .home__video {
