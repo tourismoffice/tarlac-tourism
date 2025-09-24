@@ -2780,7 +2780,8 @@ html {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  position: relative;
+  justify-content: center;
+  flex-direction: column;
   
 }
 
