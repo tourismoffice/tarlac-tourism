@@ -11,17 +11,17 @@ Created by the Computer Science students and updated by the BSIT & BSIS students
 ## Authors
 - [Saborboro, Kit Himmel C. - Head-Developer]()
 
-- [Esteban, Gerald C. - Developer]()
+- [Esteban, Gerald C.]()
 
 - [Palasigue, Calvin Ken N. - Data Analyst / Tester]()
 
 - [Vinasoy, Vincent F - Designer]()
 
-- [Terrible, Neil John M. - Developer / Designer]()
+- [Terrible, Neil John M.]()
 
-- [Patawaran, Audrey Joyce D. - Developer / Tester]()
+- [Patawaran, Audrey Joyce D.]()
   
-- [Quiballo, Miguel Angelo P. - Developer / Tester]()
+- [Quiballo, Miguel Angelo P.]()
 
 - [Arcega, John David C.  - Researcher / Tester]()
 
