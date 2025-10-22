@@ -8,7 +8,8 @@
 }
 
 /* Prevent horizontal scrollbar caused by animations */
-body, html {
+body,
+html {
   overflow-x: hidden;
 }
 
@@ -83,7 +84,7 @@ html {
 /* NAVIGATION BAR STYLE */
 
 .navbar {
-  background-color:#0A2239;
+  background-color: #0A2239;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -110,7 +111,7 @@ html {
   color: #ffff;
   text-align: center;
   font-size: 1rem;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
   margin-left: 3.5rem;
   font-style: italic;
 }
@@ -127,14 +128,14 @@ html {
 
 .navbar__title {
   color: white;
-  font-family: "Montserrat", sans-serif;  
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 0.2rem;
   text-decoration: none;
   border: 1px solid white;
-  padding: 0.6rem 1rem; 
-  display: inline-block; 
+  padding: 0.6rem 1rem;
+  display: inline-block;
   text-align: center;
 }
 
@@ -149,7 +150,7 @@ html {
 
 .navbar__link {
   color: white;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.1rem;
   text-decoration: none;
@@ -223,7 +224,7 @@ html {
 }
 
 .dropdown-menu .dropdown-link {
-  display: block; 
+  display: block;
   padding: 0.75rem 1rem;
   color: white;
   text-decoration: none;
@@ -239,7 +240,7 @@ html {
   .dropdown-menu {
     display: none;
     position: absolute;
-    top: 100%; 
+    top: 100%;
     left: 0;
     background-color: #0A2239;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
@@ -269,8 +270,8 @@ html {
   }
 
   .dropdown-link:hover {
-    color: #e6dc00; 
-    background-color: transparent; 
+    color: #e6dc00;
+    background-color: transparent;
   }
 
   .dropdown-toggle {
@@ -279,8 +280,8 @@ html {
   }
 
   .navbar__li.dropdown:hover .dropdown-menu {
-  display: block;
-}
+    display: block;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -311,7 +312,7 @@ html {
   .navbar__ul {
     flex-direction: column;
     width: 100%;
-    text-align: center; 
+    text-align: center;
   }
 
   .navbar__li {
@@ -339,7 +340,7 @@ html {
 
   .navbar__li.dropdown .dropdown-menu {
     background-color: transparent;
-    margin-left: 0; 
+    margin-left: 0;
   }
 
   .dropdown-link {
@@ -433,7 +434,7 @@ html {
 }
 
 @media screen and (max-width: 1024px) {
-  .navbar__link{
+  .navbar__link {
     font-size: 0.85rem !important;
   }
 }
@@ -465,9 +466,9 @@ html {
 }
 
 .web-coverImg {
-  position: relative; 
-  display: flex; 
-  width: 100%; 
+  position: relative;
+  display: flex;
+  width: 100%;
   max-width: 100vw;
   height: 100%;
   max-height: 85vh;
@@ -484,13 +485,13 @@ html {
 }
 
 .web-cover-text {
-  position: absolute; 
+  position: absolute;
   top: 50%;
   left: 7.5rem;
-  transform: translateY(-50%); 
+  transform: translateY(-50%);
   color: #ffff;
   text-align: left;
-  font-family: "Open Sans", sans-serif;   
+  font-family: "Open Sans", sans-serif;
   text-shadow: 2px 2px 5px black, -2px -2px 5px gray;
   z-index: 2;
   color: #ffffff;
@@ -515,10 +516,10 @@ html {
   text-transform: capitalize;
 }
 
-.web-cover-text > .web__title{
+.web-cover-text>.web__title {
   font-size: 4.8rem;
   letter-spacing: 0.10rem;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
 
@@ -563,7 +564,7 @@ html {
   margin: auto;
 }
 
-.home__title--ng{
+.home__title--ng {
   letter-spacing: 1rem;
   margin-top: 0.8rem;
   margin: auto;
@@ -888,7 +889,7 @@ html {
   background-size: cover;
   background-position: center;
   position: relative;
-  
+
 }
 
 .arrow {
@@ -920,7 +921,7 @@ html {
 /* FOOTER STYLE */
 .footer {
   color: white;
-  font-family: "Open Sans", sans-serif;   
+  font-family: "Open Sans", sans-serif;
   background-color: #0A2239;
   padding: 2rem 10rem;
 }
@@ -946,14 +947,14 @@ html {
 
 .footer__title {
   color: white;
-  font-family: "Montserrat", sans-serif;  
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 0.2rem;
   text-decoration: none;
   border: 1px solid white;
-  padding: 0.3rem 0.6rem; 
-  display: inline-block; 
+  padding: 0.3rem 0.6rem;
+  display: inline-block;
   text-align: center;
 }
 
@@ -1020,13 +1021,13 @@ html {
 
 /* Map of Tarlac Style */
 .mapTarlacDiv {
-  background: 
+  background:
     linear-gradient(rgba(10, 34, 57, 0.85), rgba(10, 34, 57, 0.85)),
     url("TarlacTourism/TARLAC CITY_TARLAC CAPITOL (2).jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  color: white; 
+  color: white;
 }
 
 
@@ -1044,7 +1045,7 @@ html {
 
 .mapTarlacTitle {
   color: white;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
   font-size: 3rem;
 }
 
@@ -1056,7 +1057,7 @@ html {
 
 .mapTarlacCountry {
   font-size: 1.75rem;
-  font-family: "Open Sans", sans-serif;   
+  font-family: "Open Sans", sans-serif;
   border: 1px solid #fff;
   padding: 1rem;
   margin: 0rem 1.6rem;
@@ -1094,7 +1095,7 @@ html {
   padding: 0;
 }
 
-.aeta-tarlacMap{
+.aeta-tarlacMap {
   padding-left: 2rem !important;
 }
 
@@ -1104,7 +1105,7 @@ html {
 }
 
 .dioramaDiv {
-  background: 
+  background:
     linear-gradient(rgba(0, 0, 0, 0.9), rgba(12, 20, 36, 0.9)),
     url("YourDayAtDioramaImages/diorama.jpg");
   background-position: center;
@@ -1117,7 +1118,7 @@ html {
 .dioramaHeaderTitle {
   color: #fff;
   font-size: 3rem;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   padding: 3rem;
 }
@@ -1134,14 +1135,14 @@ html {
 
 .slideTitle {
   color: #fff;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
   font-size: 3rem;
   text-align: center;
 }
 
 .slideYear {
   color: #fff;
-  font-family: "Open Sans", sans-serif;   
+  font-family: "Open Sans", sans-serif;
   font-size: 1.2rem;
   text-align: center;
   margin-bottom: 1rem;
@@ -1149,7 +1150,7 @@ html {
 
 .slideDescription {
   color: white;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
   text-indent: 2rem;
 }
@@ -1189,39 +1190,39 @@ html {
 
 /* product catalogue */
 
-.products-container{
+.products-container {
   min-width: 100%;
   color: #000;
   display: flex;
 }
 
-.exploreTarlac{
-  font-family: "Open Sans", sans-serif;   
+.exploreTarlac {
+  font-family: "Open Sans", sans-serif;
   margin-top: 0.7rem;
 }
 
-.exploreTarlac__location{
-  font-family: "Open Sans", sans-serif;  
+.exploreTarlac__location {
+  font-family: "Open Sans", sans-serif;
 }
 
-.product-header{
+.product-header {
   width: 85%;
   padding: 100px 10%;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
 }
 
-.product-header h1{
+.product-header h1 {
   margin-bottom: 20px;
 }
 
-.product-header p{
+.product-header p {
   margin-bottom: 40px;
   font-size: 1.10rem;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
   text-align: justify;
 }
 
-.browse-products{
+.browse-products {
   background: rgb(20, 20, 39);
   color: #fff;
   font-size: 16px;
@@ -1235,31 +1236,31 @@ html {
 
 /* cards layout */
 
-.highlight-wrapper{
+.highlight-wrapper {
   width: 100vw 100%;
   display: flex;
   padding: 1%;
   border-radius: 8px;
-  gap: 1rem; 
+  gap: 1rem;
   overflow: hidden;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   height: 100%;
   justify-content: space-between;
   align-content: space-around;
   margin: 5em;
 }
 
-.highlight-card{
-  flex: 0 0 calc(45% - 0.1rem); 
+.highlight-card {
+  flex: 0 0 calc(45% - 0.1rem);
   height: 40%;
-  gap: 1rem; 
+  gap: 1rem;
   border-radius: 8px;
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
   margin: 0.5em;
 }
 
-.highlight-img{
+.highlight-img {
   width: 120px;
   height: 120px;
   border-radius: 5px;
@@ -1268,7 +1269,7 @@ html {
 }
 
 .highlight-text {
-  flex: 1; 
+  flex: 1;
 }
 
 /*About Us */
@@ -1294,36 +1295,36 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.45); 
+  background-color: rgba(0, 0, 0, 0.45);
   z-index: 1;
 }
 
-.pto-about-us > h3.about {
+.pto-about-us>h3.about {
   position: relative;
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   color: #fff;
-  z-index: 2; 
+  z-index: 2;
 }
 
-.pto-about-us > h2{
+.pto-about-us>h2 {
   position: relative;
   font-size: 4rem;
   font-weight: bold;
   line-height: 4.5rem;
-  font-family: "Open Sans", sans-serif;   
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   color: white;
   font-weight: 500;
-  z-index: 2; 
+  z-index: 2;
 }
 
-.pto-section > h2{
+.pto-section>h2 {
   text-align: center;
-  font-family: "Open Sans", sans-serif;   
+  font-family: "Open Sans", sans-serif;
   margin-top: 3rem;
   margin-bottom: 0;
 }
@@ -1339,7 +1340,7 @@ html {
 
 .pto-section {
   padding: 60px 20px;
-  background-color: #fff; 
+  background-color: #fff;
 }
 
 .pto-row {
@@ -1373,7 +1374,7 @@ html {
 .pto-text {
   max-width: 50rem;
   padding: 10px 20px;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
 }
 
 .pto-text h2 {
@@ -1390,7 +1391,7 @@ html {
   padding: 60px 20px;
   background-color: #ffffff;
   text-align: center;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
 }
 
 .vision-mission-container {
@@ -1411,7 +1412,7 @@ html {
   font-weight: bold;
 }
 
-.vision-mission-title > span:hover{
+.vision-mission-title>span:hover {
   color: #3e73c6;
 }
 
@@ -1448,7 +1449,7 @@ html {
   text-align: left;
 }
 
-.pto-bullet-objectives > p {
+.pto-bullet-objectives>p {
   text-align: left;
   font-size: 24px;
   font-size: 0.98rem;
@@ -1463,80 +1464,80 @@ html {
 }
 
 /*Museo KanLahi*/
-  .museo-kanlahi {
-      text-align: center;
-      padding: 40px 20px;
-      font-family: "Open Sans", sans-serif;
-      margin-bottom: 1.5rem;
-    }
+.museo-kanlahi {
+  text-align: center;
+  padding: 40px 20px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 1.5rem;
+}
 
-    .museo-kanlahi h1 {
-      font-size: 2.5em;
-      font-weight: bold;
-      margin-bottom: 0.5rem;
-      text-transform: uppercase;
-    }
+.museo-kanlahi h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
 
-    .museo-kanlahi h1:hover {
-      color: rgb(30, 104, 153);
-    }
+.museo-kanlahi h1:hover {
+  color: rgb(30, 104, 153);
+}
 
-    .museo-kanlahi .styled-hr {
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    margin: 0.1rem 0 1.5rem 0;
-    justify-content: center; 
-    }
+.museo-kanlahi .styled-hr {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0.1rem 0 1.5rem 0;
+  justify-content: center;
+}
 
-    .museo-kanlahi .styled-hr::before,
-    .museo-kanlahi .styled-hr::after {
-      content: "";
-      display: block;
-      height: 2.5px;
-      background-color: rgb(18, 122, 190);
-    }
+.museo-kanlahi .styled-hr::before,
+.museo-kanlahi .styled-hr::after {
+  content: "";
+  display: block;
+  height: 2.5px;
+  background-color: rgb(18, 122, 190);
+}
 
-    .museo-kanlahi .styled-hr::before {
-      width: 50px;
-    }
+.museo-kanlahi .styled-hr::before {
+  width: 50px;
+}
 
-    .museo-kanlahi .styled-hr::after {
-      width: 15px;
-    }
+.museo-kanlahi .styled-hr::after {
+  width: 15px;
+}
 
-    .museo-kanlahi-description {
-      max-width: 75rem;
-      margin: 0 auto 40px;
-      font-size: 1.19rem;
-      line-height: 1.6;
-      font-style: normal;
-    }
+.museo-kanlahi-description {
+  max-width: 75rem;
+  margin: 0 auto 40px;
+  font-size: 1.19rem;
+  line-height: 1.6;
+  font-style: normal;
+}
 
-    .museo-kanlahi-img-container {
-      display: flex;
-      justify-content: center;
-      gap: 1em;
-      flex-wrap: wrap;
-    }
+.museo-kanlahi-img-container {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
 
-    .museo-kanlahi-img {
-      width: 25rem;
-      height: 20rem;
-      object-fit: cover;
-      border-radius: 4px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      margin-top: 2em;
-    }
+.museo-kanlahi-img {
+  width: 25rem;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 2em;
+}
 
 
 /* Provincial Tourism Offices */
 
-.provincial-tourism >  h2.title {
+.provincial-tourism>h2.title {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  font-family: "Open Sans", sans-serif;   
+  font-family: "Open Sans", sans-serif;
   text-align: center;
 }
 
@@ -1547,7 +1548,7 @@ html {
   max-width: 75rem;
   margin: auto;
   padding: 2rem;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
 }
 
 .card {
@@ -1555,20 +1556,20 @@ html {
   border-radius: 10px;
   padding: 1.35rem;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center; 
-  display: flex;  
-  flex-direction: column;  
-  align-items: center;  
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .logo {
-  width: 15rem; 
+  width: 15rem;
   height: auto;
   margin-bottom: 0.95rem;
 }
 
 
-.provincial-tourism > h3 {
+.provincial-tourism>h3 {
   color: white;
   font-size: 1.25rem;
   margin-bottom: 0.98rem;
@@ -1591,37 +1592,37 @@ html {
   }
 
   .tarlac-tourism-dept .full-row {
-    grid-column: 1 / -1;        
-    width: 100%;                
-    max-width: 23rem;           
-    margin-left: auto;          
-    margin-right: auto;         
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: 23rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 /* Explore Tarlac */
 .products-container .styled-hr {
   display: flex;
-  gap: 7px; 
+  gap: 7px;
   margin: 0.6rem 0 1.5rem 0;
 }
 
 
-.products-container .styled-hr::before, .products-container
-.styled-hr::after {
+.products-container .styled-hr::before,
+.products-container .styled-hr::after {
   content: "";
   display: block;
-  width: 50px; 
-  height: 2.5px;   
+  width: 50px;
+  height: 2.5px;
   margin-left: 0.3rem;
   background-color: rgb(18, 122, 190);
 }
 
 .products-container .styled-hr::after {
-  width: 15px; 
+  width: 15px;
 }
 
-.product-header:hover > h1 {
+.product-header:hover>h1 {
   color: rgb(30, 104, 153);
 }
 
@@ -1631,12 +1632,12 @@ html {
 
 .img-tourism-logos {
   display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-  gap: 2rem; 
-  padding: 1.5rem 4rem; 
-  margin: 2.1rem auto; 
-  max-width: 50rem; 
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem 4rem;
+  margin: 2.1rem auto;
+  max-width: 50rem;
 }
 
 .img-tourism-logos img {
@@ -1652,10 +1653,10 @@ html {
   align-items: center;
   padding: 4.5rem;
   background-color: hsl(0, 0%, 92%);
-  
-  background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), 
-                    url('TarlacTourism/diwa6.png');
-  
+
+  background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+    url('TarlacTourism/diwa6.png');
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1667,7 +1668,7 @@ html {
   align-items: center;
   gap: 7px;
   margin: 0.1rem 0 1.5rem 0;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .provincial-tourism .styled-hr::before,
@@ -1686,11 +1687,11 @@ html {
   width: 15px;
 }
 
-.provincial-tourism:hover > h2 {
+.provincial-tourism:hover>h2 {
   color: rgb(30, 104, 153);
 }
 
-.provincial-tourism .card p.name{
+.provincial-tourism .card p.name {
   font-size: 1.03rem;
 }
 
@@ -1701,7 +1702,7 @@ html {
   font-size: 0.98rem;
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem; 
+  gap: 0.5rem;
   margin-top: 0.75rem;
   flex-wrap: nowrap;
 }
@@ -1716,24 +1717,24 @@ html {
 }
 
 .social-link span {
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 .social-link-2 {
   display: block;
-  margin-left: 1.7rem; 
+  margin-left: 1.7rem;
   color: rgb(30, 104, 153);
   font-size: 0.98rem;
   text-decoration: none;
 }
 
-.contact-1{
+.contact-1 {
   font-size: 0.98rem;
 }
 
-.contact-2{
+.contact-2 {
   display: block;
-  margin-left: 1.7rem; 
+  margin-left: 1.7rem;
   font-size: 0.98rem;
 }
 
@@ -1752,22 +1753,22 @@ html {
 
 .food-right-content .styled-hr {
   display: flex;
-  gap: 7px; 
+  gap: 7px;
   margin: 0.6rem 0 1.5rem 0;
 }
 
-.food-right-content .styled-hr::before, .food-right-content
-.styled-hr::after {
+.food-right-content .styled-hr::before,
+.food-right-content .styled-hr::after {
   content: "";
   display: block;
-  width: 32px; 
-  height: 2.5px;   
+  width: 32px;
+  height: 2.5px;
   margin-left: 0.3rem;
   background-color: rgb(18, 122, 190);
 }
 
 .food-right-content .styled-hr::after {
-  width: 15px; 
+  width: 15px;
 }
 
 .text-right-content {
@@ -1776,11 +1777,11 @@ html {
 }
 
 
-.text-right-content h2{
+.text-right-content h2 {
   font-size: 2rem;
 }
 
-.text-right-content:hover > h2 {
+.text-right-content:hover>h2 {
   color: rgb(0, 94, 138);
 }
 
@@ -1794,7 +1795,7 @@ html {
   height: auto;
 }
 
-.food-right-content p{
+.food-right-content p {
   font-size: 1.15rem;
   margin-right: 2rem;
   font-weight: 300;
@@ -1802,16 +1803,16 @@ html {
 }
 
 /*PTO*/
-.pto-container{
+.pto-container {
   min-width: 100%;
   flex-wrap: wrap;
   background-color: #0A2239;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
   color: #fff;
   display: flex;
 }
 
-.pto-about{
+.pto-about {
   width: 50%;
   padding: 200px 8%;
 }
@@ -1822,17 +1823,17 @@ html {
   background-size: cover;
 }
 
-.pto-about h1{
+.pto-about h1 {
   margin-bottom: 20px;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
   font-size: 2.5rem;
 }
 
-.pto-about p{
+.pto-about p {
   font-size: 1.1rem;
   margin-bottom: 2rem;
   line-height: 1.3;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
 }
 
 .view-btn {
@@ -1842,12 +1843,12 @@ html {
   padding: 14px 28px;
   font-weight: 600;
   font-size: 1rem;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
   border-radius: 8px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  text-decoration: none; 
-  display: inline-block; 
+  text-decoration: none;
+  display: inline-block;
   transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -1869,7 +1870,7 @@ html {
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.8); 
+  background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
   height: 100%;
   display: flex;
@@ -1888,14 +1889,14 @@ html {
 .hero-content h1 {
   font-size: 3rem;
   margin-bottom: 1.5rem;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
 }
 
 .hero-content p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   line-height: 1.6;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
 }
 
 .btn {
@@ -1907,7 +1908,7 @@ html {
   border: 2px solid #fff;
   border-radius: 4px;
   transition: background-color 0.3s ease, color 0.3s ease;
-  font-family: "Open Sans", sans-serif;   
+  font-family: "Open Sans", sans-serif;
 }
 
 .btn:hover {
@@ -1924,27 +1925,27 @@ html {
   max-width: 85rem;
   margin: auto;
   margin-bottom: 5vb;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
 }
 
 .food-right-content .styled-hr {
   display: flex;
-  gap: 7px; 
+  gap: 7px;
   margin: 0.6rem 0 1.5rem 0;
 }
 
-.food-right-content .styled-hr::before, .food-right-content
-.styled-hr::after {
+.food-right-content .styled-hr::before,
+.food-right-content .styled-hr::after {
   content: "";
   display: block;
-  width: 32px; 
-  height: 2.5px;   
+  width: 32px;
+  height: 2.5px;
   margin-left: 0.3rem;
   background-color: rgb(18, 122, 190);
 }
 
 .food-right-content .styled-hr::after {
-  width: 15px; 
+  width: 15px;
 }
 
 .text-right-content {
@@ -1952,30 +1953,30 @@ html {
   padding-right: 20px;
 }
 
-.text-right-content h2{
+.text-right-content h2 {
   font-size: 2rem;
 }
 
-.text-right-content:hover > h2 {
+.text-right-content:hover>h2 {
   color: rgb(0, 94, 138);
 }
 
 .images-right {
   display: flex;
-  gap: 1.35rem; 
+  gap: 1.35rem;
 }
 
 .images-right img {
-  width: 200px; 
+  width: 200px;
   height: auto;
 }
 
 .images-right img.img-1 {
-  width: 30rem; 
+  width: 30rem;
   height: auto;
 }
 
-.food-right-content p{
+.food-right-content p {
   font-size: 1.15rem;
   margin-right: 5rem;
   font-weight: 300;
@@ -1989,27 +1990,27 @@ html {
   max-width: 78.5rem !important;
   margin: auto;
   margin-bottom: 5vb;
-  font-family: "Open Sans", sans-serif;   
+  font-family: "Open Sans", sans-serif;
 }
 
 .food-right-content .styled-hr {
   display: flex;
-  gap: 7px; 
+  gap: 7px;
   margin: 0.6rem 0 1.5rem 0;
 }
 
-.food-right-content .styled-hr::before, .food-right-content
-.styled-hr::after {
+.food-right-content .styled-hr::before,
+.food-right-content .styled-hr::after {
   content: "";
   display: block;
-  width: 32px; 
-  height: 2.5px;   
+  width: 32px;
+  height: 2.5px;
   margin-left: 0.3rem;
   background-color: rgb(18, 122, 190);
 }
 
 .food-right-content .styled-hr::after {
-  width: 15px; 
+  width: 15px;
 }
 
 .text-right-content {
@@ -2017,26 +2018,26 @@ html {
   padding-right: 20px;
 }
 
-.text-right-content h2{
+.text-right-content h2 {
   font-size: 2rem;
 }
 
-.text-right-content:hover > h2 {
+.text-right-content:hover>h2 {
   color: rgb(0, 94, 138);
 }
 
 .images-right {
   display: flex;
-  align-items: flex-start; 
+  align-items: flex-start;
   gap: 1rem;
-  flex-wrap: wrap; 
-  max-width: 100%; 
+  flex-wrap: wrap;
+  max-width: 100%;
 }
 
 .images-right img {
   max-width: 20rem;
   height: auto;
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 
 .images-right img.img-1 {
@@ -2053,10 +2054,10 @@ html {
 .images-right img.bottom-img {
   width: 35rem;
   height: 10rem;
-  margin: 0.78rem 0 4.5rem 7.5rem; 
+  margin: 0.78rem 0 4.5rem 7.5rem;
 }
 
-.food-right-content p{
+.food-right-content p {
   font-size: 1.15rem;
   margin-right: 2rem;
   font-weight: 300;
@@ -2071,28 +2072,28 @@ html {
   max-width: 85rem;
   margin: auto;
   padding: 1.5rem;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
   flex-wrap: wrap;
 }
 
 .middle-content .styled-hr {
   display: flex;
-  gap: 7px; 
+  gap: 7px;
   margin: 0.6rem 0 1.5rem 0;
 }
 
-.middle-content  .styled-hr::before, .middle-content 
-.styled-hr::after {
+.middle-content .styled-hr::before,
+.middle-content .styled-hr::after {
   content: "";
   display: block;
-  width: 8.5rem; 
-  height: 2.5px;   
+  width: 8.5rem;
+  height: 2.5px;
   margin-left: 0.3rem;
   background-color: rgb(18, 122, 190);
 }
 
 .middle-content .styled-hr::after {
-  width: 15px; 
+  width: 15px;
 }
 
 .middle-content {
@@ -2100,11 +2101,11 @@ html {
   padding-right: 20px;
 }
 
-.column h2{
+.column h2 {
   font-size: 2rem;
 }
 
-.column:hover > h2 {
+.column:hover>h2 {
   color: rgb(0, 94, 138);
 }
 
@@ -2122,7 +2123,7 @@ html {
   margin: 0 auto 10px;
 }
 
-.column img{
+.column img {
   border-radius: 10px;
   margin-bottom: 4vb;
   width: 40rem;
@@ -2134,7 +2135,8 @@ html {
   width: 35rem;
   margin-top: 6vb;
 }
-.middle-content h2{
+
+.middle-content h2 {
   font-size: 2rem;
 }
 
@@ -2147,35 +2149,35 @@ html {
   margin: auto;
   margin-top: 4vh;
   margin-bottom: 7.5vb;
-  font-family: "Open Sans", sans-serif;   
+  font-family: "Open Sans", sans-serif;
   font-size: 1.10rem;
 }
 
 .text-left-content {
   flex: 1;
-  padding-left: 20px; 
+  padding-left: 20px;
 }
 
 .text-left-content h2 {
   font-size: 2rem;
 }
 
-.text-left-content:hover > h2 {
+.text-left-content:hover>h2 {
   color: rgb(0, 94, 138);
 }
 
 .images-left {
   display: flex;
-  align-items: flex-start; 
+  align-items: flex-start;
   gap: 1rem;
-  flex-wrap: wrap; 
-  max-width: 100%; 
+  flex-wrap: wrap;
+  max-width: 100%;
 }
 
 .images-left img {
   max-width: 30rem;
   height: auto;
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 
 .images-left img.img-1 {
@@ -2185,21 +2187,22 @@ html {
 
 .food-left-content .styled-hr {
   display: flex;
-  gap: 7px; 
+  gap: 7px;
   margin: 0.6rem 0 1.5rem 0;
 }
 
-.food-left-content .styled-hr::before, .food-left-content .styled-hr::after {
+.food-left-content .styled-hr::before,
+.food-left-content .styled-hr::after {
   content: "";
   display: block;
-  width: 32px; 
-  height: 2.5px;   
+  width: 32px;
+  height: 2.5px;
   margin-left: 0.3rem;
   background-color: rgb(18, 122, 190);
 }
 
 .food-left-content .styled-hr::after {
-  width: 15px; 
+  width: 15px;
 }
 
 /* Food Webpage */
@@ -2218,28 +2221,28 @@ html {
   max-width: 78rem;
   margin: auto;
   margin-bottom: 5vb;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
 
 .food-right-content-02 .styled-hr-02 {
   display: flex;
-  gap: 7px; 
+  gap: 7px;
   margin: 0.6rem 0 1.5rem 0;
 }
 
-.food-right-content-02 .styled-hr-02::before, .food-right-content-02
-.styled-hr-02::after {
+.food-right-content-02 .styled-hr-02::before,
+.food-right-content-02 .styled-hr-02::after {
   content: "";
   display: block;
-  width: 32px; 
-  height: 2.5px;   
+  width: 32px;
+  height: 2.5px;
   margin-left: 0.3rem;
   background-color: rgb(18, 122, 190);
 }
 
 .food-right-content-02 .styled-hr-02::after {
-  width: 15px; 
+  width: 15px;
 }
 
 .text-right-content-02 {
@@ -2247,42 +2250,42 @@ html {
   padding-right: 20px;
 }
 
-.text-right-content-02 h2{
+.text-right-content-02 h2 {
   font-size: 2rem;
 }
 
-.text-right-content-02:hover > h2 {
+.text-right-content-02:hover>h2 {
   color: rgb(0, 94, 138);
 }
 
 .images-right-02 {
   display: flex;
-  gap: 1.35rem; 
+  gap: 1.35rem;
 }
 
 .images-right-02 img {
-  width: 22rem; 
+  width: 22rem;
   height: auto;
   border-radius: 0.5rem;
 }
 
 .images-right-02 img.img-1 {
-  width: 20rem; 
+  width: 20rem;
   height: auto;
   border-radius: 0.5rem;
 }
 
-.food-right-content-02 p{
+.food-right-content-02 p {
   font-size: 1.15rem;
   margin-right: 5rem;
   font-weight: 300;
 }
 
-#tel-phone{
+#tel-phone {
   margin-right: 0.42rem;
 }
 
-.camiling-resto{
+.camiling-resto {
   margin-left: 1.1rem;
 }
 
@@ -2298,15 +2301,16 @@ html {
 .images-right img.bottom-img-eco {
   width: 30rem;
   height: 15rem;
-  margin: 0.78rem 0 4.5rem 7.5rem; 
+  margin: 0.78rem 0 4.5rem 7.5rem;
 }
 
 /*canding and lubigan*/
 .column img.img-tour {
   width: 35rem;
   height: 16rem;
-  margin: 0 0 2rem 0; 
+  margin: 0 0 2rem 0;
 }
+
 .myVideo2 {
   position: absolute;
   width: 100%;
@@ -2351,10 +2355,10 @@ html {
 }
 
 /*bulsa river*/
-.column img.img-tour-1{
+.column img.img-tour-1 {
   width: 38rem;
   height: 22.3rem;
-  margin: 3rem 0 2rem 0; 
+  margin: 3rem 0 2rem 0;
 }
 
 /* Another eco-tourism (Aquino Museum) */
@@ -2364,28 +2368,28 @@ html {
   max-width: 78rem;
   margin: auto;
   margin-bottom: 5vb;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
   font-size: 1.12rem;
 }
 
 .aquino-right-content .styled-hr {
   display: flex;
-  gap: 7px; 
+  gap: 7px;
   margin: 0.6rem 0 1.5rem 0;
 }
 
-.aquino-right-content .styled-hr::before, .aquino-right-content
-.styled-hr::after {
+.aquino-right-content .styled-hr::before,
+.aquino-right-content .styled-hr::after {
   content: "";
   display: block;
-  width: 32px; 
-  height: 2.5px;   
+  width: 32px;
+  height: 2.5px;
   margin-left: 0.3rem;
   background-color: rgb(18, 122, 190);
 }
 
 .aquino-right-content .styled-hr::after {
-  width: 15px; 
+  width: 15px;
 }
 
 .adventure-right-content {
@@ -2395,31 +2399,31 @@ html {
   margin: auto;
   margin-bottom: 6vb !important;
   margin-top: 8vh !important;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
 
 .adventure-right-content .styled-hr {
   display: flex;
-  gap: 7px; 
+  gap: 7px;
   margin: 0.6rem 0 1.5rem 0;
 }
 
-.adventure-right-content .styled-hr::before, .adventure-right-content
-.styled-hr::after {
+.adventure-right-content .styled-hr::before,
+.adventure-right-content .styled-hr::after {
   content: "";
   display: block;
-  width: 32px; 
-  height: 2.5px;   
+  width: 32px;
+  height: 2.5px;
   margin-left: 0.3rem;
   background-color: rgb(18, 122, 190);
 }
 
 .adventure-right-content .styled-hr::after {
-  width: 15px; 
+  width: 15px;
 }
 
-.adventure-right-content .text-right-content{
+.adventure-right-content .text-right-content {
   margin-bottom: 5vb;
 }
 
@@ -2428,11 +2432,11 @@ html {
   padding-right: 20px;
 }
 
-.text-right-content h2{
+.text-right-content h2 {
   font-size: 2rem;
 }
 
-.text-right-content:hover > h2 {
+.text-right-content:hover>h2 {
   color: rgb(0, 94, 138);
 }
 
@@ -2446,7 +2450,7 @@ html {
   height: auto;
 }
 
-.adventure-right-content p{
+.adventure-right-content p {
   font-size: 1.15rem;
   margin-right: 2rem;
   font-weight: 300;
@@ -2471,27 +2475,27 @@ html {
   max-width: 85rem;
   margin: auto;
   margin-bottom: 5vb;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
 }
 
 .adventure-right-content .styled-hr {
   display: flex;
-  gap: 7px; 
+  gap: 7px;
   margin: 0.6rem 0 1.5rem 0;
 }
 
-.adventure-right-content .styled-hr::before, .adventure-right-content
-.styled-hr::after {
+.adventure-right-content .styled-hr::before,
+.adventure-right-content .styled-hr::after {
   content: "";
   display: block;
-  width: 32px; 
-  height: 2.5px;   
+  width: 32px;
+  height: 2.5px;
   margin-left: 0.3rem;
   background-color: rgb(18, 122, 190);
 }
 
 .adventure-right-content .styled-hr::after {
-  width: 15px; 
+  width: 15px;
 }
 
 .text-right-content {
@@ -2499,30 +2503,30 @@ html {
   padding-right: 20px;
 }
 
-.text-right-content h2{
+.text-right-content h2 {
   font-size: 2rem;
 }
 
-.text-right-content:hover > h2 {
+.text-right-content:hover>h2 {
   color: rgb(0, 94, 138);
 }
 
 .images-right {
   display: flex;
-  gap: 1.35rem; 
+  gap: 1.35rem;
 }
 
 .images-right img {
-  width: 200px; 
+  width: 200px;
   height: auto;
 }
 
 .images-right img.img-1 {
-  width: 30rem; 
+  width: 30rem;
   height: auto;
 }
 
-.adventure-right-content p{
+.adventure-right-content p {
   font-size: 1.15rem;
   margin-right: 5rem;
   font-weight: 300;
@@ -2536,27 +2540,27 @@ html {
   max-width: 85rem;
   margin: auto;
   margin-bottom: 1vb;
-  font-family: "Open Sans", sans-serif;    
+  font-family: "Open Sans", sans-serif;
 }
 
 .adventure-right-content .styled-hr {
   display: flex;
-  gap: 7px; 
+  gap: 7px;
   margin: 0.6rem 0 1.5rem 0;
 }
 
-.adventure-right-content .styled-hr::before, .adventure-right-content
-.styled-hr::after {
+.adventure-right-content .styled-hr::before,
+.adventure-right-content .styled-hr::after {
   content: "";
   display: block;
-  width: 32px; 
-  height: 2.5px;   
+  width: 32px;
+  height: 2.5px;
   margin-left: 0.3rem;
   background-color: rgb(18, 122, 190);
 }
 
 .adventure-right-content .styled-hr::after {
-  width: 15px; 
+  width: 15px;
 }
 
 .text-right-content {
@@ -2564,26 +2568,26 @@ html {
   padding-right: 20px;
 }
 
-.text-right-content h2{
+.text-right-content h2 {
   font-size: 2rem;
 }
 
-.text-right-content:hover > h2 {
+.text-right-content:hover>h2 {
   color: rgb(0, 94, 138);
 }
 
 .images-right {
   display: flex;
-  align-items: flex-start; 
+  align-items: flex-start;
   gap: 1rem;
-  flex-wrap: wrap; 
-  max-width: 100%; 
+  flex-wrap: wrap;
+  max-width: 100%;
 }
 
 .images-right img {
   max-width: 20rem;
   height: auto;
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 
 .images-right img.img-1 {
@@ -2600,10 +2604,10 @@ html {
 .images-right img.bottom-img {
   width: 35rem;
   height: 10rem;
-  margin: 0.78rem 0 4.5rem 7.5rem; 
+  margin: 0.78rem 0 4.5rem 7.5rem;
 }
 
-.adventure-right-content p{
+.adventure-right-content p {
   font-size: 1.15rem;
   margin-right: 2rem;
   font-weight: 300;
@@ -2618,45 +2622,48 @@ html {
   max-width: 83rem;
   margin: auto;
   padding: 1.5rem;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
   flex-wrap: wrap;
 }
 
 .middle-content .styled-hr {
   display: flex;
-  gap: px; 
+  gap: px;
   margin: 0.6rem 0 1.5rem 0;
 }
 
-.middle-content  .styled-hr::before, .middle-content 
-.styled-hr::after {
+.middle-content .styled-hr::before,
+.middle-content .styled-hr::after {
   content: "";
   display: block;
-  width: 3.5rem; 
-  height: 2.5px;   
+  width: 3.5rem;
+  height: 2.5px;
   margin-left: 0.3rem;
   background-color: rgb(18, 122, 190);
 }
 
 .middle-content .styled-hr::after {
-  width: 15px; 
+  width: 15px;
 }
+
 .middle-content .styled-hr1 {
   display: flex;
-  gap: px; 
+  gap: px;
   margin: 0.6rem 0 1.5rem 0;
 }
-.middle-content  .styled-hr1::before, .middle-content 
-.styled-hr1::after {
+
+.middle-content .styled-hr1::before,
+.middle-content .styled-hr1::after {
   content: "";
   display: block;
-  width: 1.5rem; 
-  height: 2.5px;   
+  width: 1.5rem;
+  height: 2.5px;
   margin-left: 0.3rem;
   background-color: rgb(18, 122, 190);
 }
+
 .middle-content .styled-hr1::after {
-  width: 15px; 
+  width: 15px;
 }
 
 .middle-content {
@@ -2664,11 +2671,11 @@ html {
   padding-right: 20px;
 }
 
-.column h2{
+.column h2 {
   font-size: 2rem;
 }
 
-.column:hover > h2 {
+.column:hover>h2 {
   color: rgb(0, 94, 138);
 }
 
@@ -2686,18 +2693,20 @@ html {
   margin: 0 auto 10px;
 }
 
-.column img{
+.column img {
   border-radius: 10px;
   margin-bottom: 4vb;
   width: 35rem;
 }
+
 .atv {
   border-radius: 10px;
   margin-bottom: 4vb;
   width: 35rem;
   margin-top: 6vb;
 }
-.middle-content h2{
+
+.middle-content h2 {
   font-size: 2rem;
 }
 
@@ -2708,35 +2717,35 @@ html {
   margin: auto;
   margin-top: 2vh;
   margin-bottom: 7.5vb;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
   font-size: 1.10rem;
 }
 
 .text-left-content {
   flex: 1;
-  padding-left: 20px; 
+  padding-left: 20px;
 }
 
 .text-left-content h2 {
   font-size: 2rem;
 }
 
-.text-left-content:hover > h2 {
+.text-left-content:hover>h2 {
   color: rgb(0, 94, 138);
 }
 
 .images-left {
   display: flex;
-  align-items: flex-start; 
+  align-items: flex-start;
   gap: 1rem;
-  flex-wrap: wrap; 
-  max-width: 100%; 
+  flex-wrap: wrap;
+  max-width: 100%;
 }
 
 .images-left img {
   max-width: 30rem;
   height: auto;
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 
 .images-left img.img-1 {
@@ -2746,21 +2755,22 @@ html {
 
 .adventure-left-content .styled-hr {
   display: flex;
-  gap: 7px; 
+  gap: 7px;
   margin: 0.6rem 0 1.5rem 0;
 }
 
-.adventure-left-content .styled-hr::before, .adventure-left-content .styled-hr::after {
+.adventure-left-content .styled-hr::before,
+.adventure-left-content .styled-hr::after {
   content: "";
   display: block;
-  width: 32px; 
-  height: 2.5px;   
+  width: 32px;
+  height: 2.5px;
   margin-left: 0.3rem;
   background-color: rgb(18, 122, 190);
 }
 
 .adventure-left-content .styled-hr::after {
-  width: 15px; 
+  width: 15px;
 }
 
 /*Festivals webpages*/
@@ -2775,7 +2785,7 @@ html {
 }
 
 .fes {
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
   line-height: 1.6;
   margin-top: 2rem;
   padding: 5.5rem 4rem;
@@ -2794,10 +2804,10 @@ html {
 .h1 {
   font-size: 2.1rem;
   margin-bottom: 0.4rem;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
 }
 
-.h1:hover{
+.h1:hover {
   color: rgb(0, 94, 138);
 }
 
@@ -2810,13 +2820,14 @@ html {
   width: 50%;
   position: relative;
 }
+
 .media-wrapper {
   position: relative;
   width: 100%;
   padding-top: 50%;
 }
 
-.media-wrapper .image{
+.media-wrapper .image {
   position: absolute;
   left: 0;
   bottom: 30px;
@@ -2829,7 +2840,7 @@ html {
   transition: transform 0.3s ease, z-index 0.3s ease, box-shadow 0.3s ease;
 }
 
-.media-wrapper .image2{
+.media-wrapper .image2 {
   position: absolute;
   left: 0;
   bottom: 520px;
@@ -2841,7 +2852,8 @@ html {
   z-index: 1;
   transition: transform 0.3s ease, z-index 0.3s ease, box-shadow 0.3s ease;
 }
-.media-wrapper .image1{
+
+.media-wrapper .image1 {
   position: absolute;
   left: 0;
   top: -50px;
@@ -2859,6 +2871,7 @@ html {
   transform: scale(1.1);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
+
 .media-wrapper .image1:hover {
   z-index: 3;
   transform: scale(1.1);
@@ -2868,7 +2881,7 @@ html {
 .media-wrapper video {
   position: absolute;
   top: 10px;
-  left: 60px; 
+  left: 60px;
   width: 100%;
   height: 110%;
   object-fit: cover;
@@ -2877,10 +2890,11 @@ html {
   border: 4px solid #fff;
   z-index: 2;
 }
+
 .media-wrapper .vid {
   position: absolute;
   top: -470px;
-  left: 60px; 
+  left: 60px;
   width: 100%;
   height: 110%;
   object-fit: cover;
@@ -2889,10 +2903,11 @@ html {
   border: 4px solid #fff;
   z-index: 2;
 }
+
 .media-wrapper .video {
   position: absolute;
   top: -5px;
-  left: 60px; 
+  left: 60px;
   width: 100%;
   height: 110%;
   object-fit: cover;
@@ -2904,31 +2919,31 @@ html {
 
 .festival-text-content .styled-hr {
   display: flex;
-  gap: 7px; 
+  gap: 7px;
   margin: 0.6rem 0 1.5rem 0;
 }
 
-.festival-text-content .styled-hr::before, .festival-text-content
-.styled-hr::after {
+.festival-text-content .styled-hr::before,
+.festival-text-content .styled-hr::after {
   content: "";
   display: block;
-  width: 32px; 
-  height: 2.5px;   
+  width: 32px;
+  height: 2.5px;
   margin-left: 0.3rem;
   background-color: rgb(18, 122, 190);
 }
 
 .festival-text-content .styled-hr::after {
-  width: 15px; 
+  width: 15px;
 }
 
-.fes .media-content p.photo-credit{
+.fes .media-content p.photo-credit {
   margin-top: 5rem;
   font-weight: 400;
   margin-left: 10%;
 }
 
-.fes .media-content p.video-credit{
+.fes .media-content p.video-credit {
   font-weight: 400;
   margin-left: 10%;
 }
@@ -2937,33 +2952,36 @@ html {
 /*Second Layout*/
 
 .fes-1 {
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
   line-height: 1.6;
   margin: 0;
-  padding:5.5rem 4rem;
+  padding: 5.5rem 4rem;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   background-color: rgb(6, 53, 71);
 }
+
 .fes-2 {
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
   line-height: 1.6;
   margin-bottom: 50px;
-  padding:35.5rem 4rem;
+  padding: 35.5rem 4rem;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   background-color: rgb(22, 101, 133);
 }
+
 .festival1-text-content {
   width: 40%;
   margin-right: 50px;
   margin-top: -2rem;
 }
+
 .festival1-text-content1 {
   width: 40%;
-  margin-left:100px;
+  margin-left: 100px;
   margin-right: 50px;
   margin-top: -30rem;
   color: white;
@@ -2975,7 +2993,7 @@ html {
   margin-top: 0px;
   color: white;
   margin-left: 18%;
-  
+
 }
 
 .h1-2 {
@@ -2987,10 +3005,11 @@ html {
   margin-right: 0%;
 }
 
-.h1-2:hover{
+.h1-2:hover {
   color: gold;
 }
-.h1-1:hover{
+
+.h1-1:hover {
   color: gold;
 }
 
@@ -3003,13 +3022,14 @@ html {
   width: 50%;
   position: relative;
 }
+
 .media-wrapper {
   position: relative;
   width: 100%;
   padding-top: 50%;
 }
 
-.media-wrapper .image{
+.media-wrapper .image {
   position: absolute;
   left: 0;
   bottom: 30px;
@@ -3030,9 +3050,9 @@ html {
 
 .media-wrapper video {
   position: absolute;
-  top: 10px; 
-  left: 60px; 
-  width: 100%; 
+  top: 10px;
+  left: 60px;
+  width: 100%;
   height: 110%;
   object-fit: cover;
   border-radius: 8px;
@@ -3043,95 +3063,98 @@ html {
 
 .festival1-text-content .styled-hr {
   display: flex;
-  gap: 7px; 
+  gap: 7px;
   margin: 0.6rem 0 1.5rem 0;
 }
 
-.festival1-text-content .styled-hr::before, .festival1-text-content
-.styled-hr::after {
+.festival1-text-content .styled-hr::before,
+.festival1-text-content .styled-hr::after {
   content: "";
   display: block;
-  width: 32px; 
-  height: 2.5px;   
+  width: 32px;
+  height: 2.5px;
   margin-left: 0.3rem;
   background-color: rgb(145, 192, 223);
 }
 
 .festival1-text-content .styled-hr::after {
-  width: 15px; 
+  width: 15px;
 }
 
-.fes-1 .media-content p.photo-credit1{
+.fes-1 .media-content p.photo-credit1 {
   margin-top: 5rem;
   font-weight: 400;
   margin-left: 10%;
   color: white;
 }
 
-.fes-1 .media-content p.video-credit1{
+.fes-1 .media-content p.video-credit1 {
   font-weight: 400;
   margin-left: 10%;
   color: white;
 }
+
 .festival1-text-content .styled-hr2 {
   display: flex;
-  gap: 7px; 
+  gap: 7px;
   margin: 0.6rem 0 1.5rem 0;
   margin-left: 18%;
 }
 
-.festival1-text-content .styled-hr2::before, .festival1-text-content
-.styled-hr2::after {
+.festival1-text-content .styled-hr2::before,
+.festival1-text-content .styled-hr2::after {
   content: "";
   display: block;
-  width: 32px; 
-  height: 2.5px;   
+  width: 32px;
+  height: 2.5px;
   margin-left: 0.3rem;
   background-color: white;
 }
 
 .festival1-text-content .styled-hr2::after {
-  width: 15px; 
+  width: 15px;
 }
 
-.fes-1 .festival1-text-content p{
+.fes-1 .festival1-text-content p {
   margin-left: 18%;
 
 }
-.fes-1 .media-content p.photo-credit{
+
+.fes-1 .media-content p.photo-credit {
   margin-top: 5rem;
   font-weight: 400;
   margin-left: 10%;
   color: white;
 }
 
-.fes-1 .media-content p.video-credit1{
+.fes-1 .media-content p.video-credit1 {
   font-weight: 400;
   margin-left: 10%;
   color: white;
 }
+
 .festival1-text-content .styled-hr2 {
   display: flex;
-  gap: 7px; 
+  gap: 7px;
   margin: 0.6rem 0 1.5rem 0;
   margin-left: 18%;
 }
 
-.festival1-text-content .styled-hr2::before, .festival1-text-content
-.styled-hr2::after {
+.festival1-text-content .styled-hr2::before,
+.festival1-text-content .styled-hr2::after {
   content: "";
   display: block;
-  width: 32px; 
-  height: 2.5px;   
+  width: 32px;
+  height: 2.5px;
   margin-left: 0.3rem;
   background-color: white;
 }
 
 .festival1-text-content .styled-hr2::after {
-  width: 15px; 
+  width: 15px;
 }
 
-.fes-1 .festival1-text-content p{
+.fes-1 .festival1-text-content p {
   margin-left: 18%;
 }
 
@@ -3147,10 +3170,10 @@ html {
 .h1-pura {
   font-size: 2.1rem;
   margin-bottom: 0.4rem;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
 }
 
-.h1-pura:hover{
+.h1-pura:hover {
   color: gold;
 }
 
@@ -3161,22 +3184,22 @@ html {
 
 .pura-festival .festival-text-content .styled-hr {
   display: flex;
-  gap: 7px; 
+  gap: 7px;
   margin: 0.6rem 0 1.5rem 0;
 }
 
-.pura-festival .festival-text-content .styled-hr::before, .pura-festival .festival-text-content
-.styled-hr::after {
+.pura-festival .festival-text-content .styled-hr::before,
+.pura-festival .festival-text-content .styled-hr::after {
   content: "";
   display: block;
-  width: 32px; 
-  height: 2.5px;   
+  width: 32px;
+  height: 2.5px;
   margin-left: 0.3rem;
   background-color: #ffffff;
 }
 
 .pura-festival .festival-text-content .styled-hr::after {
-  width: 15px; 
+  width: 15px;
 }
 
 /* Concepcion Festival*/
@@ -3191,10 +3214,10 @@ html {
 .h1-concepcion {
   font-size: 2.1rem;
   margin-bottom: 0.4rem;
-  font-family: "Open Sans", sans-serif;     
+  font-family: "Open Sans", sans-serif;
 }
 
-.h1-concepcion:hover{
+.h1-concepcion:hover {
   color: gold;
 }
 
@@ -3205,34 +3228,34 @@ html {
 
 .concepcion-festival .festival-text-content .styled-hr {
   display: flex;
-  gap: 7px; 
+  gap: 7px;
   margin: 0.6rem 0 1.5rem 0;
 }
 
-.concepcion-festival .festival-text-content .styled-hr::before, .concepcion-festival .festival-text-content
-.styled-hr::after {
+.concepcion-festival .festival-text-content .styled-hr::before,
+.concepcion-festival .festival-text-content .styled-hr::after {
   content: "";
   display: block;
-  width: 32px; 
-  height: 2.5px;   
+  width: 32px;
+  height: 2.5px;
   margin-left: 0.3rem;
   background-color: #ffffff;
 }
 
 .concepcion-festival .festival-text-content .styled-hr::after {
-  width: 15px; 
+  width: 15px;
 }
 
 /*Religion*/
 
-.religion-right-content .images-right img.anao-church{
+.religion-right-content .images-right img.anao-church {
   width: 35rem;
   max-width: 50rem;
   height: 25rem;
   margin-left: 3rem;
 }
 
-.religion-right-content .images-right img.la-maja{
+.religion-right-content .images-right img.la-maja {
   width: 35rem;
   max-width: 50rem;
   height: 25rem;
@@ -3259,29 +3282,29 @@ html {
   max-width: 78rem;
   margin: auto;
   margin-bottom: 10vb;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
   font-size: 1.12rem;
   margin-top: 5vh;
 }
 
 .religion-right-content .styled-hr {
   display: flex;
-  gap: 7px; 
+  gap: 7px;
   margin: 0.6rem 0 1.5rem 0;
 }
 
-.religion-right-content .styled-hr::before, .religion-right-content
-.styled-hr::after {
+.religion-right-content .styled-hr::before,
+.religion-right-content .styled-hr::after {
   content: "";
   display: block;
-  width: 32px; 
-  height: 2.5px;   
+  width: 32px;
+  height: 2.5px;
   margin-left: 0.3rem;
   background-color: rgb(18, 122, 190);
 }
 
 .religion-right-content .styled-hr::after {
-  width: 15px; 
+  width: 15px;
 }
 
 .text-right-content {
@@ -3289,20 +3312,20 @@ html {
   padding-right: 20px;
 }
 
-.text-right-content h2{
+.text-right-content h2 {
   font-size: 2rem;
 }
 
-.text-right-content:hover > h2 {
+.text-right-content:hover>h2 {
   color: rgb(0, 94, 138);
 }
 
-.assisi{
+.assisi {
   margin-top: 5rem;
   height: 23rem;
 }
 
-.nonnatus{
+.nonnatus {
   margin-top: 4vh;
   height: 25rem;
 }
@@ -3314,33 +3337,33 @@ html {
   margin: auto;
   margin-top: 3vh;
   margin-bottom: 9.5vb;
-  font-family: "Open Sans", sans-serif;    
+  font-family: "Open Sans", sans-serif;
   font-size: 1.10rem;
 }
 
 .text-left-content {
   flex: 1;
-  padding-left: 20px; 
+  padding-left: 20px;
 }
 
 .text-left-content h2 {
   font-size: 2rem;
 }
 
-.text-left-content:hover > h2 {
+.text-left-content:hover>h2 {
   color: rgb(0, 94, 138);
 }
 
 .images-left {
   display: flex;
-  align-items: flex-start; 
+  align-items: flex-start;
   gap: 1rem;
-  flex-wrap: wrap; 
-  max-width: 100%; 
+  flex-wrap: wrap;
+  max-width: 100%;
 }
 
 .images-left img.peace {
-  width: 35rem; 
+  width: 35rem;
   height: 25rem;
   margin-right: 2.5rem;
   max-width: 50rem;
@@ -3348,7 +3371,7 @@ html {
 }
 
 .images-left img.cathedral {
-  width: 35rem; 
+  width: 35rem;
   height: 25rem;
   margin-right: 2.5rem;
   max-width: 50rem;
@@ -3357,21 +3380,22 @@ html {
 
 .religion-left-content .styled-hr {
   display: flex;
-  gap: 7px; 
+  gap: 7px;
   margin: 0.6rem 0 1.5rem 0;
 }
 
-.religion-left-content .styled-hr::before, .religion-left-content .styled-hr::after {
+.religion-left-content .styled-hr::before,
+.religion-left-content .styled-hr::after {
   content: "";
   display: block;
-  width: 32px; 
-  height: 2.5px;   
+  width: 32px;
+  height: 2.5px;
   margin-left: 0.3rem;
   background-color: rgb(18, 122, 190);
 }
 
 .religion-left-content .styled-hr::after {
-  width: 15px; 
+  width: 15px;
 }
 
 /* Another eco-tourism (Aquino Museum) */
@@ -3381,32 +3405,32 @@ html {
   max-width: 78rem;
   margin: auto;
   margin-bottom: 5vb;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
   font-size: 1.12rem;
 }
 
 .aquino-right-content .styled-hr {
   display: flex;
-  gap: 7px; 
+  gap: 7px;
   margin: 0.6rem 0 1.5rem 0;
 }
 
-.aquino-right-content .styled-hr::before, .aquino-right-content
-.styled-hr::after {
+.aquino-right-content .styled-hr::before,
+.aquino-right-content .styled-hr::after {
   content: "";
   display: block;
-  width: 32px; 
-  height: 2.5px;   
+  width: 32px;
+  height: 2.5px;
   margin-left: 0.3rem;
   background-color: rgb(18, 122, 190);
 }
 
 .aquino-right-content .styled-hr::after {
-  width: 15px; 
+  width: 15px;
 }
 
 /*isdaan-food-content*/
-.isdaan-right-content .images-right img.isdaan-restaurant{
+.isdaan-right-content .images-right img.isdaan-restaurant {
   width: 35rem;
   max-width: 50rem;
   height: 25rem;
@@ -3434,28 +3458,28 @@ html {
   margin: auto;
   margin-bottom: 8vb;
   margin-top: 5vh;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif;
   font-size: 1.12rem;
 }
 
 .isdaan-right-content .styled-hr {
   display: flex;
-  gap: 7px; 
+  gap: 7px;
   margin: 0.6rem 0 1.5rem 0;
 }
 
-.isdaan-right-content .styled-hr::before, .isdaan-right-content
-.styled-hr::after {
+.isdaan-right-content .styled-hr::before,
+.isdaan-right-content .styled-hr::after {
   content: "";
   display: block;
-  width: 32px; 
-  height: 2.5px;   
+  width: 32px;
+  height: 2.5px;
   margin-left: 0.3rem;
   background-color: rgb(18, 122, 190);
 }
 
 .isdaan-right-content .styled-hr::after {
-  width: 15px; 
+  width: 15px;
 }
 
 .text-right-content {
@@ -3463,11 +3487,11 @@ html {
   padding-right: 20px;
 }
 
-.text-right-content h2{
+.text-right-content h2 {
   font-size: 2rem;
 }
 
-.text-right-content:hover > h2 {
+.text-right-content:hover>h2 {
   color: rgb(0, 94, 138);
 }
 
@@ -3520,14 +3544,14 @@ html {
 
 /*Animation*/
 
-@keyframes appear{
-  
-  from{
+@keyframes appear {
+
+  from {
     opacity: 0;
     scale: 0.5;
   }
 
-  to{
+  to {
     opacity: 1;
     scale: 1;
   }
@@ -3538,6 +3562,7 @@ html {
     transform: translateX(-100%);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -3549,6 +3574,7 @@ html {
     transform: translateX(100%);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -3560,19 +3586,20 @@ html {
     transform: translateY(100%);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
   }
 }
 
-.tarlac-tourism-dept > .card{
+.tarlac-tourism-dept>.card {
   opacity: 0;
   transform: translateY(100%);
   transition: transform 1.4s ease-out, opacity 1.5s ease-out;
 }
 
-.tarlac-tourism-dept > .card.animate {
+.tarlac-tourism-dept>.card.animate {
   transform: translateY(0);
   opacity: 1;
 }
@@ -3590,45 +3617,89 @@ html {
 
 /* 3-column image right entry*/
 
- .images-right > .img-1-eco, .img-1-eco-1 {
+.images-right>.img-1-eco,
+.img-1-eco-1 {
   opacity: 0;
   transform: translateX(-100%);
   transition: transform 1.5s ease-out, opacity 1.5s ease-out;
 }
 
-  .images-right > .img-1-eco.animate, .img-1-eco-1.animate {
+.images-right>.img-1-eco.animate,
+.img-1-eco-1.animate {
   transform: translateX(0);
   opacity: 1;
 }
 
 /* Left entry */
 
-.images-right > .img-2, .images-right-02 > .img-2, .anao-church, .la-maja,.images-right > .img-2-faith, .img-2-eco-1, .img-2-eco-2, .fes-1 .media-wrapper > .image,
-.fes .media-wrapper > video, .pto-img-2{
+.images-right>.img-2,
+.images-right-02>.img-2,
+.anao-church,
+.la-maja,
+.images-right>.img-2-faith,
+.img-2-eco-1,
+.img-2-eco-2,
+.fes-1 .media-wrapper>.image,
+.fes .media-wrapper>video,
+.pto-img-2 {
   opacity: 0;
   transform: translateX(100%);
   transition: transform 1.5s ease-out, opacity 1.5s ease-out;
 }
 
-.images-right > .img-2.animate, .images-right-02 > .img-2.animate, .anao-church.animate, .la-maja.animate, .images-right > .img-2-faith.animate, 
-.img-2-eco-1.animate, .fes-1 .media-wrapper > .image.animate, .fes .media-wrapper > video.animate, .pto-img-2.animate, .img-2-eco-2.animate{
+.images-right>.img-2.animate,
+.images-right-02>.img-2.animate,
+.anao-church.animate,
+.la-maja.animate,
+.images-right>.img-2-faith.animate,
+.img-2-eco-1.animate,
+.fes-1 .media-wrapper>.image.animate,
+.fes .media-wrapper>video.animate,
+.pto-img-2.animate,
+.img-2-eco-2.animate {
   transform: translateX(0);
   opacity: 1;
 }
 
 /* Bottom entry */
 
-.bottom-img-eco, .archangel, .assisi, .Antoninus, .Qwerty, .atv, .antonius, .Faustina, .therese,  .Archangel, .nonnatus, .column-img, 
-.column-eco, .img-tour-1, .museo-kanlahi-img, .img-tour-12{
+.bottom-img-eco,
+.archangel,
+.assisi,
+.Antoninus,
+.Qwerty,
+.atv,
+.antonius,
+.Faustina,
+.therese,
+.Archangel,
+.nonnatus,
+.column-img,
+.column-eco,
+.img-tour-1,
+.museo-kanlahi-img,
+.img-tour-12 {
   opacity: 0;
   transform: translateY(100%);
   transition: transform 1.5s ease-out, opacity 1.5s ease-out;
 }
 
-.bottom-img-eco.animate, .Archangel.animate, .nonnatus.animate, .archangel.animate, .assisi.animate, 
-.Antoninus.animate, .Qwerty.animate, .atv.animate, .antonius.animate, .Faustina.animate, .therese.animate, .column-img.animate, 
-.column-eco.animate,.img-tour-1.animate, .museo-kanlahi-img.animate, .img-tour-12.animate
-{
+.bottom-img-eco.animate,
+.Archangel.animate,
+.nonnatus.animate,
+.archangel.animate,
+.assisi.animate,
+.Antoninus.animate,
+.Qwerty.animate,
+.atv.animate,
+.antonius.animate,
+.Faustina.animate,
+.therese.animate,
+.column-img.animate,
+.column-eco.animate,
+.img-tour-1.animate,
+.museo-kanlahi-img.animate,
+.img-tour-12.animate {
   transform: translateY(0);
   opacity: 1;
 }
@@ -3636,15 +3707,27 @@ html {
 
 /* Right enter */
 
-.img-1, .images-right > .img-1-faith, .peace, .cathedral, .mapTarlacVisuals, .fes .media-wrapper > .image,
-.fes-1 .media-wrapper > video, .pto-img{
+.img-1,
+.images-right>.img-1-faith,
+.peace,
+.cathedral,
+.mapTarlacVisuals,
+.fes .media-wrapper>.image,
+.fes-1 .media-wrapper>video,
+.pto-img {
   opacity: 0;
   transform: translateX(-100%);
   transition: transform 1.5s ease-out, opacity 1.5s ease-out;
 }
 
-.img-1.animate, .images-right > .img-1-faith.animate, .peace.animate, .cathedral.animate, .mapTarlacVisuals.animate, 
-.fes .media-wrapper > .image.animate, .fes-1 .media-wrapper > video.animate, .pto-img.animate{
+.img-1.animate,
+.images-right>.img-1-faith.animate,
+.peace.animate,
+.cathedral.animate,
+.mapTarlacVisuals.animate,
+.fes .media-wrapper>.image.animate,
+.fes-1 .media-wrapper>video.animate,
+.pto-img.animate {
   transform: translateX(0);
   opacity: 1;
 }
@@ -3668,75 +3751,76 @@ html {
 
 @media screen and (max-width: 1345px) {
   .products-container {
-      flex-wrap: wrap; 
+    flex-wrap: wrap;
   }
 
   .product-header {
-      width: 100%; 
+    width: 100%;
   }
 
   .highlight-wrapper {
-      gap: 0.5rem; 
-      margin: 2em; 
+    gap: 0.5rem;
+    margin: 2em;
 
   }
 
   .highlight-card {
-      flex: 0 0 calc(50% - 0.5rem); 
+    flex: 0 0 calc(50% - 0.5rem);
   }
 
   .highlight-img {
-      width: 160px; 
-      height: 160px;
+    width: 160px;
+    height: 160px;
   }
 }
 
 @media screen and (max-width: 1370px) {
-  .food-right-content{
+  .food-right-content {
     max-width: 75rem;
   }
+
   .images-right {
-      display: flex;
-      gap: 1.35rem; 
-    }
-    
-    .images-right img {
-      width: 150px; 
-      height: auto;
-    }
-    
-    .images-right img.img-1 {
-      width: 30rem; 
-      height: auto;
-    }
+    display: flex;
+    gap: 1.35rem;
+  }
+
+  .images-right img {
+    width: 150px;
+    height: auto;
+  }
+
+  .images-right img.img-1 {
+    width: 30rem;
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1920px) {
   .navbar {
-      padding: 1rem 4.8rem; 
+    padding: 1rem 4.8rem;
   }
 
   .navbar__img {
-      width: 3rem; 
-      height: 3rem;
+    width: 3rem;
+    height: 3rem;
   }
 
   .navbar__title {
-      font-size: 1.15rem; 
-      letter-spacing: 0.8rem;
-      padding: 0.3rem 0.1rem 0.2rem 0.5rem;
+    font-size: 1.15rem;
+    letter-spacing: 0.8rem;
+    padding: 0.3rem 0.1rem 0.2rem 0.5rem;
   }
 
   .navbar__ul {
-      gap: 0.45rem; 
+    gap: 0.45rem;
   }
 
   .navbar__li {
-      margin: 0rem 0.8rem; 
+    margin: 0rem 0.8rem;
   }
 
   .navbar__link {
-      font-size: 0.75rem;
+    font-size: 0.75rem;
   }
 
   .click-image {
@@ -3752,16 +3836,16 @@ html {
     width: 30rem;
     height: auto;
   }
-  
+
   .images-right img.img-2 {
     width: 18rem;
     height: 22.3rem;
   }
-  
+
   .images-right img.bottom-img {
     width: 35rem;
     height: 10rem;
-    margin: 0.78rem 0 4.5rem 7.5rem; 
+    margin: 0.78rem 0 4.5rem 7.5rem;
 
   }
 
@@ -3775,80 +3859,80 @@ html {
     max-width: 70rem;
     margin: auto;
     margin-bottom: 5vb;
-    font-family: "Open Sans", sans-serif;  
+    font-family: "Open Sans", sans-serif;
   }
 
 }
 
 @media screen and (max-width: 1024px) {
   .navbar {
-      padding: 1rem 3rem; 
-      flex-direction: column; 
-      align-items: center;
+    padding: 1rem 3rem;
+    flex-direction: column;
+    align-items: center;
   }
 
   .navtitle {
-      text-align: center;
+    text-align: center;
   }
 
   .navbar__img {
-      width: 2.8rem; 
-      height: 2.8rem;
+    width: 2.8rem;
+    height: 2.8rem;
   }
 
   .navbar__title {
-      font-size: 1.2rem; 
-      letter-spacing: 0.6rem;
-      padding: 0.3rem 0.1rem 0.2rem 0.5rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.6rem;
+    padding: 0.3rem 0.1rem 0.2rem 0.5rem;
   }
 
   .navbar__ul {
-      flex-direction: column; 
-      align-items: center;
-      padding: 0;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
   }
 
   .navbar__li {
-      margin: 0.5rem 0;
+    margin: 0.5rem 0;
   }
 
   .navbar__link {
-      font-size: 0.9rem; 
+    font-size: 0.9rem;
   }
-  
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .pto-about-us {
-  max-height: 120rem;
-  height: 30rem;
-  padding-top: 10rem;
-}
+    max-height: 120rem;
+    height: 30rem;
+    padding-top: 10rem;
+  }
 
-.pto-about-us .about{
-  font-size: 1rem;
-}
+  .pto-about-us .about {
+    font-size: 1rem;
+  }
 
-.pto-about-us h2{
-  font-size: 4rem;
-  line-height: 3.75rem;
-}
+  .pto-about-us h2 {
+    font-size: 4rem;
+    line-height: 3.75rem;
+  }
 }
 
 @media (width: 768px) {
-  .food-right-content{
+  .food-right-content {
     max-width: 60rem !important;
   }
 
-  .food-right-content .text-right-content > p{
+  .food-right-content .text-right-content>p {
     width: 120rem !important;
   }
 
-  .food-right-content-02{
+  .food-right-content-02 {
     max-width: 40rem !important;
   }
 
-  .food-right-content-02 .text-right-content-02 > p{
+  .food-right-content-02 .text-right-content-02>p {
     width: 32rem !important;
   }
 
@@ -3874,14 +3958,14 @@ html {
     color: white;
   }
 
-  .pto-container .picture{
+  .pto-container .picture {
     width: 100%;
     height: 360px;
   }
 
-  .pto-about{
-      width: 100%;
-      padding: 100px 20%;
+  .pto-about {
+    width: 100%;
+    padding: 100px 20%;
   }
 }
 
@@ -3984,7 +4068,7 @@ html {
 @media screen and (max-width: 1300px) {
   .navbar {
     padding: 1rem 2rem;
-    background-color:#0A2239;
+    background-color: #0A2239;
   }
 
   .navbar__li {
@@ -4156,7 +4240,7 @@ html {
 @media screen and (max-width: 1024px) {
   .navBtns {
     display: flex;
-    background-color:#0A2239;
+    background-color: #0A2239;
     padding: 1rem 0rem 1rem 2rem;
     align-items: center;
     position: fixed;
@@ -4221,10 +4305,10 @@ html {
   .navTitleProvince {
     color: #fff;
     font-size: 0.5rem;
-  font-family: "Montserrat", sans-serif;   
+    font-family: "Montserrat", sans-serif;
   }
 
-  .img-cover{
+  .img-cover {
     padding-top: 6rem;
   }
 
@@ -4254,7 +4338,7 @@ html {
   }
 
   .mapTarlacCountryText {
-    font-size: 1.8rem; 
+    font-size: 1.8rem;
     line-height: 1.6;
     color: white;
     margin-bottom: 0.6rem;
@@ -4355,7 +4439,7 @@ html {
 
   .navBtns {
     display: flex;
-    background-color:#0A2239;
+    background-color: #0A2239;
     padding: 1rem 0rem 1rem 2.5rem;
     position: relative;
     align-items: center;
@@ -4493,19 +4577,19 @@ html {
     font-size: 0.8rem;
   }
 
-  .img-cover{
+  .img-cover {
     padding-top: 6.5rem;
   }
 
   .homeIconClose {
-  position: absolute;
-  top: 3vh;
-  right: -12vw;
-  z-index: 1100;
-  padding: 0.3rem; 
-  border-radius: 50%;
-  color: white;
-  font-size: 0.7rem; 
+    position: absolute;
+    top: 3vh;
+    right: -12vw;
+    z-index: 1100;
+    padding: 0.3rem;
+    border-radius: 50%;
+    color: white;
+    font-size: 0.7rem;
   }
 
   .homeIconClose i {
@@ -4515,7 +4599,7 @@ html {
 }
 
 @media screen and (max-width: 768px) {
-  .img-cover{
+  .img-cover {
     padding-top: 6rem;
   }
 
@@ -4554,7 +4638,7 @@ html {
     font-size: 1rem;
   }
 
-  .footer__date{
+  .footer__date {
     font-size: 1rem;
     margin-bottom: 1rem;
   }
@@ -4601,7 +4685,7 @@ html {
 
   .navmobileProvince {
     text-align: left;
-    margin-left: 6rem; 
+    margin-left: 6rem;
     font-size: 1.8vh;
   }
 
@@ -4671,7 +4755,7 @@ html {
     font-size: 0.8rem;
   }
 
-  .img-cover{
+  .img-cover {
     padding-top: 6.3rem;
   }
 }
@@ -4824,7 +4908,7 @@ html {
 .timelineHeader {
   background-color: #f3f3f3;
   color: #0A2239;
-  font-family: "Open Sans", sans-serif; 
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   padding: 5rem 0rem;
 }
@@ -4834,7 +4918,7 @@ html {
 }
 
 .contentTitle {
-  font-family: "Open Sans", sans-serif; 
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   margin-bottom: 1rem;
   font-size: 2rem;
@@ -4850,7 +4934,7 @@ html {
   margin-right: auto;
 }
 
-.contentImage.capitalBamban{
+.contentImage.capitalBamban {
   width: 50rem;
   margin-bottom: 1rem;
   max-height: 25rem;
@@ -4859,7 +4943,7 @@ html {
   margin-right: auto;
 }
 
-.contentImage.TNHS{
+.contentImage.TNHS {
   width: 50rem;
   margin-bottom: 1rem;
   max-height: 25rem;
@@ -4868,7 +4952,7 @@ html {
   margin-right: auto;
 }
 
-.contentImage.pedroImage{
+.contentImage.pedroImage {
   height: 25rem;
   width: auto;
   display: block;
@@ -4877,7 +4961,7 @@ html {
 }
 
 .contentDescription {
-  font-family: "Open Sans", sans-serif; 
+  font-family: "Open Sans", sans-serif;
   font-size: 1.2rem;
   text-align: justify;
   display: block;
@@ -4885,7 +4969,8 @@ html {
   margin-right: auto;
 }
 
-.contentDescription.san-jose-western, .contentDescription.ww2-tarlac-liberation{
+.contentDescription.san-jose-western,
+.contentDescription.ww2-tarlac-liberation {
   text-align: center;
 }
 
@@ -5023,84 +5108,97 @@ html {
   .footer {
     padding: 1rem 0rem;
   }
+
   .footer__title {
     font-size: 1.2rem;
   }
+
   .footer__size {
     font-size: 0.7rem;
   }
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) {
   .product-header h1 {
     font-size: 2em;
     padding: 1em 5%;
-}
+  }
 
-.product-header p {
+  .product-header p {
     font-size: 16px;
     padding: 1em 5%;
-}
+  }
 
-.highlight-wrapper {
+  .highlight-wrapper {
     margin: 0.5em;
-}
+  }
 
-.highlight-card {
+  .highlight-card {
     flex: 0 0 calc(100% - 1rem);
     margin: 0.5em;
-}
+  }
 
-.highlight-img {
+  .highlight-img {
     width: 100px;
     height: 100px;
-}
+  }
 
-.product-header h1 {
-  font-size: 2em;
-  padding: 1em 5%;
-}
+  .product-header h1 {
+    font-size: 2em;
+    padding: 1em 5%;
+  }
 
-.product-header p {
-  font-size: 16px;
-  padding: 1em 5%;
-}
+  .product-header p {
+    font-size: 16px;
+    padding: 1em 5%;
+  }
 
-.highlight-wrapper {
-  margin: 0.5em;
-}
+  .highlight-wrapper {
+    margin: 0.5em;
+  }
 
-.highlight-card {
-  flex: 0 0 calc(100% - 1rem);
-  margin: 0.5em;
-}
+  .highlight-card {
+    flex: 0 0 calc(100% - 1rem);
+    margin: 0.5em;
+  }
 
-.highlight-img {
-  width: 100px;
-  height: 100px;
-}
+  .highlight-img {
+    width: 100px;
+    height: 100px;
+  }
 
-.pto-about{
-  padding: 5rem 15%;
-}
+  .pto-about {
+    padding: 5rem 15%;
+  }
 
-.footer p {
-    font-size: 0.875rem !important; 
-}
+  .footer p {
+    font-size: 0.875rem !important;
+  }
 
-.footer__div {
+  .footer__div {
     margin-top: 1rem;
- }
+  }
 
-  .contentImage.capitalBamban, .contentImage.revolution, .contentImage.san-seb-cathedral, 
-  .contentImage.tarlac-capitol, .contentImage.TNHS, .contentImage.san-jose-western,
-  .contentImage.mt-pinatubo, .contentImage.monasterio, .contentImage.trp, .contentImage.ncc,
-  .contentImage.train, .contentImage.soldier, .contentImage.death-march, .contentImage.ww2-tarlac-liberation,
-  .contentImage.diwa, .contentImage.pedroImage {
+  .contentImage.capitalBamban,
+  .contentImage.revolution,
+  .contentImage.san-seb-cathedral,
+  .contentImage.tarlac-capitol,
+  .contentImage.TNHS,
+  .contentImage.san-jose-western,
+  .contentImage.mt-pinatubo,
+  .contentImage.monasterio,
+  .contentImage.trp,
+  .contentImage.ncc,
+  .contentImage.train,
+  .contentImage.soldier,
+  .contentImage.death-march,
+  .contentImage.ww2-tarlac-liberation,
+  .contentImage.diwa,
+  .contentImage.pedroImage {
     width: 18rem !important;
     max-height: 25rem;
     display: block;
-    margin: 0 auto 1rem auto; 
+    margin: 0 auto 1rem auto;
     object-fit: cover;
   }
 
@@ -5109,84 +5207,84 @@ html {
 @media screen and (min-width: 375px) and (max-width: 820px) {
 
   .provincial-tourism {
-      padding: 1rem;
-      text-align: center;
+    padding: 1rem;
+    text-align: center;
   }
 
   .provincial-tourism .title {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      margin-top: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
   }
 
   .styled-hr {
-      width: 80%;
-      margin: 0 auto 1.5rem;
+    width: 80%;
+    margin: 0 auto 1.5rem;
   }
 
   .tarlac-tourism-dept {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 1rem;
-      max-width: 100%;
-      margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    max-width: 100%;
+    margin: 0 auto;
   }
 
   .card {
-      width: 90%;
-      max-width: 350px; 
-      padding: 1.5rem;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
-      background: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      margin: 0 auto;
-      word-wrap: break-word;  
-      overflow-wrap: break-word;
+    width: 90%;
+    max-width: 350px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   .card img.logo {
-      width: 80px;
-      height: auto;
-      margin-bottom: 1rem;
-      align-self: center;
+    width: 80px;
+    height: auto;
+    margin-bottom: 1rem;
+    align-self: center;
   }
 
   .card h3 {
-      font-size: 1.1rem;
-      margin-bottom: 0.5rem;
-      white-space: normal; 
-      word-wrap: break-word;
-      overflow-wrap: break-word;
-      max-width: 100%; 
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
   }
 
   .card p {
-      font-size: 1rem;
-      margin-bottom: 0.3rem;
-      word-wrap: break-word;
-      overflow-wrap: break-word;
-      white-space: normal;
-      max-width: 95%; 
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    max-width: 95%;
   }
 
   .img-tourism-logos {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin: 1.5rem auto;
-      width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1.5rem auto;
+    width: 90%;
   }
 
   .img-tourism-logos img {
-      width: 50px; 
-      height: auto;
+    width: 50px;
+    height: auto;
   }
 
 }
@@ -5194,8 +5292,8 @@ html {
 
 /*web cover responsive*/
 
-@media screen and (min-width: 1024px) and (max-width: 2560px){
-  
+@media screen and (min-width: 1024px) and (max-width: 2560px) {
+
   .home__video {
     position: fixed;
     top: -65vh;
@@ -5208,13 +5306,13 @@ html {
     align-items: center;
     justify-content: center;
   }
-  
+
   .homeVideoWrapper {
     width: 100%;
     height: 100%;
     position: relative;
   }
-  
+
   .home__diorama {
     width: 100%;
     height: 100%;
@@ -5231,9 +5329,9 @@ html {
     color: white;
   }
 
-.homeIconClose i {
-  font-size: 1rem;
-}
+  .homeIconClose i {
+    font-size: 1rem;
+  }
 
 
 }
@@ -5263,13 +5361,20 @@ html {
     font-size: 1rem;
   }
 
-  .contentImage.capitalBamban, .contentImage.revolution, .contentImage.san-seb-cathedral, 
-  .contentImage.tarlac-capitol, .contentImage.TNHS, .contentImage.san-jose-western,
-  .contentImage.mt-pinatubo, .contentImage.monasterio, .contentImage.trp, .contentImage.ncc {
+  .contentImage.capitalBamban,
+  .contentImage.revolution,
+  .contentImage.san-seb-cathedral,
+  .contentImage.tarlac-capitol,
+  .contentImage.TNHS,
+  .contentImage.san-jose-western,
+  .contentImage.mt-pinatubo,
+  .contentImage.monasterio,
+  .contentImage.trp,
+  .contentImage.ncc {
     width: 35rem;
     max-height: 25rem;
     display: block;
-    margin: 0 auto 1rem auto; 
+    margin: 0 auto 1rem auto;
     object-fit: cover;
   }
 }
@@ -5288,30 +5393,40 @@ html {
     justify-content: center;
   }
 
-.homeIconClose {
-  position: absolute;
-  top: -3vh;
-  right: -14vw;
-  z-index: 1100;
-  padding: 0.3rem; 
-  border-radius: 50%;
-  color: white;
-  font-size: 1rem; 
-}
+  .homeIconClose {
+    position: absolute;
+    top: -3vh;
+    right: -14vw;
+    z-index: 1100;
+    padding: 0.3rem;
+    border-radius: 50%;
+    color: white;
+    font-size: 1rem;
+  }
 
-.homeIconClose i {
-  font-size: 0.8rem;
-}
+  .homeIconClose i {
+    font-size: 0.8rem;
+  }
 
-  .contentImage.capitalBamban, .contentImage.revolution, .contentImage.san-seb-cathedral, 
-  .contentImage.tarlac-capitol, .contentImage.TNHS, .contentImage.san-jose-western,
-  .contentImage.mt-pinatubo, .contentImage.monasterio, .contentImage.trp, .contentImage.ncc,
-  .contentImage.train, .contentImage.soldier, .contentImage.death-march, .contentImage.ww2-tarlac-liberation,
+  .contentImage.capitalBamban,
+  .contentImage.revolution,
+  .contentImage.san-seb-cathedral,
+  .contentImage.tarlac-capitol,
+  .contentImage.TNHS,
+  .contentImage.san-jose-western,
+  .contentImage.mt-pinatubo,
+  .contentImage.monasterio,
+  .contentImage.trp,
+  .contentImage.ncc,
+  .contentImage.train,
+  .contentImage.soldier,
+  .contentImage.death-march,
+  .contentImage.ww2-tarlac-liberation,
   .contentImage.diwa {
     width: 23rem;
     max-height: 25rem;
     display: block;
-    margin: 0 auto 1rem auto; 
+    margin: 0 auto 1rem auto;
     object-fit: cover;
   }
 
@@ -5374,55 +5489,55 @@ html {
   }
 
   .food-right-content-02 {
-    display: flex;  
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: flex-start; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     width: 100%;
     max-width: 35rem;
-}
+  }
 
-.provincial-tourism {
-  padding: 2rem;
-  text-align: center;
-}
+  .provincial-tourism {
+    padding: 2rem;
+    text-align: center;
+  }
 
-.provincial-tourism .title {
-  font-size: 1.4rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
+  .provincial-tourism .title {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 
-.styled-hr {
-  width: 90%;
-  margin: 0 auto 1rem;
-}
+  .styled-hr {
+    width: 90%;
+    margin: 0 auto 1rem;
+  }
 
-.tarlac-tourism-dept {
-  gap: 1rem;
-  padding: 0 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+  .tarlac-tourism-dept {
+    gap: 1rem;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
 
-.card h3 {
-  font-size: 1.05rem;
-}
+  .card h3 {
+    font-size: 1.05rem;
+  }
 
-.card p {
-  font-size: 0.95rem;
-}
+  .card p {
+    font-size: 0.95rem;
+  }
 
-.img-tourism-logos {
-  width: 95%;
-  gap: 0.75rem;
-  margin: 1rem auto;
-}
+  .img-tourism-logos {
+    width: 95%;
+    gap: 0.75rem;
+    margin: 1rem auto;
+  }
 
-.img-tourism-logos img {
-  width: 5.5rem;
-}
+  .img-tourism-logos img {
+    width: 5.5rem;
+  }
 
 }
 
@@ -5477,14 +5592,14 @@ html {
     margin-bottom: 7.5vh;
   }
 
-  .web-cover-text{
+  .web-cover-text {
     opacity: 0;
     transform: translateX(-50%);
     top: 25vh;
     transition: transform 1.5s ease-out, opacity 1.5s ease-out;
   }
 
-  .web-cover-text.animate{
+  .web-cover-text.animate {
     transform: translateX(0);
     opacity: 1;
   }
@@ -5492,19 +5607,30 @@ html {
 }
 
 @media screen and (max-width: 425px) {
-  .pto-about{
+  .pto-about {
     padding: 5rem 15%;
   }
 
-  .contentImage.capitalBamban, .contentImage.revolution, .contentImage.san-seb-cathedral, 
-  .contentImage.tarlac-capitol, .contentImage.TNHS, .contentImage.san-jose-western,
-  .contentImage.mt-pinatubo, .contentImage.monasterio, .contentImage.trp, .contentImage.ncc,
-  .contentImage.train, .contentImage.soldier, .contentImage.death-march, .contentImage.ww2-tarlac-liberation,
-  .contentImage.diwa, .contentImage.pedroImage {
+  .contentImage.capitalBamban,
+  .contentImage.revolution,
+  .contentImage.san-seb-cathedral,
+  .contentImage.tarlac-capitol,
+  .contentImage.TNHS,
+  .contentImage.san-jose-western,
+  .contentImage.mt-pinatubo,
+  .contentImage.monasterio,
+  .contentImage.trp,
+  .contentImage.ncc,
+  .contentImage.train,
+  .contentImage.soldier,
+  .contentImage.death-march,
+  .contentImage.ww2-tarlac-liberation,
+  .contentImage.diwa,
+  .contentImage.pedroImage {
     width: 20rem;
     max-height: 25rem;
     display: block;
-    margin: 0 auto 1rem auto; 
+    margin: 0 auto 1rem auto;
     object-fit: cover;
   }
 }
@@ -5514,12 +5640,12 @@ html {
 @media screen and (max-width: 1024px) {
   .middle-content {
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
   }
 
   .column {
     width: 100%;
-    max-width: 40rem; 
+    max-width: 40rem;
   }
 
   .column img {
@@ -5533,14 +5659,14 @@ html {
     margin-top: 3vh;
   }
 
-  .adventure-left-content{
+  .adventure-left-content {
     flex-direction: column;
     align-items: center;
     width: 100%;
     max-width: 35em;
   }
 
-  .adventure-left-content img{
+  .adventure-left-content img {
     width: 100%;
     max-width: 35rem;
     margin-bottom: 3vb;
@@ -5550,29 +5676,29 @@ html {
     width: 100%;
     max-width: 40rem;
     padding: 1rem;
-}
+  }
 
   .adventure-right-content {
     flex-direction: column;
     align-items: center;
     width: 100%;
     max-width: 40rem;
-}
+  }
 
   .images-right {
-      order: -1; 
-      width: 100%;
-      max-width: 35rem;
+    order: -1;
+    width: 100%;
+    max-width: 35rem;
   }
 
   .adventure-right-content img {
-      width: 100%;
-      max-width: 40rem;
+    width: 100%;
+    max-width: 40rem;
   }
 
   .text-right-content {
-      width: 100%;
-      max-width: 35rem;
+    width: 100%;
+    max-width: 35rem;
   }
 
   .food-right-content {
@@ -5583,43 +5709,45 @@ html {
   }
 
   .images-right {
-      order: -1; 
-      width: 100%;
-      max-width: 35rem;
+    order: -1;
+    width: 100%;
+    max-width: 35rem;
   }
 
   .images-right {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 0.5rem; 
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
     justify-content: center;
     align-items: center;
-    max-width: 35rem; 
+    max-width: 35rem;
     margin: auto;
-}
+  }
 
-  .img-1, .img-2 {
-    width: 100%; 
+  .img-1,
+  .img-2 {
+    width: 100%;
     object-fit: cover;
   }
 
   .bottom-img {
-  grid-column: span 2; 
-  width: auto;
-  max-width: 100%;
-  object-fit: cover;
-  width: 30vw !important;
-  height: 25vh !important;
-  margin-left: 0;
-}
+    grid-column: span 2;
+    width: auto;
+    max-width: 100%;
+    object-fit: cover;
+    width: 30vw !important;
+    height: 25vh !important;
+    margin-left: 0;
+  }
 
-  .img-1-eco, .img-2 {
-      width: 100%; 
-      object-fit: cover;
+  .img-1-eco,
+  .img-2 {
+    width: 100%;
+    object-fit: cover;
   }
 
   .bottom-img-eco {
-    grid-column: span 2; 
+    grid-column: span 2;
     width: auto;
     max-width: 100%;
     object-fit: cover;
@@ -5627,31 +5755,31 @@ html {
   }
 
   .food-right-content img {
-      width: 100%;
-      max-width: 40rem;
+    width: 100%;
+    max-width: 40rem;
   }
 
-  .food-left-content{
+  .food-left-content {
     flex-direction: column;
     align-items: center;
     width: 100%;
     max-width: 35em;
   }
 
-  .food-left-content img{
+  .food-left-content img {
     width: 100%;
     max-width: 35rem;
     margin-bottom: 3vb;
   }
 
-  .religion-left-content{
+  .religion-left-content {
     flex-direction: column;
     align-items: center;
     width: 100%;
     max-width: 35em;
   }
 
-  .religion-left-content img{
+  .religion-left-content img {
     width: 100%;
     max-width: 35rem;
     margin-bottom: 3vb;
@@ -5663,7 +5791,7 @@ html {
     width: 100%;
     max-width: 35rem;
   }
-  
+
   .religion-right-content img {
     width: 100%;
     max-width: 35rem;
@@ -5671,12 +5799,12 @@ html {
     margin-right: 5rem;
   }
 
-  .religion-right-content .images-right img.img-1-faith{
+  .religion-right-content .images-right img.img-1-faith {
     margin-left: 5rem !important;
     margin-right: 0;
   }
 
-  .religion-right-content .images-right img.img-2-faith{
+  .religion-right-content .images-right img.img-2-faith {
     margin-left: 1.5rem !important;
     margin-right: 5vw !important;
     margin-top: 0;
@@ -5691,7 +5819,7 @@ html {
     margin-left: 25%;
   }
 
-  .festival1-text-content > p.p {
+  .festival1-text-content>p.p {
     width: 100%;
     margin-right: 1rem;
     margin-left: 25%;
@@ -5699,29 +5827,50 @@ html {
   }
 
   .images-right-02 {
-    order: -1; 
+    order: -1;
     width: 100%;
     max-width: 35rem;
   }
 
-  .images-right-02 img.img-1, img.img-2{
+  .images-right-02 img.img-1,
+  img.img-2 {
     width: 25vw;
     margin-bottom: 3vb;
   }
 
   /* Animations (Bottom) */
 
-  .mapTarlacVisuals, .img-1, .images-right-02 > .img-2, .anao-church, .images-left > .img-1, .images-left > .peace,
-  .images-right > .img-1, .images-right > .img-2, .images-right > .img-1-faith, .images-right > .img-2-faith, .cathedral, .la-maja, .img-tour-12
-  {
+  .mapTarlacVisuals,
+  .img-1,
+  .images-right-02>.img-2,
+  .anao-church,
+  .images-left>.img-1,
+  .images-left>.peace,
+  .images-right>.img-1,
+  .images-right>.img-2,
+  .images-right>.img-1-faith,
+  .images-right>.img-2-faith,
+  .cathedral,
+  .la-maja,
+  .img-tour-12 {
     opacity: 0;
     transform: translateY(100%);
     transition: transform 1.5s ease-out, opacity 1.5s ease-out;
   }
 
-  .mapTarlacVisuals.animate, .img-1.animate, .images-right-02 > .img-2.animate, .anao-church.animate, .images-left > .img-1.animate, .images-left > .peace.animate,
-  .images-right > .img-1.animate, .images-right > .img-2.animate, .images-right > .img-1-faith.animate, .images-right > .img-2-faith.animate, .religion-left-content > .cathedral.animate, .la-maja.animate, .img-tour-12.animate
-  {
+  .mapTarlacVisuals.animate,
+  .img-1.animate,
+  .images-right-02>.img-2.animate,
+  .anao-church.animate,
+  .images-left>.img-1.animate,
+  .images-left>.peace.animate,
+  .images-right>.img-1.animate,
+  .images-right>.img-2.animate,
+  .images-right>.img-1-faith.animate,
+  .images-right>.img-2-faith.animate,
+  .religion-left-content>.cathedral.animate,
+  .la-maja.animate,
+  .img-tour-12.animate {
     transform: translateY(0);
     opacity: 1;
   }
@@ -5730,7 +5879,7 @@ html {
 
 @media screen and (max-width: 950px) {
   .middle-content {
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
   }
 
@@ -5749,14 +5898,14 @@ html {
     margin-top: 3vh;
   }
 
-  .adventure-left-content{
+  .adventure-left-content {
     flex-direction: column;
     align-items: center;
     width: 100%;
     max-width: 40rem;
   }
 
-  .adventure-left-content img{
+  .adventure-left-content img {
     width: 100%;
     max-width: 35rem;
     margin-bottom: 3vb;
@@ -5767,41 +5916,41 @@ html {
     align-items: center;
     width: 100%;
     max-width: 40rem;
-}
+  }
 
   .images-right {
-      order: -1; 
-      width: 100%;
-      max-width: 35rem;
+    order: -1;
+    width: 100%;
+    max-width: 35rem;
   }
 
   .adventure-right-content img {
-      width: 100%;
-      max-width: 35rem;
+    width: 100%;
+    max-width: 35rem;
   }
 
   .text-right-content {
-      width: 100%;
-      padding: 1rem;
+    width: 100%;
+    padding: 1rem;
   }
 
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .middle-content .column > .column-eco1 {
+  .middle-content .column>.column-eco1 {
     max-width: 40rem !important;
   }
 
-  .middle-content .column > .text-falls{
+  .middle-content .column>.text-falls {
     margin-left: 5rem !important;
     max-width: 40rem !important;
   }
 
-  .middle-content .column > .img-tour-12{
+  .middle-content .column>.img-tour-12 {
     margin-left: 5rem !important;
   }
 
-  .middle-content .column .column-eco1 > .img-tour-12{
+  .middle-content .column .column-eco1>.img-tour-12 {
     margin-left: 5rem !important;
   }
 }
@@ -5811,13 +5960,13 @@ html {
 @media screen and (max-width: 768px) {
   .assisi {
     margin-top: 3rem;
-    height: 20rem; 
+    height: 20rem;
   }
 
   .nonnatus {
-    margin-top: 3vh; 
-    height: 20rem; 
-  }  
+    margin-top: 3vh;
+    height: 20rem;
+  }
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
@@ -5833,8 +5982,8 @@ html {
     width: 100%;
     padding-top: 50%;
   }
-  
-  .media-wrapper .image{
+
+  .media-wrapper .image {
     position: absolute;
     left: 0;
     bottom: 30px;
@@ -5846,7 +5995,7 @@ html {
     z-index: 1;
     transition: transform 0.3s ease, z-index 0.3s ease, box-shadow 0.3s ease;
   }
-  
+
   .fes {
     flex-direction: column;
   }
@@ -5856,33 +6005,36 @@ html {
   }
 
   .media-content {
-      order: 1;
+    order: 1;
   }
 
   .festival-text-content {
-      order: 2;
+    order: 2;
   }
 
   .festival1-text-content {
     order: 2;
-}
+  }
 
-  .fes .festival-text-content{
+  .fes .festival-text-content {
     margin-top: 5vh;
     width: 90%;
   }
 
-  .fes-1 .festival1-text-content{
+  .fes-1 .festival1-text-content {
     margin-top: 5vh;
     width: 90%;
   }
 
-  .fes-1 .festival1-text-content p.p, .h1-1{
+  .fes-1 .festival1-text-content p.p,
+  .h1-1 {
     margin: 0;
     margin-top: 3rem;
   }
 
-  .fes-1 .festival1-text-content .styled-hr2, .styled-hr2::before, .styled-hr2::after{
+  .fes-1 .festival1-text-content .styled-hr2,
+  .styled-hr2::before,
+  .styled-hr2::after {
     margin: 0;
     margin-top: 0.5rem;
   }
@@ -5901,18 +6053,37 @@ html {
 
   /* Animations (Bottom) */
 
-  .mapTarlacVisuals, .img-1, .images-right-02 > .img-2, .anao-church, .images-left > .img-1, .images-left > .peace,
-  .images-right > .img-1, .images-right > .img-2, .images-right > .img-1-faith, .images-right > .img-2-faith, .cathedral, .la-maja, .img-tour-12
-  {
+  .mapTarlacVisuals,
+  .img-1,
+  .images-right-02>.img-2,
+  .anao-church,
+  .images-left>.img-1,
+  .images-left>.peace,
+  .images-right>.img-1,
+  .images-right>.img-2,
+  .images-right>.img-1-faith,
+  .images-right>.img-2-faith,
+  .cathedral,
+  .la-maja,
+  .img-tour-12 {
     opacity: 0;
     transform: translateY(100%);
     transition: transform 1.5s ease-out, opacity 1.5s ease-out;
   }
 
-  .mapTarlacVisuals.animate, .img-1.animate, .images-right-02 > .img-2.animate, .anao-church.animate, .images-left > .img-1.animate, .images-left > .peace.animate,
-  .images-right > .img-1.animate, .images-right > .img-2.animate, .images-right > .img-1-faith.animate, .images-right > .img-2-faith.animate, .religion-left-content > .cathedral.animate, .la-maja.animate,
-  .img-tour-12.animate
-  {
+  .mapTarlacVisuals.animate,
+  .img-1.animate,
+  .images-right-02>.img-2.animate,
+  .anao-church.animate,
+  .images-left>.img-1.animate,
+  .images-left>.peace.animate,
+  .images-right>.img-1.animate,
+  .images-right>.img-2.animate,
+  .images-right>.img-1-faith.animate,
+  .images-right>.img-2-faith.animate,
+  .religion-left-content>.cathedral.animate,
+  .la-maja.animate,
+  .img-tour-12.animate {
     transform: translateY(0);
     opacity: 1;
   }
@@ -5920,7 +6091,7 @@ html {
 }
 
 @media screen and (max-width: 375px) {
-  .images-left > .peace{
+  .images-left>.peace {
     width: 25rem !important;
   }
 }
@@ -5938,11 +6109,13 @@ html {
     transform: translate(-50%, -50%);
     z-index: 1000;
   }
-  
+
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
-  html, body {
+
+  html,
+  body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -5959,7 +6132,8 @@ html {
 
   .web__title {
     font-size: 2.2rem !important;
-    overflow-wrap: break-word; /* Break long words */
+    overflow-wrap: break-word;
+    /* Break long words */
     word-wrap: break-word;
     word-break: break-word;
   }
@@ -5984,9 +6158,9 @@ html {
 
   .adventure-left-content img {
     width: 100%;
-    max-width: 22rem; 
-    margin-bottom: 3vh; 
-    height: auto; 
+    max-width: 22rem;
+    margin-bottom: 3vh;
+    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -5997,27 +6171,27 @@ html {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 40rem !important; 
+    max-width: 40rem !important;
   }
 
   .adventure-right-content img {
     width: 100%;
-    max-width: 18rem !important; 
+    max-width: 18rem !important;
     display: block;
   }
 
   .assisi {
     margin-top: 3rem;
-    height: 18rem; 
+    height: 18rem;
   }
 
   .nonnatus {
-    margin-top: 3vh; 
-    height: 18rem; 
+    margin-top: 3vh;
+    height: 18rem;
   }
 
-  .adventure-right-content .text-right-content > p,
-  .adventure-left-content .text-left-content > p {
+  .adventure-right-content .text-right-content>p,
+  .adventure-left-content .text-left-content>p {
     max-width: 90%;
   }
 
@@ -6041,18 +6215,18 @@ html {
     object-fit: cover;
   }
 
-  .food-right-content .text-right-content > p {
+  .food-right-content .text-right-content>p {
     max-width: 100%;
     width: 25rem;
   }
 
   .food-right-content-02 {
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
   }
 
-.food-right-content-02 > .images-right-02 {
+  .food-right-content-02>.images-right-02 {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -6060,24 +6234,24 @@ html {
     align-items: center;
     order: -1;
     margin-bottom: 1.5rem;
-}
+  }
 
-.food-right-content-02 > .images-right-02 img {
+  .food-right-content-02>.images-right-02 img {
     width: 30vw;
     height: 25vh;
     object-fit: cover;
-}
+  }
 
-.food-right-content-02 .text-right-content {
+  .food-right-content-02 .text-right-content {
     text-align: center;
-    margin-top: 1rem; 
-}
+    margin-top: 1rem;
+  }
 
-.food-right-content-02 .text-right-content > p {
+  .food-right-content-02 .text-right-content>p {
     max-width: 100%;
     width: 25rem;
-    margin: 0 auto; 
-}
+    margin: 0 auto;
+  }
 
   .bottom-img-eco {
     display: block;
@@ -6085,7 +6259,7 @@ html {
     width: 60vw !important;
     height: auto;
     margin-right: 7.5rem !important;
-}
+  }
 
   .middle-content .column img.img-tour,
   .food-left-content .images-left img.img-1,
@@ -6096,8 +6270,8 @@ html {
     height: 28vh;
     margin-left: 1.5rem !important;
   }
-  
-  .food-left-content .text-left-content > p{
+
+  .food-left-content .text-left-content>p {
     padding-right: 0.5rem;
   }
 
@@ -6110,33 +6284,33 @@ html {
     order: -1;
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
-}
+  }
 
-.religion-right-content .images-right {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-  order: -1;
-  margin-bottom: 1.5rem;
-  margin-top: 1.5rem;
-}
+  .religion-right-content .images-right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    order: -1;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
 
-.religion-right-content .images-right > img.img-1-faith {
-  display: block;
-  margin-right: 5rem !important;
-}
+  .religion-right-content .images-right>img.img-1-faith {
+    display: block;
+    margin-right: 5rem !important;
+  }
 
 
-  .religion-right-content .images-right > img.anao-church {
+  .religion-right-content .images-right>img.anao-church {
     width: 30rem;
     height: auto;
     display: block;
     margin-left: 5rem !important;
   }
 
-  .religion-left-content .images-left > img.cathedral {
+  .religion-left-content .images-left>img.cathedral {
     width: 30rem;
     height: auto;
     display: block;
@@ -6145,22 +6319,22 @@ html {
 
   .religion-left-content,
   .religion-right-content {
-      display: flex;
-      flex-direction: column; 
+    display: flex;
+    flex-direction: column;
   }
 
   .religion-right-content .text-right-content {
-      width: 100%;
-      max-width: 50rem;
-      padding: 1rem;
-      margin: 0;
+    width: 100%;
+    max-width: 50rem;
+    padding: 1rem;
+    margin: 0;
   }
 
   .middle-content {
     margin-left: 0;
     padding-left: 0;
   }
-  
+
 }
 
 @media screen and (min-width: 375px) and (max-width: 430px) {
@@ -6169,7 +6343,7 @@ html {
     margin-left: 1.5rem;
   }
 
-  .food-right-content-02 .text-right-content-02 > p{
+  .food-right-content-02 .text-right-content-02>p {
     max-width: 25rem;
     width: 100%;
     box-sizing: border-box;
@@ -6179,55 +6353,55 @@ html {
     margin-left: 0.25rem;
   }
 
-  .food-left-content .text-left-content > p{
+  .food-left-content .text-left-content>p {
     max-width: 25rem;
     width: 95%;
     box-sizing: border-box;
   }
-  
-  .religion-left-content .text-left-content > p{
+
+  .religion-left-content .text-left-content>p {
     max-width: 23rem;
     width: 90%;
     box-sizing: border-box;
   }
 
-  .religion-left-content .text-left-content > h2{
+  .religion-left-content .text-left-content>h2 {
     font-size: 1.9rem;
   }
 
-  .religion-left-content .text-left-content > h2{
+  .religion-left-content .text-left-content>h2 {
     font-size: 1.95rem;
   }
 
   .assisi {
     margin-top: 3rem;
-    height: 15rem; 
+    height: 15rem;
   }
 
   .nonnatus {
-    margin-top: 3vh; 
-    height: 15rem; 
+    margin-top: 3vh;
+    height: 15rem;
   }
 
-  .anao-church{
-    height: 18rem !important; 
+  .anao-church {
+    height: 18rem !important;
     width: auto;
   }
 
-  .la-maja{
-    height: 18rem !important; 
+  .la-maja {
+    height: 18rem !important;
     width: 25rem !important;
     margin-left: 5rem !important;
   }
 
-  .cathedral{
-    height: 18rem !important; 
+  .cathedral {
+    height: 18rem !important;
     width: 100%;
     max-width: 23rem !important;
   }
 
-  .peace{
-    height: 15rem !important; 
+  .peace {
+    height: 15rem !important;
     width: auto;
     margin-left: 1.5rem;
   }
@@ -6238,18 +6412,18 @@ html {
     height: auto;
   }
 
-  .img-1{
+  .img-1 {
     width: 100%;
     min-width: 20rem;
     height: auto;
   }
 
-  .img-tour-1{
+  .img-tour-1 {
     width: 100%;
     min-width: 20rem;
     height: auto;
   }
-  
+
   .home__video {
     position: fixed;
     top: -18vh;
@@ -6288,17 +6462,17 @@ html {
 
   .adventure-right-content {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     width: 100%;
     max-width: 40rem;
     margin: 0 auto;
   }
 
-  .adventure-right-content > .images-right {
+  .adventure-right-content>.images-right {
     display: flex;
-    flex-direction: column; 
-    gap: 1rem;             
+    flex-direction: column;
+    gap: 1rem;
     width: 100%;
     max-width: 35rem;
   }
@@ -6308,7 +6482,7 @@ html {
     border-radius: 0.5rem;
     object-fit: cover;
   }
-  
+
   .images-right-02 {
     display: flex;
     flex-direction: column;
@@ -6316,14 +6490,14 @@ html {
     width: 100%;
     max-width: 35rem;
   }
-  
-  .images-right-02 > img {
+
+  .images-right-02>img {
     width: 100%;
     max-width: 100%;
     height: auto;
     border-radius: 0.5rem;
     object-fit: cover;
-  }  
+  }
 
   .food-right-content-02 {
     display: flex;
@@ -6333,7 +6507,7 @@ html {
     max-width: 40rem;
     margin: 0 auto;
   }
-  
+
   .food-right-content-02 .images-right-02 {
     display: flex;
     flex-direction: column;
@@ -6341,7 +6515,7 @@ html {
     width: 100%;
     max-width: 23rem;
   }
-  
+
   .food-right-content-02 .images-right-02 img {
     width: 100%;
     max-width: 100%;
@@ -6359,7 +6533,7 @@ html {
     justify-content: center;
     align-items: center;
   }
-  
+
   .web-coverImg .image-container img {
     position: absolute;
     top: 0;
@@ -6369,11 +6543,14 @@ html {
     object-fit: cover;
     z-index: 0;
   }
-  
+
   .web-coverImg::before {
     content: "";
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 1;
   }
@@ -6397,44 +6574,300 @@ html {
   }
 
   .homeIconClose {
-  position: absolute;
-  top: 3vh;
-  right: -12vw;
-  z-index: 1100;
-  padding: 0.3rem; 
-  border-radius: 50%;
-  color: white;
-  font-size: 0.7rem; 
+    position: absolute;
+    top: 3vh;
+    right: -12vw;
+    z-index: 1100;
+    padding: 0.3rem;
+    border-radius: 50%;
+    color: white;
+    font-size: 0.7rem;
+  }
+
+  .homeIconClose i {
+    font-size: 0.7rem;
+  }
+
+  .pto-about-us {
+    max-height: 65rem;
+    padding-top: 10rem;
+  }
+
+  .pto-about-us .about {
+    font-size: 0.95rem;
+  }
+
+  .pto-about-us h2 {
+    font-size: 2rem;
+    line-height: 1.75rem;
+  }
+
+  .museo-kanlahi-img {
+    width: 23rem !important;
+  }
+
+  .hero-content>h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content>p {
+    font-size: 1.1rem;
+  }
+
 }
 
-.homeIconClose i {
-  font-size: 0.7rem;
+/* Mobile Responsive Fixes for Festival Page */
+@media screen and (max-width: 768px) {
+
+  /* Festival Section Layout Fix */
+  .fes,
+  .fes-1 {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    width: 100%;
+    margin: 0;
+  }
+
+  .festival-text-content,
+  .festival1-text-content {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0;
+    order: 2;
+    /* Text comes after media on mobile */
+  }
+
+  .media-content {
+    width: 100%;
+    order: 1;
+    /* Media comes first on mobile */
+    margin-bottom: 2rem;
+  }
+
+  /* Text Alignment Fixes */
+  .h1,
+  .h1-1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-left: 0 !important;
+  }
+
+  .h1-1 {
+    color: #0A2239;
+    /* Change color for better readability */
+    margin-left: 0 !important;
+  }
+
+  .p {
+    font-size: 1rem;
+    text-align: justify;
+    width: 100% !important;
+    margin: 0;
+    padding: 0 0.5rem;
+  }
+
+  /* Remove fixed margins for mobile */
+  .fes-1 .festival1-text-content p,
+  .festival1-text-content>p.p {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* HR Alignment Fix */
+  .styled-hr,
+  .styled-hr2 {
+    justify-content: center;
+    margin-left: 0 !important;
+  }
+
+  .styled-hr2::before,
+  .styled-hr2::after {
+    background-color: #0A2239 !important;
+    /* Change color for light background */
+  }
+
+  /* Media Wrapper Fix */
+  .media-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 70%;
+    /* Better aspect ratio for mobile */
+    margin: 0 auto;
+  }
+
+  .media-wrapper .image,
+  .media-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 8px;
+  }
+
+  /* Remove the overlapping video positioning */
+  .media-wrapper video {
+    position: relative !important;
+    margin-top: 1rem;
+    border: 2px solid #fff;
+  }
+
+  /* Photo and Video Credits */
+  .photo-credit,
+  .video-credit,
+  .photo-credit1,
+  .video-credit1 {
+    text-align: center;
+    margin-left: 0 !important;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .photo-credit1,
+  .video-credit1 {
+    color: #333 !important;
+    /* Dark color for better readability */
+  }
+
+  /* Background Color Adjustments */
+  .fes-1 {
+    background-color: #f8f9fa !important;
+    /* Light background for better readability */
+  }
+
+  .fes-1 .festival1-text-content p {
+    color: #333 !important;
+    /* Dark text for light background */
+  }
+
+  /* Special Festival Sections */
+  .concepcion-festival .festival-text-content,
+  .pura-festival .festival-text-content {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 2rem;
+  }
+
+  .h1-concepcion,
+  .h1-pura {
+    color: #0A2239 !important;
+    text-align: center;
+  }
+
+  .concepcion-festival .festival-text-content .styled-hr::before,
+  .concepcion-festival .festival-text-content .styled-hr::after,
+  .pura-festival .festival-text-content .styled-hr::before,
+  .pura-festival .festival-text-content .styled-hr::after {
+    background-color: #0A2239 !important;
+  }
 }
 
-.pto-about-us {
-  max-height: 65rem;
-  padding-top: 10rem;
+/* Additional fixes for very small screens */
+@media screen and (max-width: 375px) {
+
+  .fes,
+  .fes-1 {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .h1,
+  .h1-1,
+  .h1-concepcion,
+  .h1-pura {
+    font-size: 1.5rem;
+  }
+
+  .p {
+    font-size: 0.9rem;
+    padding: 0;
+  }
+
+  .media-wrapper {
+    padding-top: 80%;
+    /* Even taller aspect ratio for very small screens */
+  }
 }
 
-.pto-about-us .about{
-  font-size: 0.95rem;
+/* Fix for tablet sizes */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  .fes,
+  .fes-1 {
+    padding: 3rem 2rem;
+  }
+
+  .festival-text-content,
+  .festival1-text-content {
+    width: 45%;
+  }
+
+  .media-content {
+    width: 50%;
+  }
+
+  .h1-1 {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .festival1-text-content .styled-hr2 {
+    margin-left: 0;
+  }
+
+  .fes-1 .festival1-text-content p {
+    margin-left: 0;
+  }
 }
 
-.pto-about-us h2{
-  font-size: 2rem;
-  line-height: 1.75rem;
+/* Mobile Fix for Festival Page Text */
+@media screen and (max-width: 768px) {
+  .slide-1 .web-cover-text {
+    position: absolute;
+    top: 50%;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    text-align: center;
+    margin: 0 !important;
+    padding: 0 1rem;
+    width: 90%;
+    max-width: 100%;
+  }
+
+  .slide-1 .web__explore {
+    font-size: 1.5rem;
+    letter-spacing: 0.08rem;
+  }
+
+  .slide-1 .web__title {
+    font-size: 2.5rem !important;
+    margin-top: 0.5rem;
+    line-height: 1.2;
+  }
+
+  .slide-1 .web__description {
+    font-size: 1rem;
+    margin-top: 1rem;
+    max-width: 100%;
+    line-height: 1.4;
+  }
 }
 
-.museo-kanlahi-img{
-  width: 23rem !important;
-}
+/* Additional fix for very small screens */
+@media screen and (max-width: 375px) {
+  .slide-1 .web-cover-text {
+    width: 95%;
+    padding: 0 0.5rem;
+  }
 
-.hero-content > h1{
-  font-size: 2.5rem;
-}
+  .slide-1 .web__explore {
+    font-size: 1.3rem;
+  }
 
-.hero-content > p{
-  font-size: 1.1rem;
-}
+  .slide-1 .web__title {
+    font-size: 2rem !important;
+  }
 
+  .slide-1 .web__description {
+    font-size: 0.9rem;
+  }
 }
