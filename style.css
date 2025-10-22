@@ -6819,7 +6819,7 @@ html {
   }
 }
 
-/* Mobile Fix for Videos and Images - Using Desktop Layout as Basis */
+/* Complete Mobile Fix - Force White Titles for Carabao and Tarlakauyan Festivals */
 @media screen and (max-width: 768px) {
 
   /* Ensure videos are visible and properly sized */
@@ -6900,7 +6900,7 @@ html {
     left: 0;
   }
 
-  /* Preserve festival text positioning (similar to desktop but centered) */
+  /* Preserve festival text positioning */
   .slide-1 .web-cover-text {
     position: absolute;
     top: 50%;
@@ -6931,21 +6931,97 @@ html {
     line-height: 1.5;
   }
 
-  /* FESTIVAL PAGE SPECIFIC FIXES - Preserve desktop layout */
-  .fes,
+  /* FESTIVAL PAGE SPECIFIC FIXES */
+
+  /* Preserve blue backgrounds */
   .fes-1 {
-    padding: 4rem 2rem;
+    background-color: rgb(6, 53, 71) !important;
+    color: white !important;
+    padding: 5.5rem 2rem !important;
     display: flex;
     flex-direction: column;
     min-height: auto;
   }
 
+  .fes-2 {
+    background-color: rgb(22, 101, 133) !important;
+    color: white !important;
+    padding: 35.5rem 2rem !important;
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .fes {
+    background-color: #ffffff !important;
+    padding: 5.5rem 2rem !important;
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  /* CRITICAL FIX: Force ALL titles in blue sections to be WHITE */
+  .fes-1 h1,
+  .fes-2 h1,
+  .fes-1 .h1,
+  .fes-2 .h1,
+  .fes-1 .h1-1,
+  .fes-2 .h1-2,
+  .fes-1 [class*="h1"],
+  .fes-2 [class*="h1"],
+  .fes-1 .festival-text-content h1,
+  .fes-2 .festival-text-content h1,
+  .fes-1 .festival-text-content .h1,
+  .fes-2 .festival-text-content .h1,
+  .fes-1 .festival1-text-content h1,
+  .fes-2 .festival1-text-content1 h1,
+  .fes-1 .festival1-text-content .h1-1,
+  .fes-2 .festival1-text-content1 .h1-2 {
+    color: white !important;
+    text-align: center;
+    font-size: 2.1rem !important;
+    margin-bottom: 0.4rem !important;
+    font-family: "Open Sans", sans-serif !important;
+  }
+
+  /* Hover effects */
+  .fes-1 h1:hover,
+  .fes-2 h1:hover,
+  .fes-1 .h1:hover,
+  .fes-2 .h1:hover,
+  .fes-1 .h1-1:hover,
+  .fes-2 .h1-2:hover {
+    color: gold !important;
+  }
+
+  /* Text colors */
   .festival-text-content,
   .festival1-text-content {
     width: 100% !important;
     margin-right: 0 !important;
     margin-top: 0 !important;
     order: 2;
+  }
+
+  .fes-1 .festival1-text-content,
+  .fes-2 .festival1-text-content1,
+  .fes-1 .festival-text-content p,
+  .fes-2 .festival-text-content p,
+  .fes-1 .festival1-text-content p,
+  .fes-2 .festival1-text-content1 p,
+  .fes-1 p,
+  .fes-2 p {
+    color: white !important;
+  }
+
+  /* HR colors */
+  .fes-1 .festival1-text-content .styled-hr2::before,
+  .fes-1 .festival1-text-content .styled-hr2::after,
+  .fes-1 .festival-text-content .styled-hr::before,
+  .fes-1 .festival-text-content .styled-hr::after,
+  .fes-2 .festival-text-content .styled-hr::before,
+  .fes-2 .festival-text-content .styled-hr::after {
+    background-color: white !important;
   }
 
   .media-content {
@@ -6955,17 +7031,25 @@ html {
     display: block !important;
   }
 
-  /* Preserve the complex media wrapper layout */
+  /* Photo and video credits */
+  .fes-1 .media-content p.photo-credit1,
+  .fes-1 .media-content p.video-credit1,
+  .fes-1 .media-content p.photo-credit,
+  .fes-1 .media-content p.video-credit,
+  .fes-2 .media-content p.photo-credit,
+  .fes-2 .media-content p.video-credit {
+    color: white !important;
+  }
+
+  /* Media wrapper layout */
   .media-wrapper {
     position: relative !important;
     width: 100% !important;
     height: 500px !important;
-    /* Fixed height for the overlapping area */
     display: block !important;
     margin: 2rem auto;
   }
 
-  /* Preserve image positioning (similar to desktop but scaled) */
   .media-wrapper .image {
     position: absolute !important;
     display: block !important;
@@ -7005,7 +7089,6 @@ html {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   }
 
-  /* Preserve video positioning (overlapping images) */
   .media-wrapper video {
     position: absolute !important;
     display: block !important;
@@ -7051,7 +7134,6 @@ html {
     border: 4px solid #fff;
   }
 
-  /* Preserve hover effects */
   .media-wrapper .image:hover,
   .media-wrapper .image1:hover,
   .media-wrapper .image2:hover {
@@ -7060,7 +7142,7 @@ html {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   }
 
-  /* Fix food/adventure page image layouts - preserve desktop style */
+  /* Image layouts */
   .images-right,
   .images-left,
   .images-right-02 {
@@ -7071,7 +7153,6 @@ html {
     margin: 3rem 0;
   }
 
-  /* Preserve the 3-image overlapping layout */
   .images-right img.img-1,
   .images-right img.img-1-eco,
   .images-right img.img-1-eco-1,
@@ -7115,7 +7196,6 @@ html {
     border-radius: 8px;
   }
 
-  /* Text content adjustments */
   .text-right-content,
   .text-left-content {
     width: 100% !important;
@@ -7139,14 +7219,11 @@ html {
 
 /* Additional mobile video fixes */
 @media screen and (max-width: 768px) {
-
-  /* Force video elements to be visible */
   video[autoplay] {
     display: block !important;
     visibility: visible !important;
   }
 
-  /* Ensure video containers don't hide content */
   .slide video {
     display: block !important;
     opacity: 1 !important;
@@ -7180,28 +7257,46 @@ html {
   .media-wrapper video {
     height: 200px !important;
   }
+
+  .fes,
+  .fes-1,
+  .fes-2 {
+    padding: 3rem 1rem !important;
+  }
+
+  .fes-1 h1,
+  .fes-2 h1,
+  .fes-1 .h1,
+  .fes-2 .h1,
+  .fes-1 .h1-1,
+  .fes-2 .h1-2 {
+    font-size: 1.8rem !important;
+  }
 }
 
-/* Tablet adjustments */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .slide-1 .web-cover-text {
-    left: 4rem !important;
-    margin-left: 4rem !important;
-    transform: translateY(-50%) !important;
-    text-align: left;
-  }
+/* EMERGENCY FIX: Force white titles at all times for these sections */
+.fes-1 h1,
+.fes-2 h1,
+.fes-1 .h1,
+.fes-2 .h1,
+.fes-1 .h1-1,
+.fes-2 .h1-2,
+.fes-1 .festival-text-content h1,
+.fes-2 .festival-text-content h1,
+.fes-1 .festival-text-content .h1,
+.fes-2 .festival-text-content .h1,
+.fes-1 .festival1-text-content h1,
+.fes-2 .festival1-text-content1 h1,
+.fes-1 .festival1-text-content .h1-1,
+.fes-2 .festival1-text-content1 .h1-2 {
+  color: white !important;
+}
 
-  .media-wrapper {
-    height: 600px !important;
-  }
-
-  .media-wrapper .image,
-  .media-wrapper .image1,
-  .media-wrapper .image2 {
-    height: 250px !important;
-  }
-
-  .media-wrapper video {
-    height: 300px !important;
-  }
+.fes-1 h1:hover,
+.fes-2 h1:hover,
+.fes-1 .h1:hover,
+.fes-2 .h1:hover,
+.fes-1 .h1-1:hover,
+.fes-2 .h1-2:hover {
+  color: gold !important;
 }
