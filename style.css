@@ -6819,8 +6819,88 @@ html {
   }
 }
 
-/* Mobile Fix for Festival Page Text */
+/* Mobile Fix for Videos and Images - Using Desktop Layout as Basis */
 @media screen and (max-width: 768px) {
+
+  /* Ensure videos are visible and properly sized */
+  .myVideo1,
+  .myVideo2,
+  .myVideo3,
+  .myVideo4,
+  .myVideo5 {
+    position: absolute !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 0;
+  }
+
+  /* Fix video container slides */
+  .slide {
+    position: relative !important;
+    width: 100% !important;
+    height: 100vh !important;
+    overflow: hidden;
+  }
+
+  .slide-1,
+  .slide-2,
+  .slide-3 {
+    height: 100vh !important;
+  }
+
+  /* Ensure overlay doesn't block video */
+  .overlay-content {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  /* Fix caption positioning */
+  .caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 2;
+    padding: 20px 0px;
+  }
+
+  /* Fix web cover images */
+  .web-coverImg {
+    display: block !important;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .web-coverImg .image-container {
+    display: block !important;
+    width: 100%;
+    height: 100%;
+  }
+
+  .web-coverImg .image-container img {
+    display: block !important;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  /* Preserve festival text positioning (similar to desktop but centered) */
   .slide-1 .web-cover-text {
     position: absolute;
     top: 50%;
@@ -6828,46 +6908,300 @@ html {
     transform: translate(-50%, -50%) !important;
     text-align: center;
     margin: 0 !important;
-    padding: 0 1rem;
+    padding: 0 2rem;
     width: 90%;
+    z-index: 2;
+  }
+
+  .slide-1 .web__explore {
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .slide-1 .web__title {
+    font-size: 3.5rem !important;
+    margin-top: 0.5rem;
+    line-height: 1.1;
+  }
+
+  .slide-1 .web__description {
+    font-size: 1.1rem;
+    margin-top: 1rem;
     max-width: 100%;
+    line-height: 1.5;
+  }
+
+  /* FESTIVAL PAGE SPECIFIC FIXES - Preserve desktop layout */
+  .fes,
+  .fes-1 {
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .festival-text-content,
+  .festival1-text-content {
+    width: 100% !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+    order: 2;
+  }
+
+  .media-content {
+    width: 100% !important;
+    order: 1;
+    margin-bottom: 3rem;
+    display: block !important;
+  }
+
+  /* Preserve the complex media wrapper layout */
+  .media-wrapper {
+    position: relative !important;
+    width: 100% !important;
+    height: 500px !important;
+    /* Fixed height for the overlapping area */
+    display: block !important;
+    margin: 2rem auto;
+  }
+
+  /* Preserve image positioning (similar to desktop but scaled) */
+  .media-wrapper .image {
+    position: absolute !important;
+    display: block !important;
+    width: 70% !important;
+    height: 200px !important;
+    object-fit: cover;
+    left: 5% !important;
+    bottom: 50px !important;
+    z-index: 1;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  .media-wrapper .image1 {
+    position: absolute !important;
+    display: block !important;
+    width: 70% !important;
+    height: 200px !important;
+    object-fit: cover;
+    left: 5% !important;
+    top: 20px !important;
+    z-index: 1;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  .media-wrapper .image2 {
+    position: absolute !important;
+    display: block !important;
+    width: 70% !important;
+    height: 200px !important;
+    object-fit: cover;
+    left: 5% !important;
+    top: 100px !important;
+    z-index: 1;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  /* Preserve video positioning (overlapping images) */
+  .media-wrapper video {
+    position: absolute !important;
+    display: block !important;
+    width: 80% !important;
+    height: 250px !important;
+    object-fit: cover;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 2;
+    border-radius: 8px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+    border: 4px solid #fff;
+  }
+
+  .media-wrapper .vid {
+    position: absolute !important;
+    display: block !important;
+    width: 80% !important;
+    height: 250px !important;
+    object-fit: cover;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 2;
+    border-radius: 8px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+    border: 4px solid #fff;
+  }
+
+  .media-wrapper .video {
+    position: absolute !important;
+    display: block !important;
+    width: 80% !important;
+    height: 250px !important;
+    object-fit: cover;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 2;
+    border-radius: 8px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+    border: 4px solid #fff;
+  }
+
+  /* Preserve hover effects */
+  .media-wrapper .image:hover,
+  .media-wrapper .image1:hover,
+  .media-wrapper .image2:hover {
+    z-index: 3;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Fix food/adventure page image layouts - preserve desktop style */
+  .images-right,
+  .images-left,
+  .images-right-02 {
+    display: flex !important;
+    position: relative;
+    width: 100%;
+    height: 350px;
+    margin: 3rem 0;
+  }
+
+  /* Preserve the 3-image overlapping layout */
+  .images-right img.img-1,
+  .images-right img.img-1-eco,
+  .images-right img.img-1-eco-1,
+  .images-right img.img-1-faith {
+    position: absolute !important;
+    display: block !important;
+    width: 50% !important;
+    height: 200px !important;
+    object-fit: cover;
+    left: 5% !important;
+    top: 10% !important;
+    z-index: 1;
+    border-radius: 8px;
+  }
+
+  .images-right img.img-2,
+  .images-right img.img-2-eco-1,
+  .images-right img.img-2-eco-2,
+  .images-right img.img-2-faith {
+    position: absolute !important;
+    display: block !important;
+    width: 50% !important;
+    height: 200px !important;
+    object-fit: cover;
+    right: 5% !important;
+    top: 30% !important;
+    z-index: 2;
+    border-radius: 8px;
+  }
+
+  .images-right img.bottom-img,
+  .images-right img.bottom-img-eco {
+    position: absolute !important;
+    display: block !important;
+    width: 60% !important;
+    height: 150px !important;
+    object-fit: cover;
+    left: 20% !important;
+    bottom: 10% !important;
+    z-index: 3;
+    border-radius: 8px;
+  }
+
+  /* Text content adjustments */
+  .text-right-content,
+  .text-left-content {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 2rem 0;
+  }
+
+  .text-right-content h2,
+  .text-left-content h2 {
+    font-size: 2rem !important;
+    text-align: center;
+  }
+
+  .text-right-content p,
+  .text-left-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+}
+
+/* Additional mobile video fixes */
+@media screen and (max-width: 768px) {
+
+  /* Force video elements to be visible */
+  video[autoplay] {
+    display: block !important;
+    visibility: visible !important;
+  }
+
+  /* Ensure video containers don't hide content */
+  .slide video {
+    display: block !important;
+    opacity: 1 !important;
+  }
+}
+
+/* Very small screen adjustments */
+@media screen and (max-width: 375px) {
+  .slide-1 .web__title {
+    font-size: 2.8rem !important;
   }
 
   .slide-1 .web__explore {
     font-size: 1.5rem;
-    letter-spacing: 0.08rem;
-  }
-
-  .slide-1 .web__title {
-    font-size: 2.5rem !important;
-    margin-top: 0.5rem;
-    line-height: 1.2;
   }
 
   .slide-1 .web__description {
     font-size: 1rem;
-    margin-top: 1rem;
-    max-width: 100%;
-    line-height: 1.4;
+  }
+
+  .media-wrapper {
+    height: 400px !important;
+  }
+
+  .media-wrapper .image,
+  .media-wrapper .image1,
+  .media-wrapper .image2 {
+    height: 160px !important;
+  }
+
+  .media-wrapper video {
+    height: 200px !important;
   }
 }
 
-/* Additional fix for very small screens */
-@media screen and (max-width: 375px) {
+/* Tablet adjustments */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .slide-1 .web-cover-text {
-    width: 95%;
-    padding: 0 0.5rem;
+    left: 4rem !important;
+    margin-left: 4rem !important;
+    transform: translateY(-50%) !important;
+    text-align: left;
   }
 
-  .slide-1 .web__explore {
-    font-size: 1.3rem;
+  .media-wrapper {
+    height: 600px !important;
   }
 
-  .slide-1 .web__title {
-    font-size: 2rem !important;
+  .media-wrapper .image,
+  .media-wrapper .image1,
+  .media-wrapper .image2 {
+    height: 250px !important;
   }
 
-  .slide-1 .web__description {
-    font-size: 0.9rem;
+  .media-wrapper video {
+    height: 300px !important;
   }
 }
